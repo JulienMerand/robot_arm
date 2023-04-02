@@ -1,0 +1,43 @@
+[0.085s] Invoking command in '/home/julien/Documents/ros/robot_arm/build/Robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_moveit2/install/ros2controlcli:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/build/Robot_description -- -j4 -l4
+[0.213s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.840s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.067s] WARNING: Package name "Robot_description" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[1.130s] -- Added test 'lint_cmake' to check CMake code style
+[1.137s] -- Added test 'xmllint' to check XML markup files
+[1.140s] -- Configuring done
+[1.151s] -- Generating done
+[1.154s] -- Build files have been written to: /home/julien/Documents/ros/robot_arm/build/Robot_description
+[1.271s] Invoked command in '/home/julien/Documents/ros/robot_arm/build/Robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_moveit2/install/ros2controlcli:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/build/Robot_description -- -j4 -l4
+[1.486s] Invoking command in '/home/julien/Documents/ros/robot_arm/build/Robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_moveit2/install/ros2controlcli:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/opt/ros/humble /usr/bin/cmake --install /home/julien/Documents/ros/robot_arm/build/Robot_description
+[1.529s] -- Install configuration: ""
+[1.530s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/urdf
+[1.531s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/urdf/materials.xacro
+[1.531s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/urdf/Robot.gazebo
+[1.531s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/urdf/Robot.xacro
+[1.532s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/urdf/Robot.trans
+[1.533s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/meshes
+[1.533s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/meshes/link5_1.stl
+[1.535s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/meshes/link2_1.stl
+[1.550s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/meshes/link6_1.stl
+[1.565s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/meshes/Servo_Gear_1.stl
+[1.568s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/meshes/link1_1.stl
+[1.578s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/meshes/link3_1.stl
+[1.583s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/meshes/base_link.stl
+[1.592s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/meshes/Idol_Gear_1.stl
+[1.595s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/meshes/link4_1.stl
+[1.607s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/ament_index/resource_index/package_run_dependencies/Robot_description
+[1.608s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/ament_index/resource_index/parent_prefix_path/Robot_description
+[1.608s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/environment/ament_prefix_path.sh
+[1.609s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/environment/ament_prefix_path.dsv
+[1.609s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/environment/path.sh
+[1.609s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/environment/path.dsv
+[1.610s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/local_setup.bash
+[1.610s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/local_setup.sh
+[1.610s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/local_setup.zsh
+[1.611s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/local_setup.dsv
+[1.611s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/package.dsv
+[1.611s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/ament_index/resource_index/packages/Robot_description
+[1.612s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/cmake/Robot_descriptionConfig.cmake
+[1.612s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/cmake/Robot_descriptionConfig-version.cmake
+[1.612s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/package.xml
+[1.619s] Invoked command in '/home/julien/Documents/ros/robot_arm/build/Robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_moveit2/install/ros2controlcli:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/opt/ros/humble /usr/bin/cmake --install /home/julien/Documents/ros/robot_arm/build/Robot_description

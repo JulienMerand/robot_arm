@@ -1,0 +1,43 @@
+[0.079s] Invoking command in '/home/julien/Documents/ros/robot_arm/build/Robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_moveit2/install/ros2controlcli:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/opt/ros/humble /usr/bin/cmake /home/julien/Documents/ros/robot_arm/src/Robot_description -DCMAKE_INSTALL_PREFIX=/home/julien/Documents/ros/robot_arm/install/Robot_description
+[0.372s] -- The C compiler identification is GNU 11.3.0
+[0.625s] -- The CXX compiler identification is GNU 11.3.0
+[0.659s] -- Detecting C compiler ABI info
+[1.016s] -- Detecting C compiler ABI info - done
+[1.048s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.049s] -- Detecting C compile features
+[1.051s] -- Detecting C compile features - done
+[1.063s] -- Detecting CXX compiler ABI info
+[1.472s] -- Detecting CXX compiler ABI info - done
+[1.504s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.506s] -- Detecting CXX compile features
+[1.508s] -- Detecting CXX compile features - done
+[1.545s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.418s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[3.186s] -- Found ament_lint_auto: 0.12.5 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.412s] WARNING: Package name "Robot_description" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[3.707s] -- Added test 'lint_cmake' to check CMake code style
+[3.720s] -- Added test 'xmllint' to check XML markup files
+[3.736s] -- Configuring done
+[3.747s] -- Generating done
+[3.751s] -- Build files have been written to: /home/julien/Documents/ros/robot_arm/build/Robot_description
+[3.766s] Invoked command in '/home/julien/Documents/ros/robot_arm/build/Robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_moveit2/install/ros2controlcli:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/opt/ros/humble /usr/bin/cmake /home/julien/Documents/ros/robot_arm/src/Robot_description -DCMAKE_INSTALL_PREFIX=/home/julien/Documents/ros/robot_arm/install/Robot_description
+[3.774s] Invoking command in '/home/julien/Documents/ros/robot_arm/build/Robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_moveit2/install/ros2controlcli:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/build/Robot_description -- -j4 -l4
+[3.985s] Invoked command in '/home/julien/Documents/ros/robot_arm/build/Robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_moveit2/install/ros2controlcli:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/build/Robot_description -- -j4 -l4
+[4.201s] Invoking command in '/home/julien/Documents/ros/robot_arm/build/Robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_moveit2/install/ros2controlcli:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/opt/ros/humble /usr/bin/cmake --install /home/julien/Documents/ros/robot_arm/build/Robot_description
+[4.242s] -- Install configuration: ""
+[4.243s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/ament_index/resource_index/package_run_dependencies/Robot_description
+[4.244s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/ament_index/resource_index/parent_prefix_path/Robot_description
+[4.245s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/environment/ament_prefix_path.sh
+[4.245s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/environment/ament_prefix_path.dsv
+[4.246s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/environment/path.sh
+[4.247s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/environment/path.dsv
+[4.247s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/local_setup.bash
+[4.248s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/local_setup.sh
+[4.248s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/local_setup.zsh
+[4.249s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/local_setup.dsv
+[4.250s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/package.dsv
+[4.250s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/ament_index/resource_index/packages/Robot_description
+[4.251s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/cmake/Robot_descriptionConfig.cmake
+[4.252s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/cmake/Robot_descriptionConfig-version.cmake
+[4.252s] -- Installing: /home/julien/Documents/ros/robot_arm/install/Robot_description/share/Robot_description/package.xml
+[4.258s] Invoked command in '/home/julien/Documents/ros/robot_arm/build/Robot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_moveit2/install/ros2controlcli:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/opt/ros/humble /usr/bin/cmake --install /home/julien/Documents/ros/robot_arm/build/Robot_description
