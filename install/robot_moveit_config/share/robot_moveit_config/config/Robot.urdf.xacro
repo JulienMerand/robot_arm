@@ -5,7 +5,7 @@
     <!-- Import Robot urdf file -->
     <!-- xacro:include filename="/home/julien/Documents/ros/robot_arm/src/Robot_description/urdf/Robot.xacro" /-->
     <xacro:include filename="/home/julien/Documents/ros/robot_arm/src/Robot_description/urdf/materials.xacro" />
-    <xacro:include filename="Robot.trans/home/julien/Documents/ros/robot_arm/src/Robot_description/urdf/Robot.trans" />
+    <xacro:include filename="/home/julien/Documents/ros/robot_arm/src/Robot_description/urdf/Robot.trans" />
     <xacro:include filename="/home/julien/Documents/ros/robot_arm/src/Robot_description/urdf/Robot.gazebo" />
     <link name="base_link">
     <inertial>
