@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="Robot_description.xmllint"
+  tests="1"
+  errors="0"
+  failures="1"
+  time="0.374"
+>
+  <testcase
+    name="package.xml"
+    classname="Robot_description.xmllint"
+  >
+      <failure message="Diff with 320 lines"><![CDATA[/home/julien/Documents/ros/robot_arm/src/Robot_description/package.xml:4: element name: Schemas validity error : Element 'name': [facet 'pattern'] The value 'Robot_description' is not accepted by the pattern '[a-z](_?[a-z0-9]+)*'.
+/home/julien/Documents/ros/robot_arm/src/Robot_description/package.xml fails to validate
+]]></failure>
+  </testcase>
+  <system-out>Checked files:
+* package.xml</system-out>
+</testsuite>

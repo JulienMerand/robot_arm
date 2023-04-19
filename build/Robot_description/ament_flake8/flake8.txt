@@ -1,0 +1,328 @@
+-- run_test.py: invoking following command in '/home/julien/Documents/ros/robot_arm/src/Robot_description':
+ - /opt/ros/humble/bin/ament_flake8 --xunit-file /home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/flake8.xunit.xml
+
+ 
+^
+def generate_launch_description():
+^
+ 
+^
+  # Set the path to this package.
+  ^
+  pkg_share = FindPackageShare(package='Robot_description').find('Robot_description')
+  ^
+ 
+^
+  # Set the path to the RViz configuration settings
+  ^
+  default_rviz_config_path = os.path.join(pkg_share, 'rviz/config.rviz')
+  ^
+ 
+^
+  # Set the path to the URDF file
+  ^
+  default_urdf_model_path = os.path.join(pkg_share, 'urdf/Robot.xacro')
+  ^
+ 
+^
+  ########### YOU DO NOT NEED TO CHANGE ANYTHING BELOW THIS LINE ##############  
+  ^
+  ########### YOU DO NOT NEED TO CHANGE ANYTHING BELOW THIS LINE ##############  
+  ^
+  ########### YOU DO NOT NEED TO CHANGE ANYTHING BELOW THIS LINE ##############  
+                                                                               ^
+  # Launch configuration variables specific to simulation
+  ^
+  gui = LaunchConfiguration('gui')
+  ^
+  urdf_model = LaunchConfiguration('urdf_model')
+  ^
+  rviz_config_file = LaunchConfiguration('rviz_config_file')
+  ^
+  use_robot_state_pub = LaunchConfiguration('use_robot_state_pub')
+  ^
+  use_rviz = LaunchConfiguration('use_rviz')
+  ^
+  use_sim_time = LaunchConfiguration('use_sim_time')
+  ^
+ 
+^
+  # Declare the launch arguments  
+  ^
+  # Declare the launch arguments  
+                                ^
+  declare_urdf_model_path_cmd = DeclareLaunchArgument(
+  ^
+    name='urdf_model', 
+                      ^
+    default_value=default_urdf_model_path, 
+                                          ^
+     
+^
+  declare_rviz_config_file_cmd = DeclareLaunchArgument(
+  ^
+     
+^
+  declare_use_joint_state_publisher_cmd = DeclareLaunchArgument(
+  ^
+   
+^
+  declare_use_robot_state_pub_cmd = DeclareLaunchArgument(
+  ^
+ 
+^
+  declare_use_rviz_cmd = DeclareLaunchArgument(
+  ^
+     
+^
+  declare_use_sim_time_cmd = DeclareLaunchArgument(
+  ^
+    
+^
+  # Specify the actions
+  ^
+ 
+^
+  # Publish the joint state values for the non-fixed joints in the URDF file.
+  ^
+  start_joint_state_publisher_cmd = Node(
+  ^
+ 
+^
+  # A GUI to manipulate the joint state values
+  ^
+  start_joint_state_publisher_gui_node = Node(
+  ^
+ 
+^
+  # Subscribe to the joint states of the robot, and publish the 3D pose of each link.
+  ^
+  start_robot_state_publisher_cmd = Node(
+  ^
+    parameters=[{'use_sim_time': use_sim_time, 
+                                              ^
+    'robot_description': Command(['xacro ', urdf_model])}],
+    ^
+ 
+^
+  # Launch RViz
+  ^
+  start_rviz_cmd = Node(
+  ^
+   
+^
+  # Create the launch description and populate
+  ^
+  ld = LaunchDescription()
+  ^
+ 
+^
+  # Declare the launch options
+  ^
+  ld.add_action(declare_urdf_model_path_cmd)
+  ^
+  ld.add_action(declare_rviz_config_file_cmd)
+  ^
+  ld.add_action(declare_use_joint_state_publisher_cmd)
+  ^
+  ld.add_action(declare_use_robot_state_pub_cmd)  
+  ^
+  ld.add_action(declare_use_robot_state_pub_cmd)  
+                                                ^
+  ld.add_action(declare_use_rviz_cmd) 
+  ^
+  ld.add_action(declare_use_rviz_cmd) 
+                                     ^
+  ld.add_action(declare_use_sim_time_cmd)
+  ^
+ 
+^
+  # Add any actions
+  ^
+  ld.add_action(start_joint_state_publisher_cmd)
+  ^
+  ld.add_action(start_joint_state_publisher_gui_node)
+  ^
+  ld.add_action(start_robot_state_publisher_cmd)
+  ^
+  ld.add_action(start_rviz_cmd)
+  ^
+ 
+^
+  return ld  ^
+  return ld           ^
+31    E111 indentation is not a multiple of 4
+14    E114 indentation is not a multiple of 4 (comment)
+1     E128 continuation line under-indented for visual indent
+1     E266 too many leading '#' for block comment
+1     E302 expected 2 blank lines, found 1
+7     W291 trailing whitespace
+1     W292 no newline at end of file
+20    W293 blank line contains whitespace
+
+./launch/visualize.launch.py:8:1: W293 blank line contains whitespace
+
+./launch/visualize.launch.py:9:1: E302 expected 2 blank lines, found 1
+
+./launch/visualize.launch.py:10:1: W293 blank line contains whitespace
+
+./launch/visualize.launch.py:11:3: E114 indentation is not a multiple of 4 (comment)
+
+./launch/visualize.launch.py:12:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:13:1: W293 blank line contains whitespace
+
+./launch/visualize.launch.py:14:3: E114 indentation is not a multiple of 4 (comment)
+
+./launch/visualize.launch.py:15:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:16:1: W293 blank line contains whitespace
+
+./launch/visualize.launch.py:17:3: E114 indentation is not a multiple of 4 (comment)
+
+./launch/visualize.launch.py:18:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:19:1: W293 blank line contains whitespace
+
+./launch/visualize.launch.py:20:3: E114 indentation is not a multiple of 4 (comment)
+
+./launch/visualize.launch.py:20:3: E266 too many leading '#' for block comment
+
+./launch/visualize.launch.py:20:80: W291 trailing whitespace
+
+./launch/visualize.launch.py:21:3: E114 indentation is not a multiple of 4 (comment)
+
+./launch/visualize.launch.py:22:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:23:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:24:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:25:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:26:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:27:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:28:1: W293 blank line contains whitespace
+
+./launch/visualize.launch.py:29:3: E114 indentation is not a multiple of 4 (comment)
+
+./launch/visualize.launch.py:29:33: W291 trailing whitespace
+
+./launch/visualize.launch.py:30:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:31:23: W291 trailing whitespace
+
+./launch/visualize.launch.py:32:43: W291 trailing whitespace
+
+./launch/visualize.launch.py:34:1: W293 blank line contains whitespace
+
+./launch/visualize.launch.py:35:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:39:1: W293 blank line contains whitespace
+
+./launch/visualize.launch.py:40:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:44:1: W293 blank line contains whitespace
+
+./launch/visualize.launch.py:45:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:49:1: W293 blank line contains whitespace
+
+./launch/visualize.launch.py:50:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:54:1: W293 blank line contains whitespace
+
+./launch/visualize.launch.py:55:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:59:1: W293 blank line contains whitespace
+
+./launch/visualize.launch.py:60:3: E114 indentation is not a multiple of 4 (comment)
+
+./launch/visualize.launch.py:61:1: W293 blank line contains whitespace
+
+./launch/visualize.launch.py:62:3: E114 indentation is not a multiple of 4 (comment)
+
+./launch/visualize.launch.py:63:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:68:1: W293 blank line contains whitespace
+
+./launch/visualize.launch.py:69:3: E114 indentation is not a multiple of 4 (comment)
+
+./launch/visualize.launch.py:70:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:75:1: W293 blank line contains whitespace
+
+./launch/visualize.launch.py:76:3: E114 indentation is not a multiple of 4 (comment)
+
+./launch/visualize.launch.py:77:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:81:47: W291 trailing whitespace
+
+./launch/visualize.launch.py:82:5: E128 continuation line under-indented for visual indent
+
+./launch/visualize.launch.py:84:1: W293 blank line contains whitespace
+
+./launch/visualize.launch.py:85:3: E114 indentation is not a multiple of 4 (comment)
+
+./launch/visualize.launch.py:86:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:94:1: W293 blank line contains whitespace
+
+./launch/visualize.launch.py:95:3: E114 indentation is not a multiple of 4 (comment)
+
+./launch/visualize.launch.py:96:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:97:1: W293 blank line contains whitespace
+
+./launch/visualize.launch.py:98:3: E114 indentation is not a multiple of 4 (comment)
+
+./launch/visualize.launch.py:99:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:100:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:101:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:102:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:102:49: W291 trailing whitespace
+
+./launch/visualize.launch.py:103:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:103:38: W291 trailing whitespace
+
+./launch/visualize.launch.py:104:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:105:1: W293 blank line contains whitespace
+
+./launch/visualize.launch.py:106:3: E114 indentation is not a multiple of 4 (comment)
+
+./launch/visualize.launch.py:107:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:108:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:109:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:110:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:111:1: W293 blank line contains whitespace
+
+./launch/visualize.launch.py:112:3: E111 indentation is not a multiple of 4
+
+./launch/visualize.launch.py:112:12: W292 no newline at end of file
+
+
+1 files checked
+76 errors
+
+'E'-type errors: 48
+'W'-type errors: 28
+
+Checked files:
+
+* ./launch/visualize.launch.py
+
+
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/flake8.xunit.xml'

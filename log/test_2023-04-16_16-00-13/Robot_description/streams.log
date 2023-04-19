@@ -1,0 +1,411 @@
+[0.045s] Invoking command in '/home/julien/Documents/ros/robot_arm/build/Robot_description': CMAKE_PREFIX_PATH=/home/julien/Documents/ros/robot_arm/install/Robot_description:/home/julien/Documents/ros/ws_moveit2/install/ros2_control:/home/julien/Documents/ros/ws_moveit2/install/transmission_interface:/home/julien/Documents/ros/ws_moveit2/install/moveit_hybrid_planning:/home/julien/Documents/ros/ws_moveit2/install/controller_manager:/home/julien/Documents/ros/ws_moveit2/install/ros2_control_test_assets:/home/julien/Documents/ros/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/julien/Documents/ros/ws_moveit2/install/moveit_runtime:/home/julien/Documents/ros/ws_moveit2/install/moveit:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners:/home/julien/Documents/ros/ws_moveit2/install/pilz_industrial_motion_planner:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_control_interface:/home/julien/Documents/ros/ws_moveit2/install/moveit_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_simple_controller_manager:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_assistant:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_srdf_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_core_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_controllers:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_app_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_framework:/home/julien/Documents/ros/ws_moveit2/install/moveit_servo:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_visualization:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_benchmarks:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_warehouse:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_robot_interaction:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_perception:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_move_group:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners_ompl:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_support:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_pr2_description:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_panda_description:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_fanuc_description:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners_chomp:/home/julien/Documents/ros/ws_moveit2/install/moveit_kinematics:/home/julien/Documents/ros/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/julien/Documents/ros/ws_moveit2/install/chomp_motion_planner:/home/julien/Documents/ros/ws_moveit2/install/moveit_core:/home/julien/Documents/ros/ws_moveit2/install/moveit_msgs:/home/julien/Documents/ros/ws_moveit2/install/moveit_common:/home/julien/Documents/ros/ws_moveit2/install/joint_limits:/home/julien/Documents/ros/ws_moveit2/install/controller_interface:/home/julien/Documents/ros/ws_moveit2/install/hardware_interface:/home/julien/Documents/ros/ws_moveit2/install/controller_manager_msgs:/home/julien/Documents/ros/robot_arm/install/robot_moveit_config:/home/julien/Documents/ros/ws_ros2/install/hello_moveit:/home/julien/Documents/ros/ws_ros2/install/cpp_pubsub /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.061s] UpdateCTestConfiguration  from :/home/julien/Documents/ros/robot_arm/build/Robot_description/CTestConfiguration.ini
+[0.062s] Parse Config file:/home/julien/Documents/ros/robot_arm/build/Robot_description/CTestConfiguration.ini
+[0.062s]    Site: julien-pc
+[0.062s]    Build name: (empty)
+[0.062s]  Add coverage exclude regular expressions.
+[0.062s] Create new tag: 20230416-1400 - Experimental
+[0.062s] UpdateCTestConfiguration  from :/home/julien/Documents/ros/robot_arm/build/Robot_description/CTestConfiguration.ini
+[0.062s] Parse Config file:/home/julien/Documents/ros/robot_arm/build/Robot_description/CTestConfiguration.ini
+[0.063s] Test project /home/julien/Documents/ros/robot_arm/build/Robot_description
+[0.063s] Constructing a list of tests
+[0.063s] Done constructing a list of tests
+[0.063s] Updating test list for fixtures
+[0.063s] Added 0 tests to meet fixture requirements
+[0.063s] Checking test dependency graph...
+[0.063s] Checking test dependency graph end
+[0.063s] test 1
+[0.063s]     Start 1: flake8
+[0.063s] 
+[0.064s] 1: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/flake8.xunit.xml" "--package-name" "Robot_description" "--output-file" "/home/julien/Documents/ros/robot_arm/build/Robot_description/ament_flake8/flake8.txt" "--command" "/opt/ros/humble/bin/ament_flake8" "--xunit-file" "/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/flake8.xunit.xml"
+[0.064s] 1: Test timeout computed to be: 60
+[0.147s] 1: -- run_test.py: invoking following command in '/home/julien/Documents/ros/robot_arm/src/Robot_description':
+[0.147s] 1:  - /opt/ros/humble/bin/ament_flake8 --xunit-file /home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/flake8.xunit.xml
+[0.364s] 1:  
+[0.365s] 1: ^
+[0.365s] 1: def generate_launch_description():
+[0.365s] 1: ^
+[0.365s] 1:  
+[0.365s] 1: ^
+[0.365s] 1:   # Set the path to this package.
+[0.365s] 1:   ^
+[0.365s] 1:   pkg_share = FindPackageShare(package='Robot_description').find('Robot_description')
+[0.365s] 1:   ^
+[0.365s] 1:  
+[0.366s] 1: ^
+[0.366s] 1:   # Set the path to the RViz configuration settings
+[0.366s] 1:   ^
+[0.366s] 1:   default_rviz_config_path = os.path.join(pkg_share, 'rviz/config.rviz')
+[0.366s] 1:   ^
+[0.366s] 1:  
+[0.366s] 1: ^
+[0.366s] 1:   # Set the path to the URDF file
+[0.366s] 1:   ^
+[0.366s] 1:   default_urdf_model_path = os.path.join(pkg_share, 'urdf/Robot.xacro')
+[0.367s] 1:   ^
+[0.367s] 1:  
+[0.367s] 1: ^
+[0.367s] 1:   ########### YOU DO NOT NEED TO CHANGE ANYTHING BELOW THIS LINE ##############  
+[0.367s] 1:   ^
+[0.367s] 1:   ########### YOU DO NOT NEED TO CHANGE ANYTHING BELOW THIS LINE ##############  
+[0.367s] 1:   ^
+[0.367s] 1:   ########### YOU DO NOT NEED TO CHANGE ANYTHING BELOW THIS LINE ##############  
+[0.367s] 1:                                                                                ^
+[0.367s] 1:   # Launch configuration variables specific to simulation
+[0.367s] 1:   ^
+[0.367s] 1:   gui = LaunchConfiguration('gui')
+[0.368s] 1:   ^
+[0.368s] 1:   urdf_model = LaunchConfiguration('urdf_model')
+[0.368s] 1:   ^
+[0.368s] 1:   rviz_config_file = LaunchConfiguration('rviz_config_file')
+[0.368s] 1:   ^
+[0.368s] 1:   use_robot_state_pub = LaunchConfiguration('use_robot_state_pub')
+[0.369s] 1:   ^
+[0.369s] 1:   use_rviz = LaunchConfiguration('use_rviz')
+[0.369s] 1:   ^
+[0.369s] 1:   use_sim_time = LaunchConfiguration('use_sim_time')
+[0.369s] 1:   ^
+[0.369s] 1:  
+[0.369s] 1: ^
+[0.369s] 1:   # Declare the launch arguments  
+[0.369s] 1:   ^
+[0.369s] 1:   # Declare the launch arguments  
+[0.369s] 1:                                 ^
+[0.370s] 1:   declare_urdf_model_path_cmd = DeclareLaunchArgument(
+[0.370s] 1:   ^
+[0.370s] 1:     name='urdf_model', 
+[0.370s] 1:                       ^
+[0.370s] 1:     default_value=default_urdf_model_path, 
+[0.370s] 1:                                           ^
+[0.371s] 1:      
+[0.371s] 1: ^
+[0.371s] 1:   declare_rviz_config_file_cmd = DeclareLaunchArgument(
+[0.371s] 1:   ^
+[0.371s] 1:      
+[0.371s] 1: ^
+[0.371s] 1:   declare_use_joint_state_publisher_cmd = DeclareLaunchArgument(
+[0.372s] 1:   ^
+[0.372s] 1:    
+[0.372s] 1: ^
+[0.372s] 1:   declare_use_robot_state_pub_cmd = DeclareLaunchArgument(
+[0.372s] 1:   ^
+[0.372s] 1:  
+[0.372s] 1: ^
+[0.372s] 1:   declare_use_rviz_cmd = DeclareLaunchArgument(
+[0.372s] 1:   ^
+[0.372s] 1:      
+[0.372s] 1: ^
+[0.373s] 1:   declare_use_sim_time_cmd = DeclareLaunchArgument(
+[0.373s] 1:   ^
+[0.373s] 1:     
+[0.373s] 1: ^
+[0.373s] 1:   # Specify the actions
+[0.373s] 1:   ^
+[0.373s] 1:  
+[0.373s] 1: ^
+[0.373s] 1:   # Publish the joint state values for the non-fixed joints in the URDF file.
+[0.373s] 1:   ^
+[0.373s] 1:   start_joint_state_publisher_cmd = Node(
+[0.373s] 1:   ^
+[0.373s] 1:  
+[0.373s] 1: ^
+[0.373s] 1:   # A GUI to manipulate the joint state values
+[0.374s] 1:   ^
+[0.374s] 1:   start_joint_state_publisher_gui_node = Node(
+[0.374s] 1:   ^
+[0.374s] 1:  
+[0.374s] 1: ^
+[0.374s] 1:   # Subscribe to the joint states of the robot, and publish the 3D pose of each link.
+[0.374s] 1:   ^
+[0.374s] 1:   start_robot_state_publisher_cmd = Node(
+[0.374s] 1:   ^
+[0.374s] 1:     parameters=[{'use_sim_time': use_sim_time, 
+[0.374s] 1:                                               ^
+[0.375s] 1:     'robot_description': Command(['xacro ', urdf_model])}],
+[0.375s] 1:     ^
+[0.375s] 1:  
+[0.375s] 1: ^
+[0.375s] 1:   # Launch RViz
+[0.375s] 1:   ^
+[0.375s] 1:   start_rviz_cmd = Node(
+[0.375s] 1:   ^
+[0.375s] 1:    
+[0.375s] 1: ^
+[0.375s] 1:   # Create the launch description and populate
+[0.375s] 1:   ^
+[0.375s] 1:   ld = LaunchDescription()
+[0.376s] 1:   ^
+[0.376s] 1:  
+[0.376s] 1: ^
+[0.376s] 1:   # Declare the launch options
+[0.376s] 1:   ^
+[0.376s] 1:   ld.add_action(declare_urdf_model_path_cmd)
+[0.376s] 1:   ^
+[0.376s] 1:   ld.add_action(declare_rviz_config_file_cmd)
+[0.376s] 1:   ^
+[0.376s] 1:   ld.add_action(declare_use_joint_state_publisher_cmd)
+[0.376s] 1:   ^
+[0.376s] 1:   ld.add_action(declare_use_robot_state_pub_cmd)  
+[0.377s] 1:   ^
+[0.377s] 1:   ld.add_action(declare_use_robot_state_pub_cmd)  
+[0.377s] 1:                                                 ^
+[0.377s] 1:   ld.add_action(declare_use_rviz_cmd) 
+[0.377s] 1:   ^
+[0.377s] 1:   ld.add_action(declare_use_rviz_cmd) 
+[0.377s] 1:                                      ^
+[0.377s] 1:   ld.add_action(declare_use_sim_time_cmd)
+[0.377s] 1:   ^
+[0.377s] 1:  
+[0.377s] 1: ^
+[0.377s] 1:   # Add any actions
+[0.377s] 1:   ^
+[0.377s] 1:   ld.add_action(start_joint_state_publisher_cmd)
+[0.378s] 1:   ^
+[0.378s] 1:   ld.add_action(start_joint_state_publisher_gui_node)
+[0.378s] 1:   ^
+[0.378s] 1:   ld.add_action(start_robot_state_publisher_cmd)
+[0.378s] 1:   ^
+[0.378s] 1:   ld.add_action(start_rviz_cmd)
+[0.378s] 1:   ^
+[0.378s] 1:  
+[0.378s] 1: ^
+[0.378s] 1:   return ld  ^
+[0.378s] 1:   return ld           ^
+[0.378s] 1: 31    E111 indentation is not a multiple of 4
+[0.378s] 1: 14    E114 indentation is not a multiple of 4 (comment)
+[0.378s] 1: 1     E128 continuation line under-indented for visual indent
+[0.379s] 1: 1     E266 too many leading '#' for block comment
+[0.379s] 1: 1     E302 expected 2 blank lines, found 1
+[0.379s] 1: 7     W291 trailing whitespace
+[0.379s] 1: 1     W292 no newline at end of file
+[0.379s] 1: 20    W293 blank line contains whitespace
+[0.379s] 1: 
+[0.379s] 1: ./launch/visualize.launch.py:8:1: W293 blank line contains whitespace
+[0.379s] 1: 
+[0.379s] 1: ./launch/visualize.launch.py:9:1: E302 expected 2 blank lines, found 1
+[0.379s] 1: 
+[0.379s] 1: ./launch/visualize.launch.py:10:1: W293 blank line contains whitespace
+[0.379s] 1: 
+[0.379s] 1: ./launch/visualize.launch.py:11:3: E114 indentation is not a multiple of 4 (comment)
+[0.379s] 1: 
+[0.380s] 1: ./launch/visualize.launch.py:12:3: E111 indentation is not a multiple of 4
+[0.380s] 1: 
+[0.380s] 1: ./launch/visualize.launch.py:13:1: W293 blank line contains whitespace
+[0.380s] 1: 
+[0.380s] 1: ./launch/visualize.launch.py:14:3: E114 indentation is not a multiple of 4 (comment)
+[0.380s] 1: 
+[0.380s] 1: ./launch/visualize.launch.py:15:3: E111 indentation is not a multiple of 4
+[0.380s] 1: 
+[0.380s] 1: ./launch/visualize.launch.py:16:1: W293 blank line contains whitespace
+[0.380s] 1: 
+[0.380s] 1: ./launch/visualize.launch.py:17:3: E114 indentation is not a multiple of 4 (comment)
+[0.380s] 1: 
+[0.380s] 1: ./launch/visualize.launch.py:18:3: E111 indentation is not a multiple of 4
+[0.380s] 1: 
+[0.381s] 1: ./launch/visualize.launch.py:19:1: W293 blank line contains whitespace
+[0.381s] 1: 
+[0.381s] 1: ./launch/visualize.launch.py:20:3: E114 indentation is not a multiple of 4 (comment)
+[0.381s] 1: 
+[0.381s] 1: ./launch/visualize.launch.py:20:3: E266 too many leading '#' for block comment
+[0.381s] 1: 
+[0.381s] 1: ./launch/visualize.launch.py:20:80: W291 trailing whitespace
+[0.381s] 1: 
+[0.381s] 1: ./launch/visualize.launch.py:21:3: E114 indentation is not a multiple of 4 (comment)
+[0.381s] 1: 
+[0.381s] 1: ./launch/visualize.launch.py:22:3: E111 indentation is not a multiple of 4
+[0.381s] 1: 
+[0.381s] 1: ./launch/visualize.launch.py:23:3: E111 indentation is not a multiple of 4
+[0.381s] 1: 
+[0.382s] 1: ./launch/visualize.launch.py:24:3: E111 indentation is not a multiple of 4
+[0.382s] 1: 
+[0.382s] 1: ./launch/visualize.launch.py:25:3: E111 indentation is not a multiple of 4
+[0.382s] 1: 
+[0.382s] 1: ./launch/visualize.launch.py:26:3: E111 indentation is not a multiple of 4
+[0.382s] 1: 
+[0.382s] 1: ./launch/visualize.launch.py:27:3: E111 indentation is not a multiple of 4
+[0.382s] 1: 
+[0.382s] 1: ./launch/visualize.launch.py:28:1: W293 blank line contains whitespace
+[0.382s] 1: 
+[0.382s] 1: ./launch/visualize.launch.py:29:3: E114 indentation is not a multiple of 4 (comment)
+[0.382s] 1: 
+[0.382s] 1: ./launch/visualize.launch.py:29:33: W291 trailing whitespace
+[0.382s] 1: 
+[0.383s] 1: ./launch/visualize.launch.py:30:3: E111 indentation is not a multiple of 4
+[0.383s] 1: 
+[0.383s] 1: ./launch/visualize.launch.py:31:23: W291 trailing whitespace
+[0.383s] 1: 
+[0.383s] 1: ./launch/visualize.launch.py:32:43: W291 trailing whitespace
+[0.383s] 1: 
+[0.383s] 1: ./launch/visualize.launch.py:34:1: W293 blank line contains whitespace
+[0.383s] 1: 
+[0.383s] 1: ./launch/visualize.launch.py:35:3: E111 indentation is not a multiple of 4
+[0.383s] 1: 
+[0.383s] 1: ./launch/visualize.launch.py:39:1: W293 blank line contains whitespace
+[0.383s] 1: 
+[0.383s] 1: ./launch/visualize.launch.py:40:3: E111 indentation is not a multiple of 4
+[0.384s] 1: 
+[0.384s] 1: ./launch/visualize.launch.py:44:1: W293 blank line contains whitespace
+[0.384s] 1: 
+[0.384s] 1: ./launch/visualize.launch.py:45:3: E111 indentation is not a multiple of 4
+[0.384s] 1: 
+[0.384s] 1: ./launch/visualize.launch.py:49:1: W293 blank line contains whitespace
+[0.384s] 1: 
+[0.384s] 1: ./launch/visualize.launch.py:50:3: E111 indentation is not a multiple of 4
+[0.384s] 1: 
+[0.384s] 1: ./launch/visualize.launch.py:54:1: W293 blank line contains whitespace
+[0.384s] 1: 
+[0.384s] 1: ./launch/visualize.launch.py:55:3: E111 indentation is not a multiple of 4
+[0.384s] 1: 
+[0.385s] 1: ./launch/visualize.launch.py:59:1: W293 blank line contains whitespace
+[0.385s] 1: 
+[0.385s] 1: ./launch/visualize.launch.py:60:3: E114 indentation is not a multiple of 4 (comment)
+[0.385s] 1: 
+[0.385s] 1: ./launch/visualize.launch.py:61:1: W293 blank line contains whitespace
+[0.385s] 1: 
+[0.385s] 1: ./launch/visualize.launch.py:62:3: E114 indentation is not a multiple of 4 (comment)
+[0.385s] 1: 
+[0.385s] 1: ./launch/visualize.launch.py:63:3: E111 indentation is not a multiple of 4
+[0.385s] 1: 
+[0.385s] 1: ./launch/visualize.launch.py:68:1: W293 blank line contains whitespace
+[0.385s] 1: 
+[0.385s] 1: ./launch/visualize.launch.py:69:3: E114 indentation is not a multiple of 4 (comment)
+[0.386s] 1: 
+[0.386s] 1: ./launch/visualize.launch.py:70:3: E111 indentation is not a multiple of 4
+[0.386s] 1: 
+[0.386s] 1: ./launch/visualize.launch.py:75:1: W293 blank line contains whitespace
+[0.386s] 1: 
+[0.386s] 1: ./launch/visualize.launch.py:76:3: E114 indentation is not a multiple of 4 (comment)
+[0.386s] 1: 
+[0.386s] 1: ./launch/visualize.launch.py:77:3: E111 indentation is not a multiple of 4
+[0.386s] 1: 
+[0.386s] 1: ./launch/visualize.launch.py:81:47: W291 trailing whitespace
+[0.386s] 1: 
+[0.387s] 1: ./launch/visualize.launch.py:82:5: E128 continuation line under-indented for visual indent
+[0.387s] 1: 
+[0.387s] 1: ./launch/visualize.launch.py:84:1: W293 blank line contains whitespace
+[0.387s] 1: 
+[0.387s] 1: ./launch/visualize.launch.py:85:3: E114 indentation is not a multiple of 4 (comment)
+[0.387s] 1: 
+[0.387s] 1: ./launch/visualize.launch.py:86:3: E111 indentation is not a multiple of 4
+[0.387s] 1: 
+[0.387s] 1: ./launch/visualize.launch.py:94:1: W293 blank line contains whitespace
+[0.387s] 1: 
+[0.387s] 1: ./launch/visualize.launch.py:95:3: E114 indentation is not a multiple of 4 (comment)
+[0.387s] 1: 
+[0.388s] 1: ./launch/visualize.launch.py:96:3: E111 indentation is not a multiple of 4
+[0.388s] 1: 
+[0.388s] 1: ./launch/visualize.launch.py:97:1: W293 blank line contains whitespace
+[0.388s] 1: 
+[0.388s] 1: ./launch/visualize.launch.py:98:3: E114 indentation is not a multiple of 4 (comment)
+[0.388s] 1: 
+[0.388s] 1: ./launch/visualize.launch.py:99:3: E111 indentation is not a multiple of 4
+[0.388s] 1: 
+[0.388s] 1: ./launch/visualize.launch.py:100:3: E111 indentation is not a multiple of 4
+[0.388s] 1: 
+[0.388s] 1: ./launch/visualize.launch.py:101:3: E111 indentation is not a multiple of 4
+[0.388s] 1: 
+[0.388s] 1: ./launch/visualize.launch.py:102:3: E111 indentation is not a multiple of 4
+[0.389s] 1: 
+[0.389s] 1: ./launch/visualize.launch.py:102:49: W291 trailing whitespace
+[0.389s] 1: 
+[0.389s] 1: ./launch/visualize.launch.py:103:3: E111 indentation is not a multiple of 4
+[0.389s] 1: 
+[0.389s] 1: ./launch/visualize.launch.py:103:38: W291 trailing whitespace
+[0.389s] 1: 
+[0.389s] 1: ./launch/visualize.launch.py:104:3: E111 indentation is not a multiple of 4
+[0.389s] 1: 
+[0.389s] 1: ./launch/visualize.launch.py:105:1: W293 blank line contains whitespace
+[0.389s] 1: 
+[0.389s] 1: ./launch/visualize.launch.py:106:3: E114 indentation is not a multiple of 4 (comment)
+[0.389s] 1: 
+[0.390s] 1: ./launch/visualize.launch.py:107:3: E111 indentation is not a multiple of 4
+[0.390s] 1: 
+[0.390s] 1: ./launch/visualize.launch.py:108:3: E111 indentation is not a multiple of 4
+[0.390s] 1: 
+[0.390s] 1: ./launch/visualize.launch.py:109:3: E111 indentation is not a multiple of 4
+[0.390s] 1: 
+[0.390s] 1: ./launch/visualize.launch.py:110:3: E111 indentation is not a multiple of 4
+[0.390s] 1: 
+[0.390s] 1: ./launch/visualize.launch.py:111:1: W293 blank line contains whitespace
+[0.390s] 1: 
+[0.390s] 1: ./launch/visualize.launch.py:112:3: E111 indentation is not a multiple of 4
+[0.390s] 1: 
+[0.390s] 1: ./launch/visualize.launch.py:112:12: W292 no newline at end of file
+[0.391s] 1: 
+[0.391s] 1: 
+[0.391s] 1: 1 files checked
+[0.391s] 1: 76 errors
+[0.391s] 1: 
+[0.391s] 1: 'E'-type errors: 48
+[0.391s] 1: 'W'-type errors: 28
+[0.391s] 1: 
+[0.391s] 1: Checked files:
+[0.391s] 1: 
+[0.391s] 1: * ./launch/visualize.launch.py
+[0.391s] 1: -- run_test.py: return code 1
+[0.391s] 1: -- run_test.py: verify result file '/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/flake8.xunit.xml'
+[0.395s] 1/4 Test #1: flake8 ...........................***Failed    0.33 sec
+[0.395s] test 2
+[0.395s]     Start 2: lint_cmake
+[0.395s] 
+[0.395s] 2: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/lint_cmake.xunit.xml" "--package-name" "Robot_description" "--output-file" "/home/julien/Documents/ros/robot_arm/build/Robot_description/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/lint_cmake.xunit.xml"
+[0.395s] 2: Test timeout computed to be: 60
+[0.474s] 2: -- run_test.py: invoking following command in '/home/julien/Documents/ros/robot_arm/src/Robot_description':
+[0.474s] 2:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/lint_cmake.xunit.xml
+[0.558s] 2: CMakeLists.txt:16: Tab found; please use spaces [whitespace/tabs]
+[0.558s] 2: CMakeLists.txt:17: Tab found; please use spaces [whitespace/tabs]
+[0.558s] 2: CMakeLists.txt:18: Tab found; please use spaces [whitespace/tabs]
+[0.558s] 2: CMakeLists.txt:19: Tab found; please use spaces [whitespace/tabs]
+[0.558s] 2: 
+[0.558s] 2: 
+[0.558s] 2: 4 errors
+[0.569s] 2: -- run_test.py: return code 1
+[0.569s] 2: -- run_test.py: verify result file '/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/lint_cmake.xunit.xml'
+[0.583s] 2/4 Test #2: lint_cmake .......................***Failed    0.19 sec
+[0.583s] test 3
+[0.583s]     Start 3: pep257
+[0.583s] 
+[0.583s] 3: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/pep257.xunit.xml" "--package-name" "Robot_description" "--output-file" "/home/julien/Documents/ros/robot_arm/build/Robot_description/ament_pep257/pep257.txt" "--command" "/opt/ros/humble/bin/ament_pep257" "--xunit-file" "/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/pep257.xunit.xml"
+[0.583s] 3: Test timeout computed to be: 60
+[0.654s] 3: -- run_test.py: invoking following command in '/home/julien/Documents/ros/robot_arm/src/Robot_description':
+[0.655s] 3:  - /opt/ros/humble/bin/ament_pep257 --xunit-file /home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/pep257.xunit.xml
+[0.814s] 3: checking ./launch/visualize.launch.py
+[0.814s] 3: No problems found
+[0.831s] 3: -- run_test.py: return code 0
+[0.831s] 3: -- run_test.py: verify result file '/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/pep257.xunit.xml'
+[0.843s] 3/4 Test #3: pep257 ...........................   Passed    0.26 sec
+[0.843s] test 4
+[0.843s]     Start 4: xmllint
+[0.843s] 
+[0.843s] 4: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/xmllint.xunit.xml" "--package-name" "Robot_description" "--output-file" "/home/julien/Documents/ros/robot_arm/build/Robot_description/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/xmllint.xunit.xml"
+[0.843s] 4: Test timeout computed to be: 60
+[0.909s] 4: -- run_test.py: invoking following command in '/home/julien/Documents/ros/robot_arm/src/Robot_description':
+[0.909s] 4:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/xmllint.xunit.xml
+[1.365s] 4: File 'package.xml' is invalid:
+[1.366s] 4: /home/julien/Documents/ros/robot_arm/src/Robot_description/package.xml:4: element name: Schemas validity error : Element 'name': [facet 'pattern'] The value 'Robot_description' is not accepted by the pattern '[a-z](_?[a-z0-9]+)*'.
+[1.366s] 4: /home/julien/Documents/ros/robot_arm/src/Robot_description/package.xml fails to validate
+[1.366s] 4: 
+[1.366s] 4: 1 files are invalid
+[1.377s] 4: -- run_test.py: return code 1
+[1.377s] 4: -- run_test.py: verify result file '/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/xmllint.xunit.xml'
+[1.387s] 4/4 Test #4: xmllint ..........................***Failed    0.54 sec
+[1.387s] 
+[1.387s] 25% tests passed[0;0m, [0;31m3 tests failed[0;0m out of 4
+[1.388s] 
+[1.388s] Label Time Summary:
+[1.388s] flake8        =   0.33 sec*proc (1 test)
+[1.388s] lint_cmake    =   0.19 sec*proc (1 test)
+[1.388s] linter        =   1.32 sec*proc (4 tests)
+[1.388s] pep257        =   0.26 sec*proc (1 test)
+[1.389s] xmllint       =   0.54 sec*proc (1 test)
+[1.389s] 
+[1.389s] Total Test time (real) =   1.32 sec
+[1.389s] 
+[1.389s] The following tests FAILED:
+[1.389s] 	[0;31m  1 - flake8 (Failed)[0;0m
+[1.389s] 	[0;31m  2 - lint_cmake (Failed)[0;0m
+[1.389s] 	[0;31m  4 - xmllint (Failed)[0;0m
+[1.389s] Errors while running CTest
+[1.389s] Output from these tests are in: /home/julien/Documents/ros/robot_arm/build/Robot_description/Testing/Temporary/LastTest.log
+[1.389s] Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.
+[1.391s] Invoked command in '/home/julien/Documents/ros/robot_arm/build/Robot_description' returned '8': CMAKE_PREFIX_PATH=/home/julien/Documents/ros/robot_arm/install/Robot_description:/home/julien/Documents/ros/ws_moveit2/install/ros2_control:/home/julien/Documents/ros/ws_moveit2/install/transmission_interface:/home/julien/Documents/ros/ws_moveit2/install/moveit_hybrid_planning:/home/julien/Documents/ros/ws_moveit2/install/controller_manager:/home/julien/Documents/ros/ws_moveit2/install/ros2_control_test_assets:/home/julien/Documents/ros/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/julien/Documents/ros/ws_moveit2/install/moveit_runtime:/home/julien/Documents/ros/ws_moveit2/install/moveit:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners:/home/julien/Documents/ros/ws_moveit2/install/pilz_industrial_motion_planner:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_control_interface:/home/julien/Documents/ros/ws_moveit2/install/moveit_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_simple_controller_manager:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_assistant:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_srdf_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_core_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_controllers:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_app_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_framework:/home/julien/Documents/ros/ws_moveit2/install/moveit_servo:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_visualization:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_benchmarks:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_warehouse:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_robot_interaction:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_perception:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_move_group:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners_ompl:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_support:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_pr2_description:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_panda_description:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_fanuc_description:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners_chomp:/home/julien/Documents/ros/ws_moveit2/install/moveit_kinematics:/home/julien/Documents/ros/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/julien/Documents/ros/ws_moveit2/install/chomp_motion_planner:/home/julien/Documents/ros/ws_moveit2/install/moveit_core:/home/julien/Documents/ros/ws_moveit2/install/moveit_msgs:/home/julien/Documents/ros/ws_moveit2/install/moveit_common:/home/julien/Documents/ros/ws_moveit2/install/joint_limits:/home/julien/Documents/ros/ws_moveit2/install/controller_interface:/home/julien/Documents/ros/ws_moveit2/install/hardware_interface:/home/julien/Documents/ros/ws_moveit2/install/controller_manager_msgs:/home/julien/Documents/ros/robot_arm/install/robot_moveit_config:/home/julien/Documents/ros/ws_ros2/install/hello_moveit:/home/julien/Documents/ros/ws_ros2/install/cpp_pubsub /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

@@ -1,0 +1,430 @@
+[0.000000] (-) TimerEvent: {}
+[0.000236] (Robot_description) JobQueued: {'identifier': 'Robot_description', 'dependencies': OrderedDict([('Robot_description', '/home/julien/Documents/ros/robot_arm/install/Robot_description')])}
+[0.000358] (Robot_description) JobStarted: {'identifier': 'Robot_description'}
+[0.044721] (Robot_description) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/home/julien/Documents/ros/robot_arm/build/Robot_description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'julien'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/snap/code/121/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/julien/Documents/ros/ws_moveit2/install/transmission_interface/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_hybrid_planning/lib:/home/julien/Documents/ros/ws_moveit2/install/controller_manager/lib:/home/julien/Documents/ros/ws_moveit2/install/pilz_industrial_motion_planner_testutils/lib:/home/julien/Documents/ros/ws_moveit2/install/pilz_industrial_motion_planner/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_control_interface/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_simple_controller_manager/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_assistant/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_srdf_plugins/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_core_plugins/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_controllers/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_app_plugins/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_framework/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_servo/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_visualization/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_benchmarks/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_warehouse/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_robot_interaction/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_perception/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_move_group/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners_ompl/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners_chomp/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_kinematics/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_chomp_optimizer_adapter/lib:/home/julien/Documents/ros/ws_moveit2/install/chomp_motion_planner/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_core/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_msgs/lib:/home/julien/Documents/ros/ws_moveit2/install/controller_interface/lib:/home/julien/Documents/ros/ws_moveit2/install/hardware_interface/lib:/home/julien/Documents/ros/ws_moveit2/install/controller_manager_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/julien'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/julien'), ('TERM_PROGRAM_VERSION', '1.76.1'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/snap/code/121/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/snap/code/121/usr/share/code/code'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1633'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=cb4f0f28dc41c0841e2c1a25643bf907'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/julien/Documents/ros/robot_arm/install:/home/julien/Documents/ros/ws_moveit2/install:/home/julien/Documents/ros/ws_ros2/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'julien'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'julien'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/julien/Documents/ros/ws_moveit2/install/moveit_core/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/julien-pc:@/tmp/.ICE-unix/1633,unix/julien-pc:/tmp/.ICE-unix/1633'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5d1d60d6_3f66_4040_af93_fbba26c03dbf'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.VGV221'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-7f98bfd81c.sock'), ('GNOME_TERMINAL_SERVICE', ':1.114'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/snap/code/121/usr/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/julien/Documents/ros/ws_moveit2/install/ros2_control:/home/julien/Documents/ros/ws_moveit2/install/transmission_interface:/home/julien/Documents/ros/ws_moveit2/install/ros2controlcli:/home/julien/Documents/ros/ws_moveit2/install/moveit_hybrid_planning:/home/julien/Documents/ros/ws_moveit2/install/controller_manager:/home/julien/Documents/ros/ws_moveit2/install/ros2_control_test_assets:/home/julien/Documents/ros/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/julien/Documents/ros/ws_moveit2/install/moveit_runtime:/home/julien/Documents/ros/ws_moveit2/install/moveit:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners:/home/julien/Documents/ros/ws_moveit2/install/pilz_industrial_motion_planner:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_control_interface:/home/julien/Documents/ros/ws_moveit2/install/moveit_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_simple_controller_manager:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_assistant:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_srdf_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_core_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_controllers:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_app_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_framework:/home/julien/Documents/ros/ws_moveit2/install/moveit_servo:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_visualization:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_benchmarks:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_warehouse:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_robot_interaction:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_perception:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_move_group:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners_ompl:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_support:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_pr2_description:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_panda_description:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_fanuc_description:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners_chomp:/home/julien/Documents/ros/ws_moveit2/install/moveit_kinematics:/home/julien/Documents/ros/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/julien/Documents/ros/ws_moveit2/install/chomp_motion_planner:/home/julien/Documents/ros/ws_moveit2/install/moveit_core:/home/julien/Documents/ros/ws_moveit2/install/moveit_msgs:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/moveit_common:/home/julien/Documents/ros/ws_moveit2/install/joint_limits:/home/julien/Documents/ros/ws_moveit2/install/controller_interface:/home/julien/Documents/ros/ws_moveit2/install/hardware_interface:/home/julien/Documents/ros/ws_moveit2/install/controller_manager_msgs:/home/julien/Documents/ros/robot_arm/install/robot_moveit_config:/home/julien/Documents/ros/robot_arm/install/Robot_description:/home/julien/Documents/ros/ws_ros2/install/hello_moveit:/home/julien/Documents/ros/ws_ros2/install/cpp_pubsub:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/julien/Documents/ros/robot_arm/build/Robot_description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=cb4f0f28dc41c0841e2c1a25643bf907'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/julien/Documents/ros/ws_moveit2/install/ros2controlcli/lib/python3.10/site-packages:/home/julien/Documents/ros/ws_moveit2/install/controller_manager/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/ws_moveit2/install/moveit_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils/lib/python3.10/site-packages:/home/julien/Documents/ros/ws_moveit2/install/controller_manager_msgs/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/julien/Documents/ros/robot_arm/install/Robot_description:/home/julien/Documents/ros/ws_moveit2/install/ros2_control:/home/julien/Documents/ros/ws_moveit2/install/transmission_interface:/home/julien/Documents/ros/ws_moveit2/install/moveit_hybrid_planning:/home/julien/Documents/ros/ws_moveit2/install/controller_manager:/home/julien/Documents/ros/ws_moveit2/install/ros2_control_test_assets:/home/julien/Documents/ros/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/julien/Documents/ros/ws_moveit2/install/moveit_runtime:/home/julien/Documents/ros/ws_moveit2/install/moveit:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners:/home/julien/Documents/ros/ws_moveit2/install/pilz_industrial_motion_planner:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_control_interface:/home/julien/Documents/ros/ws_moveit2/install/moveit_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_simple_controller_manager:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_assistant:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_srdf_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_core_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_controllers:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_app_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_framework:/home/julien/Documents/ros/ws_moveit2/install/moveit_servo:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_visualization:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_benchmarks:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_warehouse:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_robot_interaction:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_perception:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_move_group:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners_ompl:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_support:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_pr2_description:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_panda_description:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_fanuc_description:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners_chomp:/home/julien/Documents/ros/ws_moveit2/install/moveit_kinematics:/home/julien/Documents/ros/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/julien/Documents/ros/ws_moveit2/install/chomp_motion_planner:/home/julien/Documents/ros/ws_moveit2/install/moveit_core:/home/julien/Documents/ros/ws_moveit2/install/moveit_msgs:/home/julien/Documents/ros/ws_moveit2/install/moveit_common:/home/julien/Documents/ros/ws_moveit2/install/joint_limits:/home/julien/Documents/ros/ws_moveit2/install/controller_interface:/home/julien/Documents/ros/ws_moveit2/install/hardware_interface:/home/julien/Documents/ros/ws_moveit2/install/controller_manager_msgs:/home/julien/Documents/ros/robot_arm/install/robot_moveit_config:/home/julien/Documents/ros/ws_ros2/install/hello_moveit:/home/julien/Documents/ros/ws_ros2/install/cpp_pubsub')]), 'shell': False}
+[0.061632] (Robot_description) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/julien/Documents/ros/robot_arm/build/Robot_description/CTestConfiguration.ini\n'}
+[0.061890] (Robot_description) StdoutLine: {'line': b'Parse Config file:/home/julien/Documents/ros/robot_arm/build/Robot_description/CTestConfiguration.ini\n'}
+[0.062194] (Robot_description) StdoutLine: {'line': b'   Site: julien-pc\n'}
+[0.062326] (Robot_description) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.062421] (Robot_description) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.062509] (Robot_description) StdoutLine: {'line': b'Create new tag: 20230416-1400 - Experimental\n'}
+[0.062688] (Robot_description) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/julien/Documents/ros/robot_arm/build/Robot_description/CTestConfiguration.ini\n'}
+[0.062800] (Robot_description) StdoutLine: {'line': b'Parse Config file:/home/julien/Documents/ros/robot_arm/build/Robot_description/CTestConfiguration.ini\n'}
+[0.062909] (Robot_description) StdoutLine: {'line': b'Test project /home/julien/Documents/ros/robot_arm/build/Robot_description\n'}
+[0.063002] (Robot_description) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.063170] (Robot_description) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.063265] (Robot_description) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.063348] (Robot_description) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.063429] (Robot_description) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.063509] (Robot_description) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.063589] (Robot_description) StdoutLine: {'line': b'test 1\n'}
+[0.063669] (Robot_description) StdoutLine: {'line': b'    Start 1: flake8\n'}
+[0.063750] (Robot_description) StdoutLine: {'line': b'\n'}
+[0.063831] (Robot_description) StdoutLine: {'line': b'1: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/flake8.xunit.xml" "--package-name" "Robot_description" "--output-file" "/home/julien/Documents/ros/robot_arm/build/Robot_description/ament_flake8/flake8.txt" "--command" "/opt/ros/humble/bin/ament_flake8" "--xunit-file" "/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/flake8.xunit.xml"\n'}
+[0.063920] (Robot_description) StdoutLine: {'line': b'1: Test timeout computed to be: 60\n'}
+[0.098535] (-) TimerEvent: {}
+[0.147154] (Robot_description) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/home/julien/Documents/ros/robot_arm/src/Robot_description':\n"}
+[0.147400] (Robot_description) StdoutLine: {'line': b'1:  - /opt/ros/humble/bin/ament_flake8 --xunit-file /home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/flake8.xunit.xml\n'}
+[0.198672] (-) TimerEvent: {}
+[0.298949] (-) TimerEvent: {}
+[0.364607] (Robot_description) StdoutLine: {'line': b'1:  \n'}
+[0.364877] (Robot_description) StdoutLine: {'line': b'1: ^\n'}
+[0.364991] (Robot_description) StdoutLine: {'line': b'1: def generate_launch_description():\n'}
+[0.365094] (Robot_description) StdoutLine: {'line': b'1: ^\n'}
+[0.365192] (Robot_description) StdoutLine: {'line': b'1:  \n'}
+[0.365326] (Robot_description) StdoutLine: {'line': b'1: ^\n'}
+[0.365408] (Robot_description) StdoutLine: {'line': b'1:   # Set the path to this package.\n'}
+[0.365492] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.365574] (Robot_description) StdoutLine: {'line': b"1:   pkg_share = FindPackageShare(package='Robot_description').find('Robot_description')\n"}
+[0.365657] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.365752] (Robot_description) StdoutLine: {'line': b'1:  \n'}
+[0.365834] (Robot_description) StdoutLine: {'line': b'1: ^\n'}
+[0.365915] (Robot_description) StdoutLine: {'line': b'1:   # Set the path to the RViz configuration settings\n'}
+[0.366000] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.366082] (Robot_description) StdoutLine: {'line': b"1:   default_rviz_config_path = os.path.join(pkg_share, 'rviz/config.rviz')\n"}
+[0.366166] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.366247] (Robot_description) StdoutLine: {'line': b'1:  \n'}
+[0.366328] (Robot_description) StdoutLine: {'line': b'1: ^\n'}
+[0.366421] (Robot_description) StdoutLine: {'line': b'1:   # Set the path to the URDF file\n'}
+[0.366524] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.366604] (Robot_description) StdoutLine: {'line': b"1:   default_urdf_model_path = os.path.join(pkg_share, 'urdf/Robot.xacro')\n"}
+[0.366894] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.366977] (Robot_description) StdoutLine: {'line': b'1:  \n'}
+[0.367056] (Robot_description) StdoutLine: {'line': b'1: ^\n'}
+[0.367136] (Robot_description) StdoutLine: {'line': b'1:   ########### YOU DO NOT NEED TO CHANGE ANYTHING BELOW THIS LINE ##############  \n'}
+[0.367216] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.367294] (Robot_description) StdoutLine: {'line': b'1:   ########### YOU DO NOT NEED TO CHANGE ANYTHING BELOW THIS LINE ##############  \n'}
+[0.367374] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.367451] (Robot_description) StdoutLine: {'line': b'1:   ########### YOU DO NOT NEED TO CHANGE ANYTHING BELOW THIS LINE ##############  \n'}
+[0.367531] (Robot_description) StdoutLine: {'line': b'1:                                                                                ^\n'}
+[0.367609] (Robot_description) StdoutLine: {'line': b'1:   # Launch configuration variables specific to simulation\n'}
+[0.367689] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.367772] (Robot_description) StdoutLine: {'line': b"1:   gui = LaunchConfiguration('gui')\n"}
+[0.367851] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.367928] (Robot_description) StdoutLine: {'line': b"1:   urdf_model = LaunchConfiguration('urdf_model')\n"}
+[0.368007] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.368084] (Robot_description) StdoutLine: {'line': b"1:   rviz_config_file = LaunchConfiguration('rviz_config_file')\n"}
+[0.368704] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.368804] (Robot_description) StdoutLine: {'line': b"1:   use_robot_state_pub = LaunchConfiguration('use_robot_state_pub')\n"}
+[0.368889] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.368970] (Robot_description) StdoutLine: {'line': b"1:   use_rviz = LaunchConfiguration('use_rviz')\n"}
+[0.369050] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.369128] (Robot_description) StdoutLine: {'line': b"1:   use_sim_time = LaunchConfiguration('use_sim_time')\n"}
+[0.369208] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.369286] (Robot_description) StdoutLine: {'line': b'1:  \n'}
+[0.369364] (Robot_description) StdoutLine: {'line': b'1: ^\n'}
+[0.369441] (Robot_description) StdoutLine: {'line': b'1:   # Declare the launch arguments  \n'}
+[0.369520] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.369598] (Robot_description) StdoutLine: {'line': b'1:   # Declare the launch arguments  \n'}
+[0.369675] (Robot_description) StdoutLine: {'line': b'1:                                 ^\n'}
+[0.369769] (Robot_description) StdoutLine: {'line': b'1:   declare_urdf_model_path_cmd = DeclareLaunchArgument(\n'}
+[0.370070] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.370176] (Robot_description) StdoutLine: {'line': b"1:     name='urdf_model', \n"}
+[0.370354] (Robot_description) StdoutLine: {'line': b'1:                       ^\n'}
+[0.370468] (Robot_description) StdoutLine: {'line': b'1:     default_value=default_urdf_model_path, \n'}
+[0.370552] (Robot_description) StdoutLine: {'line': b'1:                                           ^\n'}
+[0.370862] (Robot_description) StdoutLine: {'line': b'1:      \n'}
+[0.370990] (Robot_description) StdoutLine: {'line': b'1: ^\n'}
+[0.371210] (Robot_description) StdoutLine: {'line': b'1:   declare_rviz_config_file_cmd = DeclareLaunchArgument(\n'}
+[0.371364] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.371482] (Robot_description) StdoutLine: {'line': b'1:      \n'}
+[0.371607] (Robot_description) StdoutLine: {'line': b'1: ^\n'}
+[0.371698] (Robot_description) StdoutLine: {'line': b'1:   declare_use_joint_state_publisher_cmd = DeclareLaunchArgument(\n'}
+[0.371819] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.371936] (Robot_description) StdoutLine: {'line': b'1:    \n'}
+[0.372023] (Robot_description) StdoutLine: {'line': b'1: ^\n'}
+[0.372108] (Robot_description) StdoutLine: {'line': b'1:   declare_use_robot_state_pub_cmd = DeclareLaunchArgument(\n'}
+[0.372197] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.372282] (Robot_description) StdoutLine: {'line': b'1:  \n'}
+[0.372435] (Robot_description) StdoutLine: {'line': b'1: ^\n'}
+[0.372523] (Robot_description) StdoutLine: {'line': b'1:   declare_use_rviz_cmd = DeclareLaunchArgument(\n'}
+[0.372610] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.372738] (Robot_description) StdoutLine: {'line': b'1:      \n'}
+[0.372806] (Robot_description) StdoutLine: {'line': b'1: ^\n'}
+[0.372873] (Robot_description) StdoutLine: {'line': b'1:   declare_use_sim_time_cmd = DeclareLaunchArgument(\n'}
+[0.372940] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.373008] (Robot_description) StdoutLine: {'line': b'1:     \n'}
+[0.373075] (Robot_description) StdoutLine: {'line': b'1: ^\n'}
+[0.373142] (Robot_description) StdoutLine: {'line': b'1:   # Specify the actions\n'}
+[0.373212] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.373283] (Robot_description) StdoutLine: {'line': b'1:  \n'}
+[0.373351] (Robot_description) StdoutLine: {'line': b'1: ^\n'}
+[0.373420] (Robot_description) StdoutLine: {'line': b'1:   # Publish the joint state values for the non-fixed joints in the URDF file.\n'}
+[0.373489] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.373558] (Robot_description) StdoutLine: {'line': b'1:   start_joint_state_publisher_cmd = Node(\n'}
+[0.373626] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.373693] (Robot_description) StdoutLine: {'line': b'1:  \n'}
+[0.373760] (Robot_description) StdoutLine: {'line': b'1: ^\n'}
+[0.373828] (Robot_description) StdoutLine: {'line': b'1:   # A GUI to manipulate the joint state values\n'}
+[0.373895] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.373962] (Robot_description) StdoutLine: {'line': b'1:   start_joint_state_publisher_gui_node = Node(\n'}
+[0.374029] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.374096] (Robot_description) StdoutLine: {'line': b'1:  \n'}
+[0.374164] (Robot_description) StdoutLine: {'line': b'1: ^\n'}
+[0.374230] (Robot_description) StdoutLine: {'line': b'1:   # Subscribe to the joint states of the robot, and publish the 3D pose of each link.\n'}
+[0.374320] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.374388] (Robot_description) StdoutLine: {'line': b'1:   start_robot_state_publisher_cmd = Node(\n'}
+[0.374456] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.374524] (Robot_description) StdoutLine: {'line': b"1:     parameters=[{'use_sim_time': use_sim_time, \n"}
+[0.374591] (Robot_description) StdoutLine: {'line': b'1:                                               ^\n'}
+[0.374780] (Robot_description) StdoutLine: {'line': b"1:     'robot_description': Command(['xacro ', urdf_model])}],\n"}
+[0.374931] (Robot_description) StdoutLine: {'line': b'1:     ^\n'}
+[0.375012] (Robot_description) StdoutLine: {'line': b'1:  \n'}
+[0.375090] (Robot_description) StdoutLine: {'line': b'1: ^\n'}
+[0.375168] (Robot_description) StdoutLine: {'line': b'1:   # Launch RViz\n'}
+[0.375245] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.375325] (Robot_description) StdoutLine: {'line': b'1:   start_rviz_cmd = Node(\n'}
+[0.375412] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.375490] (Robot_description) StdoutLine: {'line': b'1:    \n'}
+[0.375568] (Robot_description) StdoutLine: {'line': b'1: ^\n'}
+[0.375644] (Robot_description) StdoutLine: {'line': b'1:   # Create the launch description and populate\n'}
+[0.375722] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.375799] (Robot_description) StdoutLine: {'line': b'1:   ld = LaunchDescription()\n'}
+[0.375875] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.375954] (Robot_description) StdoutLine: {'line': b'1:  \n'}
+[0.376030] (Robot_description) StdoutLine: {'line': b'1: ^\n'}
+[0.376106] (Robot_description) StdoutLine: {'line': b'1:   # Declare the launch options\n'}
+[0.376183] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.376276] (Robot_description) StdoutLine: {'line': b'1:   ld.add_action(declare_urdf_model_path_cmd)\n'}
+[0.376355] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.376435] (Robot_description) StdoutLine: {'line': b'1:   ld.add_action(declare_rviz_config_file_cmd)\n'}
+[0.376515] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.376594] (Robot_description) StdoutLine: {'line': b'1:   ld.add_action(declare_use_joint_state_publisher_cmd)\n'}
+[0.376674] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.376753] (Robot_description) StdoutLine: {'line': b'1:   ld.add_action(declare_use_robot_state_pub_cmd)  \n'}
+[0.376833] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.376947] (Robot_description) StdoutLine: {'line': b'1:   ld.add_action(declare_use_robot_state_pub_cmd)  \n'}
+[0.377033] (Robot_description) StdoutLine: {'line': b'1:                                                 ^\n'}
+[0.377102] (Robot_description) StdoutLine: {'line': b'1:   ld.add_action(declare_use_rviz_cmd) \n'}
+[0.377171] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.377239] (Robot_description) StdoutLine: {'line': b'1:   ld.add_action(declare_use_rviz_cmd) \n'}
+[0.377308] (Robot_description) StdoutLine: {'line': b'1:                                      ^\n'}
+[0.377377] (Robot_description) StdoutLine: {'line': b'1:   ld.add_action(declare_use_sim_time_cmd)\n'}
+[0.377445] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.377514] (Robot_description) StdoutLine: {'line': b'1:  \n'}
+[0.377584] (Robot_description) StdoutLine: {'line': b'1: ^\n'}
+[0.377655] (Robot_description) StdoutLine: {'line': b'1:   # Add any actions\n'}
+[0.377725] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.377798] (Robot_description) StdoutLine: {'line': b'1:   ld.add_action(start_joint_state_publisher_cmd)\n'}
+[0.377868] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.377937] (Robot_description) StdoutLine: {'line': b'1:   ld.add_action(start_joint_state_publisher_gui_node)\n'}
+[0.378006] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.378075] (Robot_description) StdoutLine: {'line': b'1:   ld.add_action(start_robot_state_publisher_cmd)\n'}
+[0.378145] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.378213] (Robot_description) StdoutLine: {'line': b'1:   ld.add_action(start_rviz_cmd)\n'}
+[0.378283] (Robot_description) StdoutLine: {'line': b'1:   ^\n'}
+[0.378353] (Robot_description) StdoutLine: {'line': b'1:  \n'}
+[0.378423] (Robot_description) StdoutLine: {'line': b'1: ^\n'}
+[0.378494] (Robot_description) StdoutLine: {'line': b'1:   return ld  ^\n'}
+[0.378563] (Robot_description) StdoutLine: {'line': b'1:   return ld           ^\n'}
+[0.378665] (Robot_description) StdoutLine: {'line': b'1: 31    E111 indentation is not a multiple of 4\n'}
+[0.378754] (Robot_description) StdoutLine: {'line': b'1: 14    E114 indentation is not a multiple of 4 (comment)\n'}
+[0.378824] (Robot_description) StdoutLine: {'line': b'1: 1     E128 continuation line under-indented for visual indent\n'}
+[0.378895] (Robot_description) StdoutLine: {'line': b"1: 1     E266 too many leading '#' for block comment\n"}
+[0.378966] (Robot_description) StdoutLine: {'line': b'1: 1     E302 expected 2 blank lines, found 1\n'}
+[0.379035] (Robot_description) StdoutLine: {'line': b'1: 7     W291 trailing whitespace\n'}
+[0.379115] (Robot_description) StdoutLine: {'line': b'1: 1     W292 no newline at end of file\n'}
+[0.379184] (Robot_description) StdoutLine: {'line': b'1: 20    W293 blank line contains whitespace\n'}
+[0.379253] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.379323] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:8:1: W293 blank line contains whitespace\n'}
+[0.379393] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.379462] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:9:1: E302 expected 2 blank lines, found 1\n'}
+[0.379533] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.379602] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:10:1: W293 blank line contains whitespace\n'}
+[0.379671] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.379741] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:11:3: E114 indentation is not a multiple of 4 (comment)\n'}
+[0.379811] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.379880] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:12:3: E111 indentation is not a multiple of 4\n'}
+[0.379949] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.380018] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:13:1: W293 blank line contains whitespace\n'}
+[0.380099] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.380165] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:14:3: E114 indentation is not a multiple of 4 (comment)\n'}
+[0.380233] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.380306] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:15:3: E111 indentation is not a multiple of 4\n'}
+[0.380374] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.380442] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:16:1: W293 blank line contains whitespace\n'}
+[0.380510] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.380592] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:17:3: E114 indentation is not a multiple of 4 (comment)\n'}
+[0.380663] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.380732] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:18:3: E111 indentation is not a multiple of 4\n'}
+[0.380803] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.380872] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:19:1: W293 blank line contains whitespace\n'}
+[0.380941] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.381011] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:20:3: E114 indentation is not a multiple of 4 (comment)\n'}
+[0.381081] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.381150] (Robot_description) StdoutLine: {'line': b"1: ./launch/visualize.launch.py:20:3: E266 too many leading '#' for block comment\n"}
+[0.381220] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.381289] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:20:80: W291 trailing whitespace\n'}
+[0.381359] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.381428] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:21:3: E114 indentation is not a multiple of 4 (comment)\n'}
+[0.381510] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.381577] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:22:3: E111 indentation is not a multiple of 4\n'}
+[0.381660] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.381729] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:23:3: E111 indentation is not a multiple of 4\n'}
+[0.381798] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.381868] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:24:3: E111 indentation is not a multiple of 4\n'}
+[0.381938] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.382014] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:25:3: E111 indentation is not a multiple of 4\n'}
+[0.382085] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.382153] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:26:3: E111 indentation is not a multiple of 4\n'}
+[0.382222] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.382291] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:27:3: E111 indentation is not a multiple of 4\n'}
+[0.382360] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.382429] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:28:1: W293 blank line contains whitespace\n'}
+[0.382498] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.382566] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:29:3: E114 indentation is not a multiple of 4 (comment)\n'}
+[0.382668] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.382754] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:29:33: W291 trailing whitespace\n'}
+[0.382824] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.382896] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:30:3: E111 indentation is not a multiple of 4\n'}
+[0.382966] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.383034] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:31:23: W291 trailing whitespace\n'}
+[0.383113] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.383182] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:32:43: W291 trailing whitespace\n'}
+[0.383251] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.383319] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:34:1: W293 blank line contains whitespace\n'}
+[0.383399] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.383468] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:35:3: E111 indentation is not a multiple of 4\n'}
+[0.383563] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.383641] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:39:1: W293 blank line contains whitespace\n'}
+[0.383731] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.383798] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:40:3: E111 indentation is not a multiple of 4\n'}
+[0.383866] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.383946] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:44:1: W293 blank line contains whitespace\n'}
+[0.384012] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.384100] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:45:3: E111 indentation is not a multiple of 4\n'}
+[0.384176] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.384252] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:49:1: W293 blank line contains whitespace\n'}
+[0.384334] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.384410] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:50:3: E111 indentation is not a multiple of 4\n'}
+[0.384495] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.384570] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:54:1: W293 blank line contains whitespace\n'}
+[0.384645] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.384719] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:55:3: E111 indentation is not a multiple of 4\n'}
+[0.384794] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.384868] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:59:1: W293 blank line contains whitespace\n'}
+[0.384943] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.385017] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:60:3: E114 indentation is not a multiple of 4 (comment)\n'}
+[0.385093] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.385180] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:61:1: W293 blank line contains whitespace\n'}
+[0.385255] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.385333] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:62:3: E114 indentation is not a multiple of 4 (comment)\n'}
+[0.385408] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.385483] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:63:3: E111 indentation is not a multiple of 4\n'}
+[0.385559] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.385634] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:68:1: W293 blank line contains whitespace\n'}
+[0.385710] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.385785] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:69:3: E114 indentation is not a multiple of 4 (comment)\n'}
+[0.385862] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.385937] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:70:3: E111 indentation is not a multiple of 4\n'}
+[0.386011] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.386087] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:75:1: W293 blank line contains whitespace\n'}
+[0.386164] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.386240] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:76:3: E114 indentation is not a multiple of 4 (comment)\n'}
+[0.386317] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.386392] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:77:3: E111 indentation is not a multiple of 4\n'}
+[0.386476] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.386556] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:81:47: W291 trailing whitespace\n'}
+[0.386644] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.386825] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:82:5: E128 continuation line under-indented for visual indent\n'}
+[0.386972] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.387076] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:84:1: W293 blank line contains whitespace\n'}
+[0.387156] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.387234] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:85:3: E114 indentation is not a multiple of 4 (comment)\n'}
+[0.387312] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.387400] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:86:3: E111 indentation is not a multiple of 4\n'}
+[0.387474] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.387561] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:94:1: W293 blank line contains whitespace\n'}
+[0.387639] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.387715] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:95:3: E114 indentation is not a multiple of 4 (comment)\n'}
+[0.387794] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.387871] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:96:3: E111 indentation is not a multiple of 4\n'}
+[0.387959] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.388039] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:97:1: W293 blank line contains whitespace\n'}
+[0.388116] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.388191] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:98:3: E114 indentation is not a multiple of 4 (comment)\n'}
+[0.388267] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.388342] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:99:3: E111 indentation is not a multiple of 4\n'}
+[0.388417] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.388491] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:100:3: E111 indentation is not a multiple of 4\n'}
+[0.388589] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.388662] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:101:3: E111 indentation is not a multiple of 4\n'}
+[0.388736] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.388808] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:102:3: E111 indentation is not a multiple of 4\n'}
+[0.388882] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.388954] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:102:49: W291 trailing whitespace\n'}
+[0.389028] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.389102] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:103:3: E111 indentation is not a multiple of 4\n'}
+[0.389175] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.389250] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:103:38: W291 trailing whitespace\n'}
+[0.389326] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.389400] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:104:3: E111 indentation is not a multiple of 4\n'}
+[0.389473] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.389546] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:105:1: W293 blank line contains whitespace\n'}
+[0.389620] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.389692] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:106:3: E114 indentation is not a multiple of 4 (comment)\n'}
+[0.389766] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.389839] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:107:3: E111 indentation is not a multiple of 4\n'}
+[0.389928] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.390003] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:108:3: E111 indentation is not a multiple of 4\n'}
+[0.390079] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.390156] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:109:3: E111 indentation is not a multiple of 4\n'}
+[0.390234] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.390311] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:110:3: E111 indentation is not a multiple of 4\n'}
+[0.390389] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.390467] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:111:1: W293 blank line contains whitespace\n'}
+[0.390544] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.390650] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:112:3: E111 indentation is not a multiple of 4\n'}
+[0.390741] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.390811] (Robot_description) StdoutLine: {'line': b'1: ./launch/visualize.launch.py:112:12: W292 no newline at end of file\n'}
+[0.390881] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.390950] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.391020] (Robot_description) StdoutLine: {'line': b'1: 1 files checked\n'}
+[0.391090] (Robot_description) StdoutLine: {'line': b'1: 76 errors\n'}
+[0.391159] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.391229] (Robot_description) StdoutLine: {'line': b"1: 'E'-type errors: 48\n"}
+[0.391298] (Robot_description) StdoutLine: {'line': b"1: 'W'-type errors: 28\n"}
+[0.391368] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.391438] (Robot_description) StdoutLine: {'line': b'1: Checked files:\n'}
+[0.391506] (Robot_description) StdoutLine: {'line': b'1: \n'}
+[0.391576] (Robot_description) StdoutLine: {'line': b'1: * ./launch/visualize.launch.py\n'}
+[0.391648] (Robot_description) StdoutLine: {'line': b'1: -- run_test.py: return code 1\n'}
+[0.391718] (Robot_description) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/flake8.xunit.xml'\n"}
+[0.394759] (Robot_description) StdoutLine: {'line': b'1/4 Test #1: flake8 ...........................***Failed    0.33 sec\n'}
+[0.394994] (Robot_description) StdoutLine: {'line': b'test 2\n'}
+[0.395076] (Robot_description) StdoutLine: {'line': b'    Start 2: lint_cmake\n'}
+[0.395151] (Robot_description) StdoutLine: {'line': b'\n'}
+[0.395248] (Robot_description) StdoutLine: {'line': b'2: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/lint_cmake.xunit.xml" "--package-name" "Robot_description" "--output-file" "/home/julien/Documents/ros/robot_arm/build/Robot_description/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/lint_cmake.xunit.xml"\n'}
+[0.395338] (Robot_description) StdoutLine: {'line': b'2: Test timeout computed to be: 60\n'}
+[0.399049] (-) TimerEvent: {}
+[0.474208] (Robot_description) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/home/julien/Documents/ros/robot_arm/src/Robot_description':\n"}
+[0.474377] (Robot_description) StdoutLine: {'line': b'2:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/lint_cmake.xunit.xml\n'}
+[0.499185] (-) TimerEvent: {}
+[0.558117] (Robot_description) StdoutLine: {'line': b'2: CMakeLists.txt:16: Tab found; please use spaces [whitespace/tabs]\n'}
+[0.558275] (Robot_description) StdoutLine: {'line': b'2: CMakeLists.txt:17: Tab found; please use spaces [whitespace/tabs]\n'}
+[0.558358] (Robot_description) StdoutLine: {'line': b'2: CMakeLists.txt:18: Tab found; please use spaces [whitespace/tabs]\n'}
+[0.558432] (Robot_description) StdoutLine: {'line': b'2: CMakeLists.txt:19: Tab found; please use spaces [whitespace/tabs]\n'}
+[0.558504] (Robot_description) StdoutLine: {'line': b'2: \n'}
+[0.558575] (Robot_description) StdoutLine: {'line': b'2: \n'}
+[0.558695] (Robot_description) StdoutLine: {'line': b'2: 4 errors\n'}
+[0.569097] (Robot_description) StdoutLine: {'line': b'2: -- run_test.py: return code 1\n'}
+[0.569769] (Robot_description) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/lint_cmake.xunit.xml'\n"}
+[0.582815] (Robot_description) StdoutLine: {'line': b'2/4 Test #2: lint_cmake .......................***Failed    0.19 sec\n'}
+[0.583003] (Robot_description) StdoutLine: {'line': b'test 3\n'}
+[0.583105] (Robot_description) StdoutLine: {'line': b'    Start 3: pep257\n'}
+[0.583193] (Robot_description) StdoutLine: {'line': b'\n'}
+[0.583277] (Robot_description) StdoutLine: {'line': b'3: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/pep257.xunit.xml" "--package-name" "Robot_description" "--output-file" "/home/julien/Documents/ros/robot_arm/build/Robot_description/ament_pep257/pep257.txt" "--command" "/opt/ros/humble/bin/ament_pep257" "--xunit-file" "/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/pep257.xunit.xml"\n'}
+[0.583368] (Robot_description) StdoutLine: {'line': b'3: Test timeout computed to be: 60\n'}
+[0.599304] (-) TimerEvent: {}
+[0.654636] (Robot_description) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/home/julien/Documents/ros/robot_arm/src/Robot_description':\n"}
+[0.655586] (Robot_description) StdoutLine: {'line': b'3:  - /opt/ros/humble/bin/ament_pep257 --xunit-file /home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/pep257.xunit.xml\n'}
+[0.699391] (-) TimerEvent: {}
+[0.799728] (-) TimerEvent: {}
+[0.813762] (Robot_description) StdoutLine: {'line': b'3: checking ./launch/visualize.launch.py\n'}
+[0.814006] (Robot_description) StdoutLine: {'line': b'3: No problems found\n'}
+[0.831304] (Robot_description) StdoutLine: {'line': b'3: -- run_test.py: return code 0\n'}
+[0.831503] (Robot_description) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/pep257.xunit.xml'\n"}
+[0.842960] (Robot_description) StdoutLine: {'line': b'3/4 Test #3: pep257 ...........................   Passed    0.26 sec\n'}
+[0.843154] (Robot_description) StdoutLine: {'line': b'test 4\n'}
+[0.843249] (Robot_description) StdoutLine: {'line': b'    Start 4: xmllint\n'}
+[0.843334] (Robot_description) StdoutLine: {'line': b'\n'}
+[0.843418] (Robot_description) StdoutLine: {'line': b'4: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/xmllint.xunit.xml" "--package-name" "Robot_description" "--output-file" "/home/julien/Documents/ros/robot_arm/build/Robot_description/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/xmllint.xunit.xml"\n'}
+[0.843509] (Robot_description) StdoutLine: {'line': b'4: Test timeout computed to be: 60\n'}
+[0.899838] (-) TimerEvent: {}
+[0.909239] (Robot_description) StdoutLine: {'line': b"4: -- run_test.py: invoking following command in '/home/julien/Documents/ros/robot_arm/src/Robot_description':\n"}
+[0.909403] (Robot_description) StdoutLine: {'line': b'4:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/xmllint.xunit.xml\n'}
+[0.999997] (-) TimerEvent: {}
+[1.100502] (-) TimerEvent: {}
+[1.200835] (-) TimerEvent: {}
+[1.301265] (-) TimerEvent: {}
+[1.365679] (Robot_description) StdoutLine: {'line': b"4: File 'package.xml' is invalid:\n"}
+[1.365855] (Robot_description) StdoutLine: {'line': b"4: /home/julien/Documents/ros/robot_arm/src/Robot_description/package.xml:4: element name: Schemas validity error : Element 'name': [facet 'pattern'] The value 'Robot_description' is not accepted by the pattern '[a-z](_?[a-z0-9]+)*'.\n"}
+[1.365954] (Robot_description) StdoutLine: {'line': b'4: /home/julien/Documents/ros/robot_arm/src/Robot_description/package.xml fails to validate\n'}
+[1.366041] (Robot_description) StdoutLine: {'line': b'4: \n'}
+[1.366150] (Robot_description) StdoutLine: {'line': b'4: 1 files are invalid\n'}
+[1.376875] (Robot_description) StdoutLine: {'line': b'4: -- run_test.py: return code 1\n'}
+[1.377230] (Robot_description) StdoutLine: {'line': b"4: -- run_test.py: verify result file '/home/julien/Documents/ros/robot_arm/build/Robot_description/test_results/Robot_description/xmllint.xunit.xml'\n"}
+[1.386860] (Robot_description) StdoutLine: {'line': b'4/4 Test #4: xmllint ..........................***Failed    0.54 sec\n'}
+[1.387287] (Robot_description) StdoutLine: {'line': b'\n'}
+[1.387529] (Robot_description) StdoutLine: {'line': b'25% tests passed\x1b[0;0m, \x1b[0;31m3 tests failed\x1b[0;0m out of 4\n'}
+[1.387647] (Robot_description) StdoutLine: {'line': b'\n'}
+[1.388241] (Robot_description) StdoutLine: {'line': b'Label Time Summary:\n'}
+[1.388357] (Robot_description) StdoutLine: {'line': b'flake8        =   0.33 sec*proc (1 test)\n'}
+[1.388458] (Robot_description) StdoutLine: {'line': b'lint_cmake    =   0.19 sec*proc (1 test)\n'}
+[1.388554] (Robot_description) StdoutLine: {'line': b'linter        =   1.32 sec*proc (4 tests)\n'}
+[1.388648] (Robot_description) StdoutLine: {'line': b'pep257        =   0.26 sec*proc (1 test)\n'}
+[1.388740] (Robot_description) StdoutLine: {'line': b'xmllint       =   0.54 sec*proc (1 test)\n'}
+[1.388924] (Robot_description) StdoutLine: {'line': b'\n'}
+[1.389016] (Robot_description) StdoutLine: {'line': b'Total Test time (real) =   1.32 sec\n'}
+[1.389098] (Robot_description) StdoutLine: {'line': b'\n'}
+[1.389177] (Robot_description) StdoutLine: {'line': b'The following tests FAILED:\n'}
+[1.389292] (Robot_description) StdoutLine: {'line': b'\t\x1b[0;31m  1 - flake8 (Failed)\x1b[0;0m\n'}
+[1.389380] (Robot_description) StdoutLine: {'line': b'\t\x1b[0;31m  2 - lint_cmake (Failed)\x1b[0;0m\n'}
+[1.389451] (Robot_description) StdoutLine: {'line': b'\t\x1b[0;31m  4 - xmllint (Failed)\x1b[0;0m\n'}
+[1.389521] (Robot_description) StderrLine: {'line': b'Errors while running CTest\n'}
+[1.389607] (Robot_description) StderrLine: {'line': b'Output from these tests are in: /home/julien/Documents/ros/robot_arm/build/Robot_description/Testing/Temporary/LastTest.log\n'}
+[1.389679] (Robot_description) StderrLine: {'line': b'Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.\n'}
+[1.391123] (Robot_description) CommandEnded: {'returncode': 8}
+[1.391641] (Robot_description) TestFailure: {'identifier': 'Robot_description'}
+[1.391685] (Robot_description) JobEnded: {'identifier': 'Robot_description', 'rc': 0}
+[1.392530] (-) EventReactorShutdown: {}

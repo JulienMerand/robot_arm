@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="Robot_description.pep257"
+  tests="1"
+  errors="0"
+  failures="0"
+  time="0.018"
+>
+  <testcase
+    name="./launch/visualize.launch.py"
+    classname="Robot_description.pep257"/>
+  <system-out>Checked files:
+* ./launch/visualize.launch.py</system-out>
+</testsuite>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="Robot_description.lint_cmake"
+  tests="4"
+  errors="0"
+  failures="4"
+  time="0.002"
+>
+  <testcase
+    name="whitespace/tabs (CMakeLists.txt:16)"
+    classname="Robot_description.lint_cmake"
+  >
+      <failure message="Tab found; please use spaces"/>
+  </testcase>
+  <testcase
+    name="whitespace/tabs (CMakeLists.txt:17)"
+    classname="Robot_description.lint_cmake"
+  >
+      <failure message="Tab found; please use spaces"/>
+  </testcase>
+  <testcase
+    name="whitespace/tabs (CMakeLists.txt:18)"
+    classname="Robot_description.lint_cmake"
+  >
+      <failure message="Tab found; please use spaces"/>
+  </testcase>
+  <testcase
+    name="whitespace/tabs (CMakeLists.txt:19)"
+    classname="Robot_description.lint_cmake"
+  >
+      <failure message="Tab found; please use spaces"/>
+  </testcase>
+  <system-out>Checked files:
+* CMakeLists.txt</system-out>
+</testsuite>
