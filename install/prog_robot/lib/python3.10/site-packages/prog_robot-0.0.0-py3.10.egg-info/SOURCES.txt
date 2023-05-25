@@ -10,6 +10,8 @@ setup.py
 ../../build/prog_robot/prog_robot.egg-info/zip-safe
 launch/simu.launch.py
 prog_robot/__init__.py
+prog_robot/angtostep.py
+prog_robot/test_com_arduino.py
 resource/prog_robot
 test/test_copyright.py
 test/test_flake8.py
