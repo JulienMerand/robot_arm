@@ -28,9 +28,21 @@ def generate_launch_description():
 
 def launch_setup(context, *args, **kwargs):
 
+    ros2_control_hardware_type = DeclareLaunchArgument(
+        "ros2_control_hardware_type",
+        default_value="mock_components",
+        description="ROS2 control hardware interface type to use for the launch file -- possible values: [mock_components, isaac]",
+    )
+
     moveit_config = (
         MoveItConfigsBuilder("Robot", package_name="robot_moveit_config")
-        .robot_description(file_path="config/Robot.urdf.xacro")
+        .robot_description(file_path="config/Robot.urdf.xacro",
+                           mappings={
+                "ros2_control_hardware_type": LaunchConfiguration(
+                    "ros2_control_hardware_type"
+                )
+            },
+        )
         # .trajectory_execution(file_path="config/gripper_moveit_controllers.yaml")
         .planning_scene_monitor(
             publish_robot_description=True, publish_robot_description_semantic=True
@@ -115,8 +127,15 @@ def launch_setup(context, *args, **kwargs):
         executable="spawner",
         arguments=["arm_position_controller", "-c", "/controller_manager"],
     )
+
+    robot_arm_controller_spawner = Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["robot_arm_controller", "-c", "/controller_manager"],
+    )
     
     nodes_to_start = [
+        ros2_control_hardware_type,
         rviz_node,
         static_tf,
         robot_state_publisher,
@@ -124,7 +143,7 @@ def launch_setup(context, *args, **kwargs):
         ros2_control_node,
         joint_state_broadcaster_spawner,
         arm_controller_spawner,
-        # hand_controller_spawner,
+        robot_arm_controller_spawner
     ]
 
     return nodes_to_start

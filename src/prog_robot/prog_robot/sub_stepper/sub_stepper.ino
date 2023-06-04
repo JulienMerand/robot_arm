@@ -19,7 +19,6 @@ rcl_allocator_t allocator;
 rcl_node_t node;
 rcl_timer_t timer;
 
-
 #include <AccelStepper.h>
 #include<MultiStepper.h>
 #include <Servo.h>
@@ -65,9 +64,8 @@ AccelStepper stepper6(AccelStepper::DRIVER, PUL_6, DIR_6);
 AccelStepper stepper[] = {stepper1, stepper2A, stepper2B, stepper3, stepper4, stepper5, stepper6};
 MultiStepper steppers;
 
-
 // Paramètres
-#define speed 500
+#define speed 700
 #define accel 100
 
 #define LED_PIN 13
@@ -89,7 +87,7 @@ void subscription_callback(const void * msgin)
   const std_msgs__msg__Int32MultiArray * msg = (const std_msgs__msg__Int32MultiArray *)msgin;
   
   for(int i=0; i<7; i++){
-    step[i] = int(msg->data.data[i]);
+    step[i] = long(msg->data.data[i]);
   }
 
   // for(int i=0; i<step[4];i++){
@@ -102,7 +100,7 @@ void subscription_callback(const void * msgin)
   steppers.moveTo(step);
   steppers.runSpeedToPosition();
   
-  // digitalWrite(LED_PIN, !digitalRead(LED_PIN));
+  digitalWrite(LED_PIN, !digitalRead(LED_PIN));
 
 
 }
@@ -119,29 +117,28 @@ void setup() {
   delay(500);
   
 
-  // // Broche de contrôle d'activation du moteur
-  // stepper[0].setEnablePin(ENA_1);
-  // stepper[1].setEnablePin(ENA_2A);
-  // stepper[2].setEnablePin(ENA_2B);
-  // stepper[3].setEnablePin(ENA_3);
-  // stepper[4].setEnablePin(ENA_4);
-  // stepper[5].setEnablePin(ENA_5);
-  // stepper[6].setEnablePin(ENA_6);
+  // Broche de contrôle d'activation du moteur
+  stepper[0].setEnablePin(ENA_1);
+  stepper[1].setEnablePin(ENA_2A);
+  stepper[2].setEnablePin(ENA_2B);
+  stepper[3].setEnablePin(ENA_3);
+  stepper[4].setEnablePin(ENA_4);
+  stepper[5].setEnablePin(ENA_5);
+  stepper[6].setEnablePin(ENA_6);
 
-  // // Activation des moteurs
-  // for(int i=0; i<7; i++){
-  //   stepper[i].disableOutputs();
-  // }
+  // Activation des moteurs
+  for(int i=0; i<7; i++){
+    stepper[i].disableOutputs();
+  }
 
-  // for(int i=0; i<7; i++){
-  //   steppers.addStepper(stepper[i]);
-  // }
+  for(int i=0; i<7; i++){
+    steppers.addStepper(stepper[i]);
+  }
 
-  // for(int i=0; i<7; i++){
-  //   int v = 700;
-  //   stepper[i].setMaxSpeed(v);
-  //   stepper[i].setAcceleration(accel);
-  // }
+  for(int i=0; i<7; i++){
+    stepper[i].setMaxSpeed(speed);
+    stepper[i].setAcceleration(accel);
+  }
 
 
 
@@ -181,6 +178,9 @@ void setup() {
 }
 
 void loop() {
-  delay(100);
+
+
+
   RCCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100)));
+  delay(100);
 }

@@ -1,3 +1,4 @@
 [console_scripts]
-
+move = prog_robot.move:main
+pub_to_arduino = prog_robot.pub_to_arduino:main
 

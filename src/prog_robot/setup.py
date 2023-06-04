@@ -23,6 +23,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "pub_to_arduino = prog_robot.pub_to_arduino:main",
+            "move = prog_robot.move:main",
         ],
     },
 )

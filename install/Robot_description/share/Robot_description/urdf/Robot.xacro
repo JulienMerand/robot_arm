@@ -198,7 +198,7 @@
   <parent link="base_link"/>
   <child link="link1_1"/>
   <axis xyz="-0.000105 6.8e-05 1.0"/>
-  <limit upper="3.1415927" lower="-3.1415927" effort="100" velocity="100.0"/>
+  <limit upper="1.95" lower="-1.95" effort="100" velocity="100.0"/>
 </joint>
 
 <joint name="Joint2" type="revolute">
@@ -206,7 +206,7 @@
   <parent link="link1_1"/>
   <child link="link2_1"/>
   <axis xyz="0 1 0"/>
-  <limit upper="1.919862" lower="-1.919862" effort="100" velocity="100.0"/>
+  <limit upper="1.92" lower="-1.5" effort="100" velocity="100.0"/>
 </joint>
 
 <joint name="Joint3" type="revolute">
@@ -230,7 +230,7 @@
   <parent link="link4_1"/>
   <child link="link5_1"/>
   <axis xyz="0 1 0"/>
-  <limit upper="1.832596" lower="-1.832596" effort="100" velocity="100.0"/>
+  <limit upper="1.7" lower="-1.7" effort="100" velocity="100.0"/>
 </joint>
 
 <joint name="Joint6" type="revolute">
@@ -246,7 +246,7 @@
   <parent link="link6_1"/>
   <child link="Servo_Gear_1"/>
   <axis xyz="0 0 -1"/>
-  <limit upper="0.959931" lower="0.523599" effort="100" velocity="100.0"/>
+  <limit upper="2.28" lower="0.523599" effort="100" velocity="100.0"/>
 </joint>
 
 <joint name="Idol Joint" type="revolute">
@@ -254,7 +254,7 @@
   <parent link="link6_1"/>
   <child link="Idol_Gear_1"/>
   <axis xyz="0 0 1"/>
-  <limit upper="0.959931" lower="0.523599" effort="100" velocity="100.0"/>
+  <limit upper="2.28" lower="0.523599" effort="100" velocity="100.0"/>
 </joint>
 
 </robot>

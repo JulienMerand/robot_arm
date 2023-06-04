@@ -9,7 +9,7 @@ def ang2step(PoseJ, LastPoseJ):
 
     Ang = [i - j for i, j in zip(PoseJ,LastPoseJ)]
 
-    step = [int(1*Ang[0]*GearRatio[0]/DegPerStep), int(-1*Ang[1]*GearRatio[1]/DegPerStep), int(1*Ang[1]*GearRatio[1]/DegPerStep), int(-1*Ang[2]*GearRatio[2]/DegPerStep), int(1*Ang[3]*GearRatio[3]/DegPerStep), int(1*Ang[4]*GearRatio[4]/DegPerStep), int(-1*Ang[5]*GearRatio[5]/DegPerStep)]
+    step = [int(-1*Ang[0]*GearRatio[0]/DegPerStep), int(1*Ang[1]*GearRatio[1]/DegPerStep), int(-1*Ang[1]*GearRatio[1]/DegPerStep), int(1*Ang[2]*GearRatio[2]/DegPerStep), int(-1*Ang[3]*GearRatio[3]/DegPerStep), int(-1*Ang[4]*GearRatio[4]/DegPerStep), int(-1*Ang[5]*GearRatio[5]/DegPerStep)]
 
     return step
 
@@ -86,12 +86,14 @@ def close_gripper():
 if __name__=="__main__":
 
     LastPoseJ = [0,0,0,0,0,0]
+    print(ang2step([30,59,80,30,90,30], LastPoseJ))
 
-    open_gripper()
-    moveJ([30,59,80,0,90,0])
-    time.sleep(0.5)
-    close_gripper()
-    time.sleep(2)
-    moveJ([0,0,0,0,0,0])
-    open_gripper()
-    time.sleep(1)
+    # open_gripper()
+    # moveJ([30,59,80,0,90,0])
+    # time.sleep(0.5)
+    # close_gripper()
+    # time.sleep(2)
+    # moveJ([0,0,0,0,0,0])
+    # open_gripper()
+    # time.sleep(1)
+

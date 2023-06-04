@@ -1,9 +1,13 @@
+/home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages/prog_robot/move.py
+/home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages/prog_robot/pub_to_arduino.py
+/home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages/prog_robot/fonctions.py
 /home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages/prog_robot/__init__.py
-/home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages/prog_robot/test_com_arduino.py
-/home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages/prog_robot/angtostep.py
+/home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages/prog_robot/kinematics.py
+/home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages/prog_robot/__pycache__/move.cpython-310.pyc
+/home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages/prog_robot/__pycache__/pub_to_arduino.cpython-310.pyc
+/home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages/prog_robot/__pycache__/fonctions.cpython-310.pyc
 /home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages/prog_robot/__pycache__/__init__.cpython-310.pyc
-/home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages/prog_robot/__pycache__/test_com_arduino.cpython-310.pyc
-/home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages/prog_robot/__pycache__/angtostep.cpython-310.pyc
+/home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages/prog_robot/__pycache__/kinematics.cpython-310.pyc
 /home/julien/Documents/ros/robot_arm/install/prog_robot/share/ament_index/resource_index/packages/prog_robot
 /home/julien/Documents/ros/robot_arm/install/prog_robot/share/prog_robot/package.xml
 /home/julien/Documents/ros/robot_arm/install/prog_robot/share/prog_robot/simu.launch.py
@@ -14,3 +18,5 @@
 /home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages/prog_robot-0.0.0-py3.10.egg-info/zip-safe
 /home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages/prog_robot-0.0.0-py3.10.egg-info/top_level.txt
 /home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages/prog_robot-0.0.0-py3.10.egg-info/dependency_links.txt
+/home/julien/Documents/ros/robot_arm/install/prog_robot/lib/prog_robot/move
+/home/julien/Documents/ros/robot_arm/install/prog_robot/lib/prog_robot/pub_to_arduino
