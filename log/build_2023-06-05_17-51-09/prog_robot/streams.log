@@ -1,0 +1,27 @@
+[3.123s] Invoking command in '/home/julien/Documents/ros/robot_arm/src/prog_robot': PYTHONPATH=/home/julien/Documents/ros/robot_arm/build/prog_robot/prefix_override:/home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/prog_robot build --build-base /home/julien/Documents/ros/robot_arm/build/prog_robot/build install --record /home/julien/Documents/ros/robot_arm/build/prog_robot/install.log --single-version-externally-managed
+[4.329s] running egg_info
+[4.332s] writing ../../build/prog_robot/prog_robot.egg-info/PKG-INFO
+[4.332s] writing dependency_links to ../../build/prog_robot/prog_robot.egg-info/dependency_links.txt
+[4.333s] writing entry points to ../../build/prog_robot/prog_robot.egg-info/entry_points.txt
+[4.334s] writing requirements to ../../build/prog_robot/prog_robot.egg-info/requires.txt
+[4.334s] writing top-level names to ../../build/prog_robot/prog_robot.egg-info/top_level.txt
+[4.341s] reading manifest file '../../build/prog_robot/prog_robot.egg-info/SOURCES.txt'
+[4.344s] writing manifest file '../../build/prog_robot/prog_robot.egg-info/SOURCES.txt'
+[4.345s] running build
+[4.345s] running build_py
+[4.345s] copying prog_robot/move.py -> /home/julien/Documents/ros/robot_arm/build/prog_robot/build/lib/prog_robot
+[4.347s] running install
+[4.348s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[4.348s]   warnings.warn(
+[4.349s] running install_lib
+[4.352s] copying /home/julien/Documents/ros/robot_arm/build/prog_robot/build/lib/prog_robot/move.py -> /home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages/prog_robot
+[4.356s] byte-compiling /home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages/prog_robot/move.py to move.cpython-310.pyc
+[4.359s] running install_data
+[4.361s] running install_egg_info
+[4.370s] removing '/home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages/prog_robot-0.0.0-py3.10.egg-info' (and everything under it)
+[4.378s] Copying ../../build/prog_robot/prog_robot.egg-info to /home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages/prog_robot-0.0.0-py3.10.egg-info
+[4.381s] running install_scripts
+[4.468s] Installing move script to /home/julien/Documents/ros/robot_arm/install/prog_robot/lib/prog_robot
+[4.469s] Installing pub_to_arduino script to /home/julien/Documents/ros/robot_arm/install/prog_robot/lib/prog_robot
+[4.470s] writing list of installed files to '/home/julien/Documents/ros/robot_arm/build/prog_robot/install.log'
+[4.549s] Invoked command in '/home/julien/Documents/ros/robot_arm/src/prog_robot' returned '0': PYTHONPATH=/home/julien/Documents/ros/robot_arm/build/prog_robot/prefix_override:/home/julien/Documents/ros/robot_arm/install/prog_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/prog_robot build --build-base /home/julien/Documents/ros/robot_arm/build/prog_robot/build install --record /home/julien/Documents/ros/robot_arm/build/prog_robot/install.log --single-version-externally-managed

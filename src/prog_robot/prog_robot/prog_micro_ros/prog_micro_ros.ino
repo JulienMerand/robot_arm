@@ -191,10 +191,10 @@ void loop() {
     if(gripper_moveable){
       gripper.write(gripper_value);
     }
-    if(ret){
-      msg_pub.data = 1;
-      RCSOFTCHECK(rcl_publish(&publisher, &msg_pub, NULL));
-    }
+    //if(ret){
+    msg_pub.data = 1;
+    RCSOFTCHECK(rcl_publish(&publisher, &msg_pub, NULL));
+    //}
     
     // digitalWrite(LED_PIN, !digitalRead(LED_PIN));
 
@@ -209,6 +209,6 @@ void loop() {
   }
 
   
-  RCCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(1)));
-  delay(10);
+  RCCHECK(rclc_executor_spin_some(&executor, RCL_MS_TO_NS(100)));
+  // delay(10);
 }

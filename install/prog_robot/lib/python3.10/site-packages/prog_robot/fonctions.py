@@ -1,4 +1,5 @@
 import math
+import numpy as np
 
 def deg2Rad(L):
         res = []
@@ -36,6 +37,26 @@ def remove_duplicates(L):
               new_L.append(list(elt))
     return new_L
 
+def cercle(centre, rayon):
+    'renvoie deux tableau X, Y des points du cercle, commence en [Ox + r, Oy]'
+    Ox, Oy = centre[0], centre[1]
+    # X = [-k for k in range(1,rayon)] + [k for k in range(rayon)]
+    theta = np.linspace(0, 2*np.pi, 100)
+
+    x = (rayon*np.cos(theta)).tolist()
+    y = (rayon*np.sin(theta)).tolist()
+
+    X, Y = [], []
+    for elt in x:
+        X.append(elt + Ox)
+    for elt in y:
+        Y.append(elt + Oy)
+
+    return X,Y
+
+if __name__=="__main__":
 
 # L = [[-9.000e+01, -2.000e-03, -9.000e+01],[-9.000e+01, -2.000e-03, -9.000e+01],[9.000e+01, -2.000e-03, 9.000e+01],[9.000e+01, -2.000e-03, 9.000e+01],[9.000e+01, 9.112e+01, -9.000e+01]]
 # print(remove_duplicates(L))
+    
+    print(cercle([300,0], 100))

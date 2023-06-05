@@ -25,6 +25,7 @@ setup(
         'console_scripts': [
             "pub_to_arduino = prog_robot.pub_to_arduino:main",
             "move = prog_robot.move:main",
+            "go_home = prog_robot.go_home:main",
         ],
     },
 )

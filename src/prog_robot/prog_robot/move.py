@@ -2,7 +2,7 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int32MultiArray, Int32
 import time,math
-from prog_robot.fonctions import ang2Step
+from prog_robot.fonctions import ang2Step, cercle
 from prog_robot.kinematics import inverse_kinematics
 
 class MinimalPublisher(Node):
@@ -21,18 +21,33 @@ class MinimalPublisher(Node):
         self.p = 0
         self.start = True
         self.delay = 1
-        self.poseX = [[350,0,45,0,180,0], [350,0,250,0,180,0], [250,0,250,0,180,0], [250,0,100,0,180,0]]
+        # self.poseX = [[350,0,45,0,180,0], [350,0,250,0,180,0], [250,0,250,0,180,0], [250,0,100,0,180,0]]
+        # self.poseJ = []
+        # for pose in self.poseX:
+        #     self.poseJ.append(inverse_kinematics(pose[:3], pose[3:])[0])
+
+        # self.poseX = [300,-200,100,0,180,0]
+        # self.poseJ = []
+        # while self.poseX[1] <= 200:
+        #     self.poseJ.append(inverse_kinematics(self.poseX[:3], self.poseX[3:])[0])
+        #     self.poseX[1] += 10
+
+        # cercle
+        self.poseX = []
+        X_cercle, Y_cercle = cercle([300,0], 50)
+        for i in range(len(X_cercle)):
+            self.poseX.append([X_cercle[i], Y_cercle[i], 100, 0, 180, 0])
+
         self.poseJ = []
         for pose in self.poseX:
             self.poseJ.append(inverse_kinematics(pose[:3], pose[3:])[0])
-
         
     def arduino_callback(self, msg):
         ang_deg = self.poseJ[self.p]
         step = ang2Step(ang_deg, "deg")
-        speed = 50
-        accel = 70
-        self.pub.data = step + [(int)(self.gripper_close)] + [(int)(speed)] + [(int)(accel)]
+        speed = 10
+        accel = 30
+        self.pub.data = step + [(int)(self.gripper_open)] + [(int)(speed)] + [(int)(accel)]
 
         if msg.data > 0 or self.start: 
             print(f"Je publie la suivante dans {self.delay} secondes : ")

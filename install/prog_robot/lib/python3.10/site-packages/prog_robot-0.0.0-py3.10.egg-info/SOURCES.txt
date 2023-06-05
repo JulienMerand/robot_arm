@@ -11,6 +11,7 @@ setup.py
 launch/simu.launch.py
 prog_robot/__init__.py
 prog_robot/fonctions.py
+prog_robot/go_home.py
 prog_robot/kinematics.py
 prog_robot/move.py
 prog_robot/pub_to_arduino.py
