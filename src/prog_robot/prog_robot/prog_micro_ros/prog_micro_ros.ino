@@ -31,7 +31,7 @@ bool cb_called = false;
 bool gripper_moveable = false;
 int gripper_value;
 long step[7];
-int speed = 50;
+int speed = 5;
 int accel = 100;
 
 
@@ -176,8 +176,8 @@ void loop() {
     stepper[1].setAcceleration(accel*5.45);
     stepper[2].setMaxSpeed(speed*5.45);
     stepper[2].setAcceleration(accel*5.45);
-    stepper[3].setMaxSpeed(speed*22.75);
-    stepper[3].setAcceleration(accel*22.75);
+    stepper[3].setMaxSpeed(speed*21);
+    stepper[3].setAcceleration(accel*21);
     stepper[4].setMaxSpeed(speed);
     stepper[4].setAcceleration(accel);
     stepper[5].setMaxSpeed(speed*4.5);

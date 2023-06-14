@@ -17,12 +17,9 @@ class MinimalPublisher(Node):
         self.gripper_open = 90
         self.gripper_close = 180
 
-
-        
-    # def arduino_callback(self, msg):
         ang_deg = [0,0,0,0,0,0]
         step = ang2Step(ang_deg, "deg")
-        speed = 50
+        speed = 15
         accel = 70
         self.pub.data = step + [(int)(self.gripper_open)] + [(int)(speed)] + [(int)(accel)]
         self.publisher_.publish(self.pub)
@@ -35,7 +32,7 @@ def main(args=None):
 
     publisher = MinimalPublisher()
 
-    rclpy.spin(publisher)
+    rclpy.spin_once(publisher)
 
     publisher.destroy_node()
     rclpy.shutdown()
