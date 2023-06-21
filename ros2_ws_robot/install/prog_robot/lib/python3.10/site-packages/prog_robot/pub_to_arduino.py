@@ -25,13 +25,17 @@ class MinimalPublisher(Node):
 
     def joint_states_callback(self, msg):
         ang_rad = [0,0,0,0,0,0]
-        for i in range(6):
-            ang_rad[i] = msg.position[i]
+        ang_rad[0] = msg.position[2]
+        ang_rad[1] = msg.position[0]
+        ang_rad[2] = msg.position[1]
+        ang_rad[3] = msg.position[3]
+        ang_rad[4] = msg.position[4]
+        ang_rad[5] = msg.position[5]
 
         step = ang2Step(ang_rad, "rad")
-        pos_gripper = msg.position[6]*180/math.pi + 50
-        speed = 50
-        accel = 70
+        pos_gripper = (msg.position[6]+math.pi)*180/math.pi
+        speed = 15
+        accel = 30
         self.pub.data = step + [(int)(pos_gripper)] + [(int)(speed)] + [(int)(accel)]
         
         
