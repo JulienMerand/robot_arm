@@ -3,13 +3,18 @@ controller_manager:
   ros__parameters:
     update_rate: 100  # Hz
 
-    arm_position_controller:
+    robot_arm_controller:
       type: joint_trajectory_controller/JointTrajectoryController
+
+
+    hand_controller:
+      type: position_controllers/GripperActionController
+
 
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
-arm_position_controller:
+robot_arm_controller:
   ros__parameters:
     joints:
       - Joint1
@@ -20,7 +25,10 @@ arm_position_controller:
       - Joint6
     command_interfaces:
       - position
-      - velocity
     state_interfaces:
       - position
-      - velocity
+hand_controller:
+  ros__parameters:
+    joints:
+      - Idol Joint
+      - Servo Joint

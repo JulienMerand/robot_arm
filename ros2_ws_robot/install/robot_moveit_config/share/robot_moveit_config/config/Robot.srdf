@@ -31,6 +31,14 @@
         <joint name="Joint5" value="0"/>
         <joint name="Joint6" value="0"/>
     </group_state>
+    <group_state name="gripper_open" group="hand">
+        <joint name="Idol Joint" value="-1.5708"/>
+        <joint name="Servo Joint" value="-1.5708"/>
+    </group_state>
+    <group_state name="gripper_close" group="hand">
+        <joint name="Idol Joint" value="0"/>
+        <joint name="Servo Joint" value="0"/>
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="hand" parent_link="link6_1" group="hand"/>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
@@ -52,12 +60,14 @@
     <disable_collisions link1="base_link" link2="link3_1" reason="Never"/>
     <disable_collisions link1="link1_1" link2="link2_1" reason="Adjacent"/>
     <disable_collisions link1="link1_1" link2="link3_1" reason="Never"/>
+    <disable_collisions link1="link1_1" link2="link5_1" reason="Never"/>
     <disable_collisions link1="link2_1" link2="link3_1" reason="Adjacent"/>
     <disable_collisions link1="link2_1" link2="link4_1" reason="Never"/>
     <disable_collisions link1="link2_1" link2="link5_1" reason="Never"/>
     <disable_collisions link1="link2_1" link2="link6_1" reason="Never"/>
     <disable_collisions link1="link3_1" link2="link4_1" reason="Adjacent"/>
     <disable_collisions link1="link3_1" link2="link5_1" reason="Never"/>
+    <disable_collisions link1="link3_1" link2="link6_1" reason="Never"/>
     <disable_collisions link1="link4_1" link2="link5_1" reason="Adjacent"/>
     <disable_collisions link1="link4_1" link2="link6_1" reason="Never"/>
     <disable_collisions link1="link5_1" link2="link6_1" reason="Adjacent"/>

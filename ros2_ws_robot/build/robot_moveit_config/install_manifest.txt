@@ -24,6 +24,7 @@
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_moveit_config/share/robot_moveit_config/config/pilz_cartesian_limits.yaml
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_moveit_config/share/robot_moveit_config/config/Robot.ros2_control.xacro
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_moveit_config/share/robot_moveit_config/config/ros2_controllers.yaml
+/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_moveit_config/share/robot_moveit_config/config/moveit_controllers.yaml
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_moveit_config/share/robot_moveit_config/config/kinematics.yaml
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_moveit_config/share/robot_moveit_config/config/moveit.rviz
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_moveit_config/share/robot_moveit_config/config/Robot.srdf
