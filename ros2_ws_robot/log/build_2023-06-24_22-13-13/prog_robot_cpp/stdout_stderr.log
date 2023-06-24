@@ -1,0 +1,9 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/scene.dir/src/scene.cpp.o[0m
+[ 75%] Built target hello_moveit
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/scene.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/scene.cpp:97:49:[m[K [01;31m[Kerror: [m[K‘[01m[Kcollision_object[m[K’ was not declared in this scope
+   97 |   planning_scene_interface.applyCollisionObject([01;31m[Kcollision_object[m[K);
+      |                                                 [01;31m[K^~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/scene.dir/build.make:76: CMakeFiles/scene.dir/src/scene.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/scene.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

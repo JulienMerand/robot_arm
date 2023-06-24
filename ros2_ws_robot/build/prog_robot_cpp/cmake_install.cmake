@@ -63,6 +63,26 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/prog_robot_cpp/scene" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/prog_robot_cpp/scene")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/prog_robot_cpp/scene"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/prog_robot_cpp" TYPE EXECUTABLE FILES "/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp/scene")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/prog_robot_cpp/scene" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/prog_robot_cpp/scene")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/prog_robot_cpp/scene"
+         OLD_RPATH "/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_move_group/lib:/home/julien/Documents/ros/microros_ws/install/std_srvs/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_warehouse/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_core/lib:/home/julien/Documents/ros/microros_ws/install/lifecycle_msgs/lib:/home/julien/Documents/ros/microros_ws/install/visualization_msgs/lib:/home/julien/Documents/ros/microros_ws/install/sensor_msgs/lib:/home/julien/Documents/ros/microros_ws/install/shape_msgs/lib:/home/julien/Documents/ros/microros_ws/install/trajectory_msgs/lib:/home/julien/Documents/ros/microros_ws/install/rosgraph_msgs/lib:/home/julien/Documents/ros/microros_ws/install/statistics_msgs/lib:/home/julien/Documents/ros/microros_ws/install/rcl_interfaces/lib:/home/julien/Documents/ros/microros_ws/install/action_msgs/lib:/home/julien/Documents/ros/microros_ws/install/unique_identifier_msgs/lib:/home/julien/Documents/ros/microros_ws/install/geometry_msgs/lib:/home/julien/Documents/ros/microros_ws/install/std_msgs/lib:/home/julien/Documents/ros/microros_ws/install/builtin_interfaces/lib:/opt/ros/humble/lib:/home/julien/Documents/ros/ws_moveit2/install/srdfdom/lib:/opt/ros/humble/lib/x86_64-linux-gnu:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/prog_robot_cpp/scene")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/prog_robot_cpp")
 endif()
 

@@ -16,11 +16,17 @@ def generate_launch_description():
     pub_to_arduino_node = Node(
         package="prog_robot",
         executable="pub_to_arduino",
-        name='pub_to_arduino'
+        # name='pub_to_arduino'
     )
 
-    ld.add_action(pub_to_arduino_node)
+    scene_node = Node(
+        package="prog_robot_cpp",
+        executable="scene"
+    )
+
     ld.add_action(rviz_moveit_launch)
+    ld.add_action(pub_to_arduino_node)
+    ld.add_action(scene_node)
 
     return ld
 

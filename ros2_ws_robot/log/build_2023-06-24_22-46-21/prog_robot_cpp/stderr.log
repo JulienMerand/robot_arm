@@ -1,0 +1,6 @@
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/scene.cpp:7:1:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Kauto move_group_interface[m[K’ has no initializer
+    7 | [01;31m[Kauto[m[K move_group_interface;
+      | [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/scene.dir/build.make:76: CMakeFiles/scene.dir/src/scene.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/scene.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

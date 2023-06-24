@@ -1,0 +1,27 @@
+[35m[1mConsolidate compiler generated dependencies of target scene[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/hello_moveit.dir/src/hello_moveit.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/scene.dir/src/scene.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable scene[0m
+[ 75%] Built target scene
+[100%] [32m[1mLinking CXX executable hello_moveit[0m
+[100%] Built target hello_moveit
+-- Install configuration: ""
+-- Installing: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/lib/prog_robot_cpp/hello_moveit
+-- Set runtime path of "/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/lib/prog_robot_cpp/hello_moveit" to ""
+-- Installing: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/lib/prog_robot_cpp/scene
+-- Set runtime path of "/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/lib/prog_robot_cpp/scene" to ""
+-- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/ament_index/resource_index/package_run_dependencies/prog_robot_cpp
+-- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/ament_index/resource_index/parent_prefix_path/prog_robot_cpp
+-- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/environment/ament_prefix_path.sh
+-- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/environment/path.sh
+-- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/environment/path.dsv
+-- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/local_setup.bash
+-- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/local_setup.sh
+-- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/local_setup.zsh
+-- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/local_setup.dsv
+-- Installing: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/package.dsv
+-- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/ament_index/resource_index/packages/prog_robot_cpp
+-- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/cmake/prog_robot_cppConfig.cmake
+-- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/cmake/prog_robot_cppConfig-version.cmake
+-- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/package.xml

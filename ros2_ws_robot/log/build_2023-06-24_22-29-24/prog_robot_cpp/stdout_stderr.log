@@ -1,0 +1,33 @@
+[35m[1mConsolidate compiler generated dependencies of target scene[0m
+[ 50%] Built target hello_moveit
+[ 75%] [32mBuilding CXX object CMakeFiles/scene.dir/src/scene.cpp.o[0m
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/scene.cpp:8:27:[m[K [01;31m[Kerror: [m[K‘[01m[KString[m[K’ was not declared in this scope
+    8 | auto create_collision_box([01;31m[KString[m[K id, float dim_x, float dim_Y, float dim_Z, float pos_X, float pos_Y, float pos_Z){
+      |                           [01;31m[K^~~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/scene.cpp:8:38:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+    8 | auto create_collision_box(String id, [01;31m[Kfloat[m[K dim_x, float dim_Y, float dim_Z, float pos_X, float pos_Y, float pos_Z){
+      |                                      [01;31m[K^~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/scene.cpp:8:51:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+    8 | auto create_collision_box(String id, float dim_x, [01;31m[Kfloat[m[K dim_Y, float dim_Z, float pos_X, float pos_Y, float pos_Z){
+      |                                                   [01;31m[K^~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/scene.cpp:8:64:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+    8 | auto create_collision_box(String id, float dim_x, float dim_Y, [01;31m[Kfloat[m[K dim_Z, float pos_X, float pos_Y, float pos_Z){
+      |                                                                [01;31m[K^~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/scene.cpp:8:77:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+    8 | auto create_collision_box(String id, float dim_x, float dim_Y, float dim_Z, [01;31m[Kfloat[m[K pos_X, float pos_Y, float pos_Z){
+      |                                                                             [01;31m[K^~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/scene.cpp:8:90:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+    8 | auto create_collision_box(String id, float dim_x, float dim_Y, float dim_Z, float pos_X, [01;31m[Kfloat[m[K pos_Y, float pos_Z){
+      |                                                                                          [01;31m[K^~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/scene.cpp:8:103:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kfloat[m[K’
+    8 | auto create_collision_box(String id, float dim_x, float dim_Y, float dim_Z, float pos_X, float pos_Y, [01;31m[Kfloat[m[K pos_Z){
+      |                                                                                                       [01;31m[K^~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/scene.cpp:8:114:[m[K [01;31m[Kerror: [m[Kexpression list treated as compound expression in initializer [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+    8 | auto create_collision_box(String id, float dim_x, float dim_Y, float dim_Z, float pos_X, float pos_Y, float pos_Z[01;31m[K)[m[K{
+      |                                                                                                                  [01;31m[K^[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/scene.cpp:8:115:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[K{[m[K’ token
+    8 | auto create_collision_box(String id, float dim_x, float dim_Y, float dim_Z, float pos_X, float pos_Y, float pos_Z)[01;31m[K{[m[K
+      |                                                                                                                   [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/scene.dir/build.make:76: CMakeFiles/scene.dir/src/scene.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/scene.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

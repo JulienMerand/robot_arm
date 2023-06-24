@@ -1,0 +1,11 @@
+[0.438s] Invoking command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4
+[0.573s] [35m[1mConsolidate compiler generated dependencies of target scene[0m
+[0.603s] [ 50%] Built target hello_moveit
+[0.624s] [ 75%] [32mBuilding CXX object CMakeFiles/scene.dir/src/scene.cpp.o[0m
+[6.076s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/scene.cpp:7:1:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[Kauto move_group_interface[m[K’ has no initializer
+[6.076s]     7 | [01;31m[Kauto[m[K move_group_interface;
+[6.076s]       | [01;31m[K^~~~[m[K
+[8.559s] gmake[2]: *** [CMakeFiles/scene.dir/build.make:76: CMakeFiles/scene.dir/src/scene.cpp.o] Error 1
+[8.559s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/scene.dir/all] Error 2
+[8.560s] gmake: *** [Makefile:146: all] Error 2
+[8.562s] Invoked command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4

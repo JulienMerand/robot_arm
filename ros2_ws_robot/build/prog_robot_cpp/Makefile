@@ -210,6 +210,19 @@ hello_moveit/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_moveit.dir/build.make CMakeFiles/hello_moveit.dir/build
 .PHONY : hello_moveit/fast
 
+#=============================================================================
+# Target rules for targets named scene
+
+# Build rule for target.
+scene: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scene
+.PHONY : scene
+
+# fast build rule for target.
+scene/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scene.dir/build.make CMakeFiles/scene.dir/build
+.PHONY : scene/fast
+
 src/hello_moveit.o: src/hello_moveit.cpp.o
 .PHONY : src/hello_moveit.o
 
@@ -234,6 +247,30 @@ src/hello_moveit.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_moveit.dir/build.make CMakeFiles/hello_moveit.dir/src/hello_moveit.cpp.s
 .PHONY : src/hello_moveit.cpp.s
 
+src/scene.o: src/scene.cpp.o
+.PHONY : src/scene.o
+
+# target to build an object file
+src/scene.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scene.dir/build.make CMakeFiles/scene.dir/src/scene.cpp.o
+.PHONY : src/scene.cpp.o
+
+src/scene.i: src/scene.cpp.i
+.PHONY : src/scene.i
+
+# target to preprocess a source file
+src/scene.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scene.dir/build.make CMakeFiles/scene.dir/src/scene.cpp.i
+.PHONY : src/scene.cpp.i
+
+src/scene.s: src/scene.cpp.s
+.PHONY : src/scene.s
+
+# target to generate assembly for a file
+src/scene.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scene.dir/build.make CMakeFiles/scene.dir/src/scene.cpp.s
+.PHONY : src/scene.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -250,9 +287,13 @@ help:
 	@echo "... prog_robot_cpp_uninstall"
 	@echo "... uninstall"
 	@echo "... hello_moveit"
+	@echo "... scene"
 	@echo "... src/hello_moveit.o"
 	@echo "... src/hello_moveit.i"
 	@echo "... src/hello_moveit.s"
+	@echo "... src/scene.o"
+	@echo "... src/scene.i"
+	@echo "... src/scene.s"
 .PHONY : help
 
 

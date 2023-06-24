@@ -1,0 +1,21 @@
+[0.032s] Invoking command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4
+[0.143s] [35m[1mConsolidate compiler generated dependencies of target scene[0m
+[0.182s] [ 50%] Built target hello_moveit
+[0.195s] [ 75%] [32mBuilding CXX object CMakeFiles/scene.dir/src/scene.cpp.o[0m
+[5.600s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/scene.cpp:[m[K In function ‘[01m[Kconst auto create_collision_box(std::string, float, float, float, float, float, float)[m[K’:
+[5.600s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/scene.cpp:11:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kmove_group_interface[m[K’ was not declared in this scope
+[5.600s]    11 |     collision_object.header.frame_id = [01;31m[Kmove_group_interface[m[K.getPlanningFrame();
+[5.601s]       |                                        [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[5.602s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/scene.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[5.602s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/scene.cpp:50:75:[m[K [01;31m[Kerror: [m[K‘[01m[KMoveGroupInterface[m[K’ was not declared in this scope; did you mean ‘[01m[Kmoveit::planning_interface::MoveGroupInterface[m[K’?
+[5.602s]    50 |     moveit::planning_interface::MoveGroupInterface move_group_interface = [01;31m[KMoveGroupInterface[m[K(node, "robot_arm");
+[5.602s]       |                                                                           [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[5.602s]       |                                                                           [32m[Kmoveit::planning_interface::MoveGroupInterface[m[K
+[5.603s] In file included from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/scene.cpp:4[m[K:
+[5.603s] [01m[K/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:80:42:[m[K [01;36m[Knote: [m[K‘[01m[Kmoveit::planning_interface::MoveGroupInterface[m[K’ declared here
+[5.603s]    80 | class MOVEIT_MOVE_GROUP_INTERFACE_EXPORT [01;36m[KMoveGroupInterface[m[K
+[5.603s]       |                                          [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[8.052s] gmake[2]: *** [CMakeFiles/scene.dir/build.make:76: CMakeFiles/scene.dir/src/scene.cpp.o] Error 1
+[8.052s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/scene.dir/all] Error 2
+[8.053s] gmake: *** [Makefile:146: all] Error 2
+[8.056s] Invoked command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4

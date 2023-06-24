@@ -1,0 +1,13 @@
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/scene.cpp:[m[K In function ‘[01m[Kconst auto create_collision_box(std::string, float, float, float, float, float, float)[m[K’:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/scene.cpp:13:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kcollision_object[m[K’
+   13 |     collision_object.header.frame_id = frame_id
+      |                                                [01;31m[K^[m[K
+      |                                                [32m[K;[m[K
+   14 |     [32m[Kcollision_object[m[K.id = id;
+      |     [32m[K~~~~~~~~~~~~~~~~[m[K                            
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/scene.cpp:9:45:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kid[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+    9 | auto const create_collision_box([01;35m[Kstd::string id[m[K, float dim_x, float dim_Y, float dim_Z, float pos_X, float pos_Y, float pos_Z)
+      |                                 [01;35m[K~~~~~~~~~~~~^~[m[K
+gmake[2]: *** [CMakeFiles/scene.dir/build.make:76: CMakeFiles/scene.dir/src/scene.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/scene.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
