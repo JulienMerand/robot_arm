@@ -34,7 +34,7 @@ class MinimalPublisher(Node):
 
         step = ang2Step(ang_rad, "rad")
         pos_gripper = (msg.position[6]+math.pi)*180/math.pi
-        speed = 15
+        speed = 50
         accel = 30
         self.pub.data = step + [(int)(pos_gripper)] + [(int)(speed)] + [(int)(accel)]
         
