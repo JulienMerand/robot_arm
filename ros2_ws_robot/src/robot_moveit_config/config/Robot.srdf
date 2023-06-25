@@ -39,6 +39,14 @@
         <joint name="Idol Joint" value="0"/>
         <joint name="Servo Joint" value="0"/>
     </group_state>
+    <group_state name="ready" group="robot_arm">
+        <joint name="Joint1" value="0"/>
+        <joint name="Joint2" value="0.66"/>
+        <joint name="Joint3" value="1.24"/>
+        <joint name="Joint4" value="0"/>
+        <joint name="Joint5" value="1.24"/>
+        <joint name="Joint6" value="0"/>
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="hand" parent_link="link6_1" group="hand"/>
     <!--VIRTUAL JOINT: Purpose: this element defines a virtual joint between a robot link and an external frame of reference (considered fixed with respect to the robot)-->
