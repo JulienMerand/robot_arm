@@ -17,13 +17,18 @@ class MinimalPublisher(Node):
         self.gripper_open = 90
         self.gripper_close = 180
 
-        ang_deg = [0,0,0,0,0,0]
-        step = ang2Step(ang_deg, "deg")
-        speed = 15
-        accel = 70
-        self.pub.data = step + [(int)(self.gripper_open)] + [(int)(speed)] + [(int)(accel)]
-        self.publisher_.publish(self.pub)
-        self.get_logger().info('Publishing: "%s"' % self.pub.data)
+        publish()
+
+        def publish():
+            ang_deg = [0,0,0,0,0,0]
+            step = ang2Step(ang_deg, "deg")
+            speed = 15
+            accel = 70
+
+
+            self.pub.data = step + [(int)(self.gripper_open)] + [(int)(speed)] + [(int)(accel)]
+            self.publisher_.publish(self.pub)
+            self.get_logger().info('Publishing: "%s"' % self.pub.data)
 
 
 
@@ -32,7 +37,7 @@ def main(args=None):
 
     publisher = MinimalPublisher()
 
-    rclpy.spin_once(publisher)
+    rclpy.spin_once(publisher, timeout_sec=1)
 
     publisher.destroy_node()
     rclpy.shutdown()

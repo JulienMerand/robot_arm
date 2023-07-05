@@ -1,0 +1,41 @@
+running egg_info
+creating ../../build/tictactoe/tictactoe.egg-info
+writing ../../build/tictactoe/tictactoe.egg-info/PKG-INFO
+writing dependency_links to ../../build/tictactoe/tictactoe.egg-info/dependency_links.txt
+writing entry points to ../../build/tictactoe/tictactoe.egg-info/entry_points.txt
+writing requirements to ../../build/tictactoe/tictactoe.egg-info/requires.txt
+writing top-level names to ../../build/tictactoe/tictactoe.egg-info/top_level.txt
+writing manifest file '../../build/tictactoe/tictactoe.egg-info/SOURCES.txt'
+reading manifest file '../../build/tictactoe/tictactoe.egg-info/SOURCES.txt'
+writing manifest file '../../build/tictactoe/tictactoe.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/build
+creating /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/build/lib
+creating /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/build/lib/tictactoe
+copying tictactoe/game_algorithm.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/build/lib/tictactoe
+copying tictactoe/__init__.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/build/lib/tictactoe
+copying tictactoe/main.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/build/lib/tictactoe
+copying tictactoe/vision.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/build/lib/tictactoe
+running install
+running install_lib
+creating /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/python3.10/site-packages/tictactoe
+copying /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/build/lib/tictactoe/game_algorithm.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/python3.10/site-packages/tictactoe
+copying /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/build/lib/tictactoe/__init__.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/python3.10/site-packages/tictactoe
+copying /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/build/lib/tictactoe/main.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/python3.10/site-packages/tictactoe
+copying /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/build/lib/tictactoe/vision.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/python3.10/site-packages/tictactoe
+byte-compiling /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/python3.10/site-packages/tictactoe/game_algorithm.py to game_algorithm.cpython-310.pyc
+byte-compiling /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/python3.10/site-packages/tictactoe/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/python3.10/site-packages/tictactoe/main.py to main.cpython-310.pyc
+byte-compiling /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/python3.10/site-packages/tictactoe/vision.py to vision.cpython-310.pyc
+running install_data
+creating /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/share/ament_index
+creating /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/share/ament_index/resource_index
+creating /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/share/ament_index/resource_index/packages
+copying resource/tictactoe -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/share/ament_index/resource_index/packages
+copying package.xml -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/share/tictactoe
+running install_egg_info
+Copying ../../build/tictactoe/tictactoe.egg-info to /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/python3.10/site-packages/tictactoe-0.0.0-py3.10.egg-info
+running install_scripts
+Installing main script to /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/tictactoe
+writing list of installed files to '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/install.log'

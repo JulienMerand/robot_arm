@@ -1,0 +1,6 @@
+source;share/tictactoe/hook/pythonpath.ps1
+source;share/tictactoe/hook/pythonpath.dsv
+source;share/tictactoe/hook/pythonpath.sh
+source;share/tictactoe/hook/ament_prefix_path.ps1
+source;share/tictactoe/hook/ament_prefix_path.dsv
+source;share/tictactoe/hook/ament_prefix_path.sh
