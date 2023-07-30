@@ -1,5 +1,9 @@
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/lib/prog_robot_cpp/hello_moveit
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/lib/prog_robot_cpp/scene
+/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/lib/prog_robot_cpp/move
+/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/lib/prog_robot_cpp/frame_effector
+/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/lib/prog_robot_cpp/transformation_matrix_calculator
+/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/launch/move_cpp.launch.py
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/ament_index/resource_index/package_run_dependencies/prog_robot_cpp
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/ament_index/resource_index/parent_prefix_path/prog_robot_cpp
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/environment/ament_prefix_path.sh

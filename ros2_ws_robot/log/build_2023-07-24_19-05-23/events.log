@@ -1,0 +1,239 @@
+[0.000000] (-) TimerEvent: {}
+[0.000695] (-) JobUnselected: {'identifier': 'prog_robot'}
+[0.000873] (-) JobUnselected: {'identifier': 'robot_description'}
+[0.000934] (-) JobUnselected: {'identifier': 'robot_moveit_config'}
+[0.000993] (-) JobUnselected: {'identifier': 'tictactoe'}
+[0.001016] (prog_robot_cpp) JobQueued: {'identifier': 'prog_robot_cpp', 'dependencies': OrderedDict()}
+[0.001075] (prog_robot_cpp) JobStarted: {'identifier': 'prog_robot_cpp'}
+[0.041951] (prog_robot_cpp) JobProgress: {'identifier': 'prog_robot_cpp', 'progress': 'cmake'}
+[0.043348] (prog_robot_cpp) JobProgress: {'identifier': 'prog_robot_cpp', 'progress': 'build'}
+[0.044551] (prog_robot_cpp) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp', '--', '-j4', '-l4'], 'cwd': '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'julien'), ('LC_TIME', 'fr_FR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/julien/Documents/ros/rosbridge_suite/install/rosbridge_test_msgs/lib:/home/julien/Documents/ros/rosbridge_suite/install/rosbridge_msgs/lib:/home/julien/Documents/ros/rosbridge_suite/install/rosapi_msgs/lib:/home/julien/Documents/ros/microros_ws/install/visualization_msgs/lib:/home/julien/Documents/ros/microros_ws/install/test_msgs/lib:/home/julien/Documents/ros/microros_ws/install/example_interfaces/lib:/home/julien/Documents/ros/microros_ws/install/action_msgs/lib:/home/julien/Documents/ros/microros_ws/install/unique_identifier_msgs/lib:/home/julien/Documents/ros/microros_ws/install/trajectory_msgs/lib:/home/julien/Documents/ros/microros_ws/install/stereo_msgs/lib:/home/julien/Documents/ros/microros_ws/install/std_srvs/lib:/home/julien/Documents/ros/microros_ws/install/shape_msgs/lib:/home/julien/Documents/ros/microros_ws/install/sensor_msgs/lib:/home/julien/Documents/ros/microros_ws/install/nav_msgs/lib:/home/julien/Documents/ros/microros_ws/install/diagnostic_msgs/lib:/home/julien/Documents/ros/microros_ws/install/geometry_msgs/lib:/home/julien/Documents/ros/microros_ws/install/actionlib_msgs/lib:/home/julien/Documents/ros/microros_ws/install/std_msgs/lib:/home/julien/Documents/ros/microros_ws/install/statistics_msgs/lib:/home/julien/Documents/ros/microros_ws/install/rosidl_typesupport_microxrcedds_test_msg/lib:/home/julien/Documents/ros/microros_ws/install/rmw_microxrcedds/lib:/home/julien/Documents/ros/microros_ws/install/rosidl_typesupport_microxrcedds_cpp/lib:/home/julien/Documents/ros/microros_ws/install/rosidl_typesupport_microxrcedds_c/lib:/home/julien/Documents/ros/microros_ws/install/rosgraph_msgs/lib:/home/julien/Documents/ros/microros_ws/install/rclc_parameter/lib:/home/julien/Documents/ros/microros_ws/install/rclc/lib:/home/julien/Documents/ros/microros_ws/install/composition_interfaces/lib:/home/julien/Documents/ros/microros_ws/install/rcl_interfaces/lib:/home/julien/Documents/ros/microros_ws/install/micro_ros_utilities/lib:/home/julien/Documents/ros/microros_ws/install/micro_ros_agent/lib:/home/julien/Documents/ros/microros_ws/install/micro_ros_msgs/lib:/home/julien/Documents/ros/microros_ws/install/lifecycle_msgs/lib:/home/julien/Documents/ros/microros_ws/install/complex_msgs/lib:/home/julien/Documents/ros/microros_ws/install/builtin_interfaces/lib:/home/julien/Documents/ros/ws_moveit2/install/pilz_industrial_motion_planner_testutils/lib:/home/julien/Documents/ros/ws_moveit2/install/pilz_industrial_motion_planner/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_visual_tools/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_task_constructor_visualization/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_task_constructor_demo/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_task_constructor_capabilities/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_task_constructor_core/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_control_interface/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_simple_controller_manager/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_assistant/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_srdf_plugins/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_core_plugins/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_controllers/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_app_plugins/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_framework/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_servo/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_visualization/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_hybrid_planning/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_benchmarks/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_warehouse/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_robot_interaction/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_perception/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_move_group/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners_ompl/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_occupancy_map_monitor/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners_chomp/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_kinematics/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_chomp_optimizer_adapter/lib:/home/julien/Documents/ros/ws_moveit2/install/chomp_motion_planner/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_core/lib:/home/julien/Documents/ros/ws_moveit2/install/srdfdom/lib:/home/julien/Documents/ros/ws_moveit2/install/rviz_marker_tools/lib:/home/julien/Documents/ros/ws_moveit2/install/rosparam_shortcuts/lib:/home/julien/Documents/ros/ws_moveit2/install/moveit_task_constructor_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/julien'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'fr_FR.UTF-8'), ('MANAGERPID', '1517'), ('SYSTEMD_EXEC_PID', '1694'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '8124'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/julien/Documents/ros/rosbridge_suite/install:/home/julien/Documents/ros/microros_ws/install:/home/julien/Documents/ros/ws_moveit2/install:/home/julien/Documents/ros/ws_ros2/install:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'julien'), ('JOURNAL_STREAM', '8:29553'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'julien'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/julien/Documents/ros/ws_moveit2/install/moveit_core/bin:/opt/ros/humble/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/julien-pc:@/tmp/.ICE-unix/1659,unix/julien-pc:/tmp/.ICE-unix/1659'), ('INVOCATION_ID', 'f89d861571d940fbb6466a2bdf5ec08c'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'fr_FR.UTF-8'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('LC_TELEPHONE', 'fr_FR.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.2S2C81'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/rosbridge_suite/install/rosbridge_test_msgs:/home/julien/Documents/ros/rosbridge_suite/install/rosbridge_suite:/home/julien/Documents/ros/rosbridge_suite/install/rosbridge_server:/home/julien/Documents/ros/rosbridge_suite/install/rosbridge_msgs:/home/julien/Documents/ros/rosbridge_suite/install/rosapi:/home/julien/Documents/ros/rosbridge_suite/install/rosbridge_library:/home/julien/Documents/ros/rosbridge_suite/install/rosapi_msgs:/home/julien/Documents/ros/microros_ws/install/micro_ros_demos_rclc:/home/julien/Documents/ros/microros_ws/install/common_interfaces:/home/julien/Documents/ros/microros_ws/install/visualization_msgs:/home/julien/Documents/ros/microros_ws/install/test_msgs:/home/julien/Documents/ros/microros_ws/install/example_interfaces:/home/julien/Documents/ros/microros_ws/install/action_msgs:/home/julien/Documents/ros/microros_ws/install/unique_identifier_msgs:/home/julien/Documents/ros/microros_ws/install/trajectory_msgs:/home/julien/Documents/ros/microros_ws/install/stereo_msgs:/home/julien/Documents/ros/microros_ws/install/std_srvs:/home/julien/Documents/ros/microros_ws/install/shape_msgs:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/microros_ws/install/sensor_msgs:/home/julien/Documents/ros/microros_ws/install/nav_msgs:/home/julien/Documents/ros/microros_ws/install/diagnostic_msgs:/home/julien/Documents/ros/microros_ws/install/geometry_msgs:/home/julien/Documents/ros/microros_ws/install/actionlib_msgs:/home/julien/Documents/ros/microros_ws/install/std_msgs:/home/julien/Documents/ros/microros_ws/install/statistics_msgs:/home/julien/Documents/ros/microros_ws/install/rosidl_typesupport_microxrcedds_test_msg:/home/julien/Documents/ros/microros_ws/install/rosidl_typesupport_microxrcedds_cpp_tests:/home/julien/Documents/ros/microros_ws/install/rmw_microxrcedds:/home/julien/Documents/ros/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/julien/Documents/ros/microros_ws/install/rosidl_typesupport_microxrcedds_c_tests:/home/julien/Documents/ros/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/julien/Documents/ros/microros_ws/install/rosgraph_msgs:/home/julien/Documents/ros/microros_ws/install/rclc_parameter:/home/julien/Documents/ros/microros_ws/install/rclc:/home/julien/Documents/ros/microros_ws/install/composition_interfaces:/home/julien/Documents/ros/microros_ws/install/rcl_interfaces:/home/julien/Documents/ros/microros_ws/install/micro_ros_utilities:/home/julien/Documents/ros/microros_ws/install/micro_ros_setup:/home/julien/Documents/ros/microros_ws/install/micro_ros_agent:/home/julien/Documents/ros/microros_ws/install/micro_ros_msgs:/home/julien/Documents/ros/microros_ws/install/lifecycle_msgs:/home/julien/Documents/ros/microros_ws/install/complex_msgs:/home/julien/Documents/ros/microros_ws/install/builtin_interfaces:/home/julien/Documents/ros/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/julien/Documents/ros/ws_moveit2/install/moveit_runtime:/home/julien/Documents/ros/ws_moveit2/install/moveit2_tutorials:/home/julien/Documents/ros/ws_moveit2/install/moveit:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners:/home/julien/Documents/ros/ws_moveit2/install/pilz_industrial_motion_planner:/home/julien/Documents/ros/ws_moveit2/install/moveit_visual_tools:/home/julien/Documents/ros/ws_moveit2/install/moveit_task_constructor_visualization:/home/julien/Documents/ros/ws_moveit2/install/moveit_task_constructor_demo:/home/julien/Documents/ros/ws_moveit2/install/moveit_task_constructor_capabilities:/home/julien/Documents/ros/ws_moveit2/install/moveit_task_constructor_core:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_control_interface:/home/julien/Documents/ros/ws_moveit2/install/moveit_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_simple_controller_manager:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_assistant:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_srdf_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_core_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_controllers:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_app_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_framework:/home/julien/Documents/ros/ws_moveit2/install/moveit_servo:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_visualization:/home/julien/Documents/ros/ws_moveit2/install/moveit_hybrid_planning:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_benchmarks:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_warehouse:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_robot_interaction:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_perception:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_move_group:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners_ompl:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners_chomp:/home/julien/Documents/ros/ws_moveit2/install/moveit_kinematics:/home/julien/Documents/ros/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/julien/Documents/ros/ws_moveit2/install/chomp_motion_planner:/home/julien/Documents/ros/ws_moveit2/install/moveit_core:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/srdfdom:/home/julien/Documents/ros/ws_moveit2/install/rviz_marker_tools:/home/julien/Documents/ros/ws_moveit2/install/rosparam_shortcuts:/home/julien/Documents/ros/ws_moveit2/install/moveit_task_constructor_msgs:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_support:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_pr2_description:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_panda_description:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_fanuc_description:/home/julien/Documents/ros/ws_moveit2/install/moveit_common:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_moveit_config:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_description:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'fr_FR.UTF-8'), ('TERMINATOR_UUID', 'urn:uuid:65546ada-5229-43c9-b5cd-f47b4408ac53'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'fr_FR.UTF-8'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'fr_FR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub/lib/python3.10/site-packages:/home/julien/Documents/ros/ws_ros2/install/py_pubsub/lib/python3.10/site-packages:/home/julien/Documents/ros/rosbridge_suite/install/rosbridge_test_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/rosbridge_suite/install/rosbridge_server/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/rosbridge_suite/install/rosbridge_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/rosbridge_suite/install/rosapi/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/rosbridge_suite/install/rosbridge_library/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/rosbridge_suite/install/rosapi_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/visualization_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/test_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/example_interfaces/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/action_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/unique_identifier_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/trajectory_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/stereo_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/std_srvs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/shape_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py/lib/python3.10/site-packages:/home/julien/Documents/ros/microros_ws/install/sensor_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/nav_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/diagnostic_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/geometry_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/actionlib_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/std_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/statistics_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/rosidl_typesupport_microxrcedds_test_msg/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/rosidl_typesupport_microxrcedds_cpp/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/rosidl_typesupport_microxrcedds_c/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/rosgraph_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/composition_interfaces/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/rcl_interfaces/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/micro_ros_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/lifecycle_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/complex_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/microros_ws/install/builtin_interfaces/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils/lib/python3.10/site-packages:/home/julien/Documents/ros/ws_moveit2/install/srdfdom/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/ws_moveit2/install/moveit_task_constructor_msgs/local/lib/python3.10/dist-packages:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder/lib/python3.10/site-packages:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/python3.10/site-packages:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'fr_FR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/julien/Documents/ros/rosbridge_suite/install/rosbridge_test_msgs:/home/julien/Documents/ros/rosbridge_suite/install/rosbridge_suite:/home/julien/Documents/ros/rosbridge_suite/install/rosbridge_server:/home/julien/Documents/ros/rosbridge_suite/install/rosbridge_msgs:/home/julien/Documents/ros/rosbridge_suite/install/rosapi:/home/julien/Documents/ros/rosbridge_suite/install/rosbridge_library:/home/julien/Documents/ros/rosbridge_suite/install/rosapi_msgs:/home/julien/Documents/ros/microros_ws/install/micro_ros_demos_rclc:/home/julien/Documents/ros/microros_ws/install/common_interfaces:/home/julien/Documents/ros/microros_ws/install/visualization_msgs:/home/julien/Documents/ros/microros_ws/install/test_msgs:/home/julien/Documents/ros/microros_ws/install/example_interfaces:/home/julien/Documents/ros/microros_ws/install/action_msgs:/home/julien/Documents/ros/microros_ws/install/unique_identifier_msgs:/home/julien/Documents/ros/microros_ws/install/trajectory_msgs:/home/julien/Documents/ros/microros_ws/install/stereo_msgs:/home/julien/Documents/ros/microros_ws/install/std_srvs:/home/julien/Documents/ros/microros_ws/install/shape_msgs:/home/julien/Documents/ros/microros_ws/install/sensor_msgs:/home/julien/Documents/ros/microros_ws/install/nav_msgs:/home/julien/Documents/ros/microros_ws/install/diagnostic_msgs:/home/julien/Documents/ros/microros_ws/install/geometry_msgs:/home/julien/Documents/ros/microros_ws/install/actionlib_msgs:/home/julien/Documents/ros/microros_ws/install/std_msgs:/home/julien/Documents/ros/microros_ws/install/statistics_msgs:/home/julien/Documents/ros/microros_ws/install/rosidl_typesupport_microxrcedds_test_msg:/home/julien/Documents/ros/microros_ws/install/rosidl_typesupport_microxrcedds_cpp_tests:/home/julien/Documents/ros/microros_ws/install/rmw_microxrcedds:/home/julien/Documents/ros/microros_ws/install/rosidl_typesupport_microxrcedds_cpp:/home/julien/Documents/ros/microros_ws/install/rosidl_typesupport_microxrcedds_c_tests:/home/julien/Documents/ros/microros_ws/install/rosidl_typesupport_microxrcedds_c:/home/julien/Documents/ros/microros_ws/install/rosgraph_msgs:/home/julien/Documents/ros/microros_ws/install/rclc_parameter:/home/julien/Documents/ros/microros_ws/install/rclc:/home/julien/Documents/ros/microros_ws/install/composition_interfaces:/home/julien/Documents/ros/microros_ws/install/rcl_interfaces:/home/julien/Documents/ros/microros_ws/install/microxrcedds_client:/home/julien/Documents/ros/microros_ws/install/microcdr:/home/julien/Documents/ros/microros_ws/install/micro_ros_utilities:/home/julien/Documents/ros/microros_ws/install/micro_ros_setup:/home/julien/Documents/ros/microros_ws/install/micro_ros_agent:/home/julien/Documents/ros/microros_ws/install/micro_ros_msgs:/home/julien/Documents/ros/microros_ws/install/lifecycle_msgs:/home/julien/Documents/ros/microros_ws/install/complex_msgs:/home/julien/Documents/ros/microros_ws/install/builtin_interfaces:/home/julien/Documents/ros/ws_moveit2/install/pilz_industrial_motion_planner_testutils:/home/julien/Documents/ros/ws_moveit2/install/moveit_runtime:/home/julien/Documents/ros/ws_moveit2/install/moveit2_tutorials:/home/julien/Documents/ros/ws_moveit2/install/moveit:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners:/home/julien/Documents/ros/ws_moveit2/install/pilz_industrial_motion_planner:/home/julien/Documents/ros/ws_moveit2/install/moveit_visual_tools:/home/julien/Documents/ros/ws_moveit2/install/moveit_task_constructor_visualization:/home/julien/Documents/ros/ws_moveit2/install/moveit_task_constructor_demo:/home/julien/Documents/ros/ws_moveit2/install/moveit_task_constructor_capabilities:/home/julien/Documents/ros/ws_moveit2/install/moveit_task_constructor_core:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_control_interface:/home/julien/Documents/ros/ws_moveit2/install/moveit_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_simple_controller_manager:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_assistant:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_srdf_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_core_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_controllers:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_app_plugins:/home/julien/Documents/ros/ws_moveit2/install/moveit_setup_framework:/home/julien/Documents/ros/ws_moveit2/install/moveit_servo:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_visualization:/home/julien/Documents/ros/ws_moveit2/install/moveit_hybrid_planning:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_benchmarks:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_warehouse:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_robot_interaction:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_perception:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_pg70_support:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_moveit_config:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_move_group:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners_ompl:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning:/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_occupancy_map_monitor:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_ikfast_manipulator_plugin:/home/julien/Documents/ros/ws_moveit2/install/moveit_planners_chomp:/home/julien/Documents/ros/ws_moveit2/install/moveit_kinematics:/home/julien/Documents/ros/ws_moveit2/install/moveit_chomp_optimizer_adapter:/home/julien/Documents/ros/ws_moveit2/install/chomp_motion_planner:/home/julien/Documents/ros/ws_moveit2/install/moveit_core:/home/julien/Documents/ros/ws_moveit2/install/srdfdom:/home/julien/Documents/ros/ws_moveit2/install/rviz_marker_tools:/home/julien/Documents/ros/ws_moveit2/install/rosparam_shortcuts:/home/julien/Documents/ros/ws_moveit2/install/moveit_task_constructor_msgs:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_prbt_support:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_pr2_description:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_panda_moveit_config:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_panda_description:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_fanuc_moveit_config:/home/julien/Documents/ros/ws_moveit2/install/moveit_resources_fanuc_description:/home/julien/Documents/ros/ws_moveit2/install/moveit_common:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_moveit_config:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_description:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble')]), 'shell': False}
+[0.099284] (-) TimerEvent: {}
+[0.199785] (-) TimerEvent: {}
+[0.303237] (-) TimerEvent: {}
+[0.309738] (prog_robot_cpp) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target move\x1b[0m\n'}
+[0.387186] (prog_robot_cpp) StdoutLine: {'line': b'[ 33%] Built target scene\n'}
+[0.403842] (prog_robot_cpp) StdoutLine: {'line': b'[ 66%] Built target hello_moveit\n'}
+[0.404101] (-) TimerEvent: {}
+[0.408733] (prog_robot_cpp) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/move.dir/src/move.cpp.o\x1b[0m\n'}
+[0.504236] (-) TimerEvent: {}
+[0.605270] (-) TimerEvent: {}
+[0.705572] (-) TimerEvent: {}
+[0.805875] (-) TimerEvent: {}
+[0.906225] (-) TimerEvent: {}
+[1.006565] (-) TimerEvent: {}
+[1.106849] (-) TimerEvent: {}
+[1.207943] (-) TimerEvent: {}
+[1.308234] (-) TimerEvent: {}
+[1.409090] (-) TimerEvent: {}
+[1.509369] (-) TimerEvent: {}
+[1.609636] (-) TimerEvent: {}
+[1.709969] (-) TimerEvent: {}
+[1.810290] (-) TimerEvent: {}
+[1.910623] (-) TimerEvent: {}
+[2.011019] (-) TimerEvent: {}
+[2.111840] (-) TimerEvent: {}
+[2.212196] (-) TimerEvent: {}
+[2.312491] (-) TimerEvent: {}
+[2.412896] (-) TimerEvent: {}
+[2.513318] (-) TimerEvent: {}
+[2.613729] (-) TimerEvent: {}
+[2.714104] (-) TimerEvent: {}
+[2.814422] (-) TimerEvent: {}
+[2.914931] (-) TimerEvent: {}
+[3.015787] (-) TimerEvent: {}
+[3.116262] (-) TimerEvent: {}
+[3.216589] (-) TimerEvent: {}
+[3.317070] (-) TimerEvent: {}
+[3.417440] (-) TimerEvent: {}
+[3.517752] (-) TimerEvent: {}
+[3.618007] (-) TimerEvent: {}
+[3.718292] (-) TimerEvent: {}
+[3.818632] (-) TimerEvent: {}
+[3.918948] (-) TimerEvent: {}
+[4.019311] (-) TimerEvent: {}
+[4.119659] (-) TimerEvent: {}
+[4.220002] (-) TimerEvent: {}
+[4.320349] (-) TimerEvent: {}
+[4.420685] (-) TimerEvent: {}
+[4.521000] (-) TimerEvent: {}
+[4.621308] (-) TimerEvent: {}
+[4.721599] (-) TimerEvent: {}
+[4.823347] (-) TimerEvent: {}
+[4.923664] (-) TimerEvent: {}
+[5.023993] (-) TimerEvent: {}
+[5.124319] (-) TimerEvent: {}
+[5.224637] (-) TimerEvent: {}
+[5.325095] (-) TimerEvent: {}
+[5.425481] (-) TimerEvent: {}
+[5.525888] (-) TimerEvent: {}
+[5.626935] (-) TimerEvent: {}
+[5.728834] (-) TimerEvent: {}
+[5.829270] (-) TimerEvent: {}
+[5.929703] (-) TimerEvent: {}
+[6.030100] (-) TimerEvent: {}
+[6.130437] (-) TimerEvent: {}
+[6.230863] (-) TimerEvent: {}
+[6.331364] (-) TimerEvent: {}
+[6.431788] (-) TimerEvent: {}
+[6.532199] (-) TimerEvent: {}
+[6.632501] (-) TimerEvent: {}
+[6.732812] (-) TimerEvent: {}
+[6.833127] (-) TimerEvent: {}
+[6.933626] (-) TimerEvent: {}
+[7.033957] (-) TimerEvent: {}
+[7.134411] (-) TimerEvent: {}
+[7.234752] (-) TimerEvent: {}
+[7.335018] (-) TimerEvent: {}
+[7.435301] (-) TimerEvent: {}
+[7.535665] (-) TimerEvent: {}
+[7.636101] (-) TimerEvent: {}
+[7.736433] (-) TimerEvent: {}
+[7.836819] (-) TimerEvent: {}
+[7.937354] (-) TimerEvent: {}
+[8.037691] (-) TimerEvent: {}
+[8.138120] (-) TimerEvent: {}
+[8.238427] (-) TimerEvent: {}
+[8.338768] (-) TimerEvent: {}
+[8.439292] (-) TimerEvent: {}
+[8.539720] (-) TimerEvent: {}
+[8.640127] (-) TimerEvent: {}
+[8.740490] (-) TimerEvent: {}
+[8.840796] (-) TimerEvent: {}
+[8.941084] (-) TimerEvent: {}
+[9.041884] (-) TimerEvent: {}
+[9.142291] (-) TimerEvent: {}
+[9.242644] (-) TimerEvent: {}
+[9.342941] (-) TimerEvent: {}
+[9.443301] (-) TimerEvent: {}
+[9.543616] (-) TimerEvent: {}
+[9.643974] (-) TimerEvent: {}
+[9.744436] (-) TimerEvent: {}
+[9.844876] (-) TimerEvent: {}
+[9.945243] (-) TimerEvent: {}
+[10.045638] (-) TimerEvent: {}
+[10.146051] (-) TimerEvent: {}
+[10.246339] (-) TimerEvent: {}
+[10.346636] (-) TimerEvent: {}
+[10.446950] (-) TimerEvent: {}
+[10.547275] (-) TimerEvent: {}
+[10.647658] (-) TimerEvent: {}
+[10.748052] (-) TimerEvent: {}
+[10.848464] (-) TimerEvent: {}
+[10.948805] (-) TimerEvent: {}
+[11.049173] (-) TimerEvent: {}
+[11.149514] (-) TimerEvent: {}
+[11.249900] (-) TimerEvent: {}
+[11.350344] (-) TimerEvent: {}
+[11.450846] (-) TimerEvent: {}
+[11.551193] (-) TimerEvent: {}
+[11.563346] (prog_robot_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Move::pose_callback(std_msgs::msg::Float32MultiArray)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[11.565863] (prog_robot_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:52:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kostream_iterator\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::ostream_iterator\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[11.566051] (prog_robot_cpp) StderrLine: {'line': b'   52 |         copy(msg.data.begin(), msg.data.end()-1, \x1b[01;31m\x1b[Kostream_iterator\x1b[m\x1b[K<float>(stream,", "));\n'}
+[11.566138] (prog_robot_cpp) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.566216] (prog_robot_cpp) StderrLine: {'line': b'      |                                                  \x1b[32m\x1b[Kstd::ostream_iterator\x1b[m\x1b[K\n'}
+[11.566289] (prog_robot_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/iterator:65\x1b[m\x1b[K,\n'}
+[11.566363] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rcpputils/rcpputils/join.hpp:23\x1b[m\x1b[K,\n'}
+[11.566435] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/exceptions/exceptions.hpp:26\x1b[m\x1b[K,\n'}
+[11.566507] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/exceptions.hpp:18\x1b[m\x1b[K,\n'}
+[11.566578] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:37\x1b[m\x1b[K,\n'}
+[11.566656] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[11.566727] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[11.566796] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[11.566865] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[11.566939] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[11.567008] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[11.567077] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[11.567147] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[11.567215] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[11.567300] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:3\x1b[m\x1b[K:\n'}
+[11.567371] (prog_robot_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stream_iterator.h:176:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::ostream_iterator\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[11.567447] (prog_robot_cpp) StderrLine: {'line': b'  176 |     class \x1b[01;36m\x1b[Kostream_iterator\x1b[m\x1b[K\n'}
+[11.567521] (prog_robot_cpp) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.567602] (prog_robot_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:52:67:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99\n'}
+[11.567683] (prog_robot_cpp) StderrLine: {'line': b'   52 |         copy(msg.data.begin(), msg.data.end()-1, ostream_iterator<\x1b[01;31m\x1b[Kfloat\x1b[m\x1b[K>(stream,", "));\n'}
+[11.567764] (prog_robot_cpp) StderrLine: {'line': b'      |                                                                   \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[11.568519] (prog_robot_cpp) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[11.568981] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[11.569238] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[11.569383] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[11.569463] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[11.569543] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[11.569619] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[11.569725] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[11.569801] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[11.569876] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[11.569951] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[11.570055] (prog_robot_cpp) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:3\x1b[m\x1b[K:\n'}
+[11.570130] (prog_robot_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:55:41:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kformat \xe2\x80\x98\x1b[01m\x1b[K%c\x1b[m\x1b[K\xe2\x80\x99 expects argument of type \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99, but argument 5 has type \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=\x07-Wformat=\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[11.570241] (prog_robot_cpp) StderrLine: {'line': b'   55 |         RCLCPP_INFO(this->get_logger(), \x1b[01;35m\x1b[K"I heard: \'%c\'"\x1b[m\x1b[K, \x1b[32m\x1b[Kstream.str().c_str()\x1b[m\x1b[K);\n'}
+[11.570327] (prog_robot_cpp) StderrLine: {'line': b'      |                                         \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K  \x1b[32m\x1b[K~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.570399] (prog_robot_cpp) StderrLine: {'line': b'      |                                                                            \x1b[32m\x1b[K|\x1b[m\x1b[K\n'}
+[11.570469] (prog_robot_cpp) StderrLine: {'line': b'      |                                                                            \x1b[32m\x1b[Kconst char*\x1b[m\x1b[K\n'}
+[11.570540] (prog_robot_cpp) StderrLine: {'line': b'\x1b[01m\x1b[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:55:53:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kformat string is defined here\n'}
+[11.570612] (prog_robot_cpp) StderrLine: {'line': b'   55 |         RCLCPP_INFO(this->get_logger(), "I heard: \'\x1b[01;36m\x1b[K%c\x1b[m\x1b[K\'", stream.str().c_str());\n'}
+[11.570683] (prog_robot_cpp) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[K~^\x1b[m\x1b[K\n'}
+[11.570755] (prog_robot_cpp) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[K|\x1b[m\x1b[K\n'}
+[11.570833] (prog_robot_cpp) StderrLine: {'line': b'      |                                                     \x1b[01;36m\x1b[Kint\x1b[m\x1b[K\n'}
+[11.570905] (prog_robot_cpp) StderrLine: {'line': b'      |                                                    \x1b[32m\x1b[K%s\x1b[m\x1b[K\n'}
+[11.651316] (-) TimerEvent: {}
+[11.751685] (-) TimerEvent: {}
+[11.852100] (-) TimerEvent: {}
+[11.952421] (-) TimerEvent: {}
+[12.052850] (-) TimerEvent: {}
+[12.153333] (-) TimerEvent: {}
+[12.253652] (-) TimerEvent: {}
+[12.354137] (-) TimerEvent: {}
+[12.454495] (-) TimerEvent: {}
+[12.554843] (-) TimerEvent: {}
+[12.655132] (-) TimerEvent: {}
+[12.755465] (-) TimerEvent: {}
+[12.855854] (-) TimerEvent: {}
+[12.956194] (-) TimerEvent: {}
+[13.056561] (-) TimerEvent: {}
+[13.156838] (-) TimerEvent: {}
+[13.257163] (-) TimerEvent: {}
+[13.357533] (-) TimerEvent: {}
+[13.457885] (-) TimerEvent: {}
+[13.558245] (-) TimerEvent: {}
+[13.658745] (-) TimerEvent: {}
+[13.759079] (-) TimerEvent: {}
+[13.859411] (-) TimerEvent: {}
+[13.959799] (-) TimerEvent: {}
+[14.060147] (-) TimerEvent: {}
+[14.160473] (-) TimerEvent: {}
+[14.260867] (-) TimerEvent: {}
+[14.361236] (-) TimerEvent: {}
+[14.461585] (-) TimerEvent: {}
+[14.561918] (-) TimerEvent: {}
+[14.662233] (-) TimerEvent: {}
+[14.762578] (-) TimerEvent: {}
+[14.862893] (-) TimerEvent: {}
+[14.963244] (-) TimerEvent: {}
+[15.063588] (-) TimerEvent: {}
+[15.163868] (-) TimerEvent: {}
+[15.264164] (-) TimerEvent: {}
+[15.364548] (-) TimerEvent: {}
+[15.464834] (-) TimerEvent: {}
+[15.565108] (-) TimerEvent: {}
+[15.665388] (-) TimerEvent: {}
+[15.765773] (-) TimerEvent: {}
+[15.866144] (-) TimerEvent: {}
+[15.966448] (-) TimerEvent: {}
+[16.066794] (-) TimerEvent: {}
+[16.167089] (-) TimerEvent: {}
+[16.267406] (-) TimerEvent: {}
+[16.367799] (-) TimerEvent: {}
+[16.468271] (-) TimerEvent: {}
+[16.568703] (-) TimerEvent: {}
+[16.669149] (-) TimerEvent: {}
+[16.769667] (-) TimerEvent: {}
+[16.844367] (prog_robot_cpp) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/move.dir/build.make:76: CMakeFiles/move.dir/src/move.cpp.o] Error 1\n'}
+[16.845251] (prog_robot_cpp) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/move.dir/all] Error 2\n'}
+[16.845376] (prog_robot_cpp) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[16.869723] (-) TimerEvent: {}
+[16.878429] (prog_robot_cpp) CommandEnded: {'returncode': 2}
+[16.969810] (-) TimerEvent: {}
+[17.070597] (-) TimerEvent: {}
+[17.090577] (prog_robot_cpp) JobEnded: {'identifier': 'prog_robot_cpp', 'rc': 2}
+[17.101883] (-) EventReactorShutdown: {}

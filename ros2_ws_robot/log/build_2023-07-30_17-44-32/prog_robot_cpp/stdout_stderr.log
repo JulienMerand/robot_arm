@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target move[0m
+[ 20%] Built target scene
+[ 40%] Built target hello_moveit
+[ 60%] Built target transformation_matrix_calculator
+[ 70%] [32mBuilding CXX object CMakeFiles/move.dir/src/move.cpp.o[0m
+[ 90%] Built target frame_effector
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In lambda function:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:158:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ was not captured for this lambda function
+  158 |             Eigen::Matrix4d TF_base_effector_final = [01;31m[Kthis[m[K->get_transformation_matrix(t);
+      |                                                      [01;31m[K^~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:159:68:[m[K [01;31m[Kerror: [m[K‘[01m[KTF_link6_effector_final[m[K’ is not captured
+  159 |             Eigen::Matrix4d TF_base_link6 = TF_base_effector_final*[01;31m[KTF_link6_effector_final[m[K.inverse();
+      |                                                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:142:45:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+  142 |         auto const target_pose = [pos = msg0[01;36m[K][m[K {
+      |                                             [01;36m[K^[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:132:25:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::Matrix4d TF_link6_effector_final[m[K’ declared here
+  132 |         Eigen::Matrix4d [01;36m[KTF_link6_effector_final[m[K = get_transformation_matrix(transform);
+      |                         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/move.dir/build.make:76: CMakeFiles/move.dir/src/move.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/move.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,15 @@
+[0.034s] Invoking command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4
+[0.177s] [35m[1mConsolidate compiler generated dependencies of target move[0m
+[0.219s] [ 20%] Built target hello_moveit
+[0.227s] [ 30%] [32mBuilding CXX object CMakeFiles/transformation_matrix_calculator.dir/src/test.cpp.o[0m
+[0.251s] [ 50%] Built target scene
+[0.253s] [ 70%] Built target move
+[0.299s] [ 90%] Built target frame_effector
+[0.596s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/test.cpp:4:10:[m[K [01;31m[Kfatal error: [m[KEigen/Geometry: No such file or directory
+[0.597s]     4 | #include [01;31m[K<Eigen/Geometry>[m[K
+[0.597s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[0.597s] compilation terminated.
+[0.600s] gmake[2]: *** [CMakeFiles/transformation_matrix_calculator.dir/build.make:76: CMakeFiles/transformation_matrix_calculator.dir/src/test.cpp.o] Error 1
+[0.600s] gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/transformation_matrix_calculator.dir/all] Error 2
+[0.601s] gmake: *** [Makefile:146: all] Error 2
+[0.604s] Invoked command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4

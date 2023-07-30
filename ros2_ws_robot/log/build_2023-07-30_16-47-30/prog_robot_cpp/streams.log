@@ -1,0 +1,87 @@
+[0.033s] Invoking command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4
+[0.166s] [35m[1mConsolidate compiler generated dependencies of target transformation_matrix_calculator[0m
+[0.217s] [ 10%] [32mBuilding CXX object CMakeFiles/transformation_matrix_calculator.dir/src/test.cpp.o[0m
+[0.226s] [ 30%] Built target scene
+[0.235s] [ 50%] Built target move
+[0.248s] [ 70%] Built target hello_moveit
+[0.298s] [ 90%] Built target frame_effector
+[3.693s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/test.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[3.693s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/test.cpp:50:47:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[KEigen::DenseBase<Eigen::Matrix<double, 4, 4> >::FixedBlockXpr<-1, -1>::Type[m[K’ {aka ‘[01m[KEigen::Block<Eigen::Matrix<double, 4, 4>, -1, -1, false>[m[K’} and ‘[01m[Ktf2::Matrix3x3[m[K’)
+[3.694s]    50 |     transformation_matrix.block(0, 0, 3, 3) = [01;31m[Krotation_matrix[m[K;
+[3.694s]       |                                               [01;31m[K^~~~~~~~~~~~~~~[m[K
+[3.694s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:273[m[K,
+[3.694s]                  from [01m[K/usr/include/eigen3/Eigen/Geometry:11[m[K,
+[3.694s]                  from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/test.cpp:5[m[K:
+[3.694s] [01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:146:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Derived& Eigen::MatrixBase<Derived>::operator=(const Eigen::DenseBase<OtherDerived>&) [with OtherDerived = OtherDerived; Derived = Eigen::Block<Eigen::Matrix<double, 4, 4>, -1, -1, false>][m[K’
+[3.694s]   146 |     Derived& [01;36m[Koperator[m[K=(const DenseBase<OtherDerived>& other);
+[3.694s]       |              [01;36m[K^~~~~~~~[m[K
+[3.694s] [01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:146:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.694s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/test.cpp:50:47:[m[K [01;36m[Knote: [m[K  ‘[01m[Ktf2::Matrix3x3[m[K’ is not derived from ‘[01m[Kconst Eigen::DenseBase<Derived>[m[K’
+[3.694s]    50 |     transformation_matrix.block(0, 0, 3, 3) = [01;36m[Krotation_matrix[m[K;
+[3.694s]       |                                               [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.694s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:273[m[K,
+[3.694s]                  from [01m[K/usr/include/eigen3/Eigen/Geometry:11[m[K,
+[3.695s]                  from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/test.cpp:5[m[K:
+[3.695s] [01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:150:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Derived& Eigen::MatrixBase<Derived>::operator=(const Eigen::EigenBase<OtherDerived>&) [with OtherDerived = OtherDerived; Derived = Eigen::Block<Eigen::Matrix<double, 4, 4>, -1, -1, false>][m[K’
+[3.695s]   150 |     Derived& [01;36m[Koperator[m[K=(const EigenBase<OtherDerived>& other);
+[3.695s]       |              [01;36m[K^~~~~~~~[m[K
+[3.695s] [01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:150:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.695s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/test.cpp:50:47:[m[K [01;36m[Knote: [m[K  ‘[01m[Ktf2::Matrix3x3[m[K’ is not derived from ‘[01m[Kconst Eigen::EigenBase<Derived>[m[K’
+[3.695s]    50 |     transformation_matrix.block(0, 0, 3, 3) = [01;36m[Krotation_matrix[m[K;
+[3.695s]       |                                               [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.695s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:273[m[K,
+[3.695s]                  from [01m[K/usr/include/eigen3/Eigen/Geometry:11[m[K,
+[3.695s]                  from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/test.cpp:5[m[K:
+[3.695s] [01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:154:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class OtherDerived> Derived& Eigen::MatrixBase<Derived>::operator=(const Eigen::ReturnByValue<OtherDerived>&) [with OtherDerived = OtherDerived; Derived = Eigen::Block<Eigen::Matrix<double, 4, 4>, -1, -1, false>][m[K’
+[3.695s]   154 |     Derived& [01;36m[Koperator[m[K=(const ReturnByValue<OtherDerived>& other);
+[3.695s]       |              [01;36m[K^~~~~~~~[m[K
+[3.695s] [01m[K/usr/include/eigen3/Eigen/src/Core/MatrixBase.h:154:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[3.696s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/test.cpp:50:47:[m[K [01;36m[Knote: [m[K  ‘[01m[Ktf2::Matrix3x3[m[K’ is not derived from ‘[01m[Kconst Eigen::ReturnByValue<Derived>[m[K’
+[3.696s]    50 |     transformation_matrix.block(0, 0, 3, 3) = [01;36m[Krotation_matrix[m[K;
+[3.696s]       |                                               [01;36m[K^~~~~~~~~~~~~~~[m[K
+[3.696s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:19[m[K,
+[3.696s]                  from [01m[K/usr/include/eigen3/Eigen/Geometry:11[m[K,
+[3.696s]                  from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/test.cpp:5[m[K:
+[3.696s] [01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:111:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::Block<XprType, BlockRows, BlockCols, InnerPanel>& Eigen::Block<XprType, BlockRows, BlockCols, InnerPanel>::operator=(const Eigen::Block<XprType, BlockRows, BlockCols, InnerPanel>&) [with XprType = Eigen::Matrix<double, 4, 4>; int BlockRows = -1; int BlockCols = -1; bool InnerPanel = false][m[K’
+[3.696s]   111 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(Block)
+[3.696s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.696s] [01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:111:5:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ktf2::Matrix3x3[m[K’ to ‘[01m[Kconst Eigen::Block<Eigen::Matrix<double, 4, 4>, -1, -1, false>&[m[K’
+[3.697s]   111 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(Block)
+[3.697s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.697s] [01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:341:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>& Eigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>::operator=(const Eigen::internal::BlockImpl_dense<XprType, BlockRows, BlockCols, InnerPanel, true>&) [with XprType = Eigen::Matrix<double, 4, 4>; int BlockRows = -1; int BlockCols = -1; bool InnerPanel = false][m[K’
+[3.697s]   341 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl_dense)
+[3.697s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.697s] [01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:341:5:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ktf2::Matrix3x3[m[K’ to ‘[01m[Kconst Eigen::internal::BlockImpl_dense<Eigen::Matrix<double, 4, 4>, -1, -1, false, true>&[m[K’
+[3.697s]   341 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl_dense)
+[3.697s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.697s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:282[m[K,
+[3.697s]                  from [01m[K/usr/include/eigen3/Eigen/Geometry:11[m[K,
+[3.697s]                  from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/test.cpp:5[m[K:
+[3.697s] [01m[K/usr/include/eigen3/Eigen/src/Core/Assign.h:55:30:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KDerived& Eigen::MatrixBase<Derived>::operator=(const Eigen::MatrixBase<Derived>&) [with Derived = Eigen::Block<Eigen::Matrix<double, 4, 4>, -1, -1, false>][m[K’
+[3.697s]    55 | EIGEN_STRONG_INLINE Derived& [01;36m[KMatrixBase<Derived>[m[K::operator=(const MatrixBase& other)
+[3.698s]       |                              [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[3.698s] [01m[K/usr/include/eigen3/Eigen/src/Core/Assign.h:55:79:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ktf2::Matrix3x3[m[K’ to ‘[01m[Kconst Eigen::MatrixBase<Eigen::Block<Eigen::Matrix<double, 4, 4>, -1, -1, false> >&[m[K’
+[3.698s]    55 | EIGEN_STRONG_INLINE Derived& MatrixBase<Derived>::operator=([01;36m[Kconst MatrixBase& other[m[K)
+[3.698s]       |                                                             [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[3.698s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:306[m[K,
+[3.698s]                  from [01m[K/usr/include/eigen3/Eigen/Geometry:11[m[K,
+[3.698s]                  from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/test.cpp:5[m[K:
+[3.698s] [01m[K/usr/include/eigen3/Eigen/src/Core/MapBase.h:292:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KDerived& Eigen::MapBase<Derived, 1>::operator=(const Eigen::MapBase<Derived, 1>&) [with Derived = Eigen::Block<Eigen::Matrix<double, 4, 4>, -1, -1, false>][m[K’
+[3.698s]   292 |     Derived& [01;36m[Koperator[m[K=(const MapBase& other)
+[3.698s]       |              [01;36m[K^~~~~~~~[m[K
+[3.698s] [01m[K/usr/include/eigen3/Eigen/src/Core/MapBase.h:292:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ktf2::Matrix3x3[m[K’ to ‘[01m[Kconst Eigen::MapBase<Eigen::Block<Eigen::Matrix<double, 4, 4>, -1, -1, false>, 1>&[m[K’
+[3.698s]   292 |     Derived& operator=([01;36m[Kconst MapBase& other[m[K)
+[3.698s]       |                        [01;36m[K~~~~~~~~~~~~~~~^~~~~[m[K
+[3.698s] In file included from [01m[K/usr/include/eigen3/Eigen/Core:19[m[K,
+[3.699s]                  from [01m[K/usr/include/eigen3/Eigen/Geometry:11[m[K,
+[3.699s]                  from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/test.cpp:5[m[K:
+[3.699s] [01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:161:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KEigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>& Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>::operator=(const Eigen::BlockImpl<XprType, BlockRows, BlockCols, InnerPanel, Eigen::Dense>&) [with XprType = Eigen::Matrix<double, 4, 4>; int BlockRows = -1; int BlockCols = -1; bool InnerPanel = false][m[K’
+[3.699s]   161 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl)
+[3.699s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.699s] [01m[K/usr/include/eigen3/Eigen/src/Core/Block.h:161:5:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ktf2::Matrix3x3[m[K’ to ‘[01m[Kconst Eigen::BlockImpl<Eigen::Matrix<double, 4, 4>, -1, -1, false, Eigen::Dense>&[m[K’
+[3.699s]   161 |     [01;36m[KEIGEN_INHERIT_ASSIGNMENT_OPERATORS[m[K(BlockImpl)
+[3.699s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.322s] gmake[2]: *** [CMakeFiles/transformation_matrix_calculator.dir/build.make:76: CMakeFiles/transformation_matrix_calculator.dir/src/test.cpp.o] Error 1
+[4.322s] gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/transformation_matrix_calculator.dir/all] Error 2
+[4.323s] gmake: *** [Makefile:146: all] Error 2
+[4.326s] Invoked command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4

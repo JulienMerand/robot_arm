@@ -1,0 +1,6 @@
+[35m[1mConsolidate compiler generated dependencies of target move[0m
+[ 20%] Built target hello_moveit
+[ 30%] [32mBuilding CXX object CMakeFiles/transformation_matrix_calculator.dir/src/test.cpp.o[0m
+[ 50%] Built target scene
+[ 70%] Built target move
+[ 90%] Built target frame_effector

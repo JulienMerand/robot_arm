@@ -1,1 +1,1 @@
-moveit_ros_planning_interface;rclcpp;string;moveit_visual_tools;ament_lint_auto;ament_lint_common
+moveit_ros_planning_interface;rclcpp;string;moveit_visual_tools;Eigen;ament_lint_auto;ament_lint_common

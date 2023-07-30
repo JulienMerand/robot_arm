@@ -1,0 +1,60 @@
+[0.051s] Invoking command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4
+[0.219s] [35m[1mConsolidate compiler generated dependencies of target transformation_matrix_calculator[0m
+[0.272s] [ 20%] Built target hello_moveit
+[0.282s] [ 30%] [32mBuilding CXX object CMakeFiles/transformation_matrix_calculator.dir/src/transformation_matrix_calculator.cpp.o[0m
+[0.298s] [ 50%] Built target move
+[0.310s] [ 70%] Built target scene
+[0.345s] [ 90%] Built target frame_effector
+[4.564s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.564s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.564s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.564s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.564s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.564s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.564s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.564s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.564s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.564s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.565s]                  from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/transformation_matrix_calculator.cpp:1[m[K:
+[4.565s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/transformation_matrix_calculator.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[4.565s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/transformation_matrix_calculator.cpp:22:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[4.565s]    22 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Waiting for the frame...");
+[4.565s]       |                         [01;31m[K^~~~[m[K
+[4.565s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/transformation_matrix_calculator.cpp:22:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[4.565s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/transformation_matrix_calculator.cpp:22:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.565s]    22 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Waiting for the frame...");
+[4.565s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[4.568s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/transformation_matrix_calculator.cpp:22:13:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[4.568s]    22 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Waiting for the frame...");
+[4.568s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[4.568s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/transformation_matrix_calculator.cpp:22:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.568s]    22 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Waiting for the frame...");
+[4.568s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[4.568s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/transformation_matrix_calculator.cpp:22:13:[m[K [01;31m[Kerror: [m[K‘[01m[K<declaration error>[m[K’ is not a template [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[4.568s]    22 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Waiting for the frame...");
+[4.568s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[4.568s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/transformation_matrix_calculator.cpp:22:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.568s]    22 |             [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "Waiting for the frame...");
+[4.569s]       |             [01;31m[K^~~~~~~~~~~[m[K
+[4.569s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[4.569s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[4.570s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[4.570s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[4.570s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[4.570s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[4.570s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[4.571s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[4.571s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[4.571s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[4.571s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[4.571s]                  from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/transformation_matrix_calculator.cpp:1[m[K:
+[4.572s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/transformation_matrix_calculator.cpp:22:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[4.572s]    22 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Waiting for the frame...");
+[4.572s]       |                         [01;31m[K^~~~[m[K
+[4.572s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/transformation_matrix_calculator.cpp:22:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[4.573s]    22 |             RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "Waiting for the frame...");
+[4.573s]       |                         [01;31m[K^~~~[m[K
+[5.441s] gmake[2]: *** [CMakeFiles/transformation_matrix_calculator.dir/build.make:76: CMakeFiles/transformation_matrix_calculator.dir/src/transformation_matrix_calculator.cpp.o] Error 1
+[5.441s] gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/transformation_matrix_calculator.dir/all] Error 2
+[5.442s] gmake: *** [Makefile:146: all] Error 2
+[5.445s] Invoked command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4

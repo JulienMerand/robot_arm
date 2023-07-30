@@ -1,0 +1,8 @@
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In member function ‘[01m[Kvoid Move::pose_callback(std_msgs::msg::Float32MultiArray)[m[K’:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:103:56:[m[K [01;31m[Kerror: [m[K‘[01m[KtransformToEigen[m[K’ is not a member of ‘[01m[Ktf2[m[K’; did you mean ‘[01m[KTransformStorage[m[K’?
+  103 |         Eigen::Isometry3d transformation_matrix = tf2::[01;31m[KtransformToEigen[m[K(transform.transform);
+      |                                                        [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                                                        [32m[KTransformStorage[m[K
+gmake[2]: *** [CMakeFiles/move.dir/build.make:76: CMakeFiles/move.dir/src/move.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/move.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

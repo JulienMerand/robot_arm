@@ -1,0 +1,6 @@
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:55:91:[m[K [01;31m[Kerror: [m[Knon-member function ‘[01m[KEigen::Matrix4d get_transformation_matrix(geometry_msgs::msg::TransformStamped)[m[K’ cannot have cv-qualifier
+   55 | Eigen::Matrix4d get_transformation_matrix(geometry_msgs::msg::TransformStamped transform) [01;31m[Kconst[m[K
+      |                                                                                           [01;31m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/move.dir/build.make:76: CMakeFiles/move.dir/src/move.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/move.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

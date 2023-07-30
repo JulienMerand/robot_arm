@@ -1,0 +1,15 @@
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In lambda function:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:64:23:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KpublishText[m[K’ in ‘[01m[Kvisual_tools_[m[K’, which is of pointer type ‘[01m[Kmoveit_visual_tools::MoveItVisualTools* const[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+   64 |         visual_tools_.[01;31m[KpublishText[m[K(text_pose, text, rviz_visual_tools::WHITE, rviz_visual_tools::XLARGE);
+      |                       [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In lambda function:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:67:27:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kprompt[m[K’ in ‘[01m[Kvisual_tools_[m[K’, which is of pointer type ‘[01m[Kmoveit_visual_tools::MoveItVisualTools* const[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+   67 |             visual_tools_.[01;31m[Kprompt[m[K(text);
+      |                           [01;31m[K^~~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In lambda function:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:71:27:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KpublishTrajectoryLine[m[K’ in ‘[01m[Kvisual_tools_[m[K’, which is of pointer type ‘[01m[Kmoveit_visual_tools::MoveItVisualTools* const[m[K’ (maybe you meant to use ‘[01m[K->[m[K’ ?)
+   71 |             visual_tools_.[01;31m[KpublishTrajectoryLine[m[K(trajectory, jmg);
+      |                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/move.dir/build.make:76: CMakeFiles/move.dir/src/move.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/move.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

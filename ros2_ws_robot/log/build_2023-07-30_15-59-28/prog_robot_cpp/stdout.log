@@ -1,0 +1,4 @@
+[ 25%] Built target hello_moveit
+[ 50%] Built target frame_effector
+[ 75%] Built target scene
+[ 87%] [32mBuilding CXX object CMakeFiles/move.dir/src/move.cpp.o[0m

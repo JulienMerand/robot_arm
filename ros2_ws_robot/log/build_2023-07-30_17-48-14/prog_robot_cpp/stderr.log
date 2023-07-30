@@ -1,0 +1,8 @@
+/usr/bin/ld: CMakeFiles/move.dir/src/move.cpp.o: in function `Move::pose_callback(std_msgs::msg::Float32MultiArray_<std::allocator<void> >)::{lambda()#3}::operator()() const':
+move.cpp:(.text+0xfe8): undefined reference to `Move::get_transformation_matrix(geometry_msgs::msg::TransformStamped_<std::allocator<void> >)'
+/usr/bin/ld: CMakeFiles/move.dir/src/move.cpp.o: in function `Move::pose_callback(std_msgs::msg::Float32MultiArray_<std::allocator<void> >)':
+move.cpp:(.text+0x1bfd): undefined reference to `Move::get_transformation_matrix(geometry_msgs::msg::TransformStamped_<std::allocator<void> >)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/move.dir/build.make:419: move] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/move.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,38 @@
+[35m[1mConsolidate compiler generated dependencies of target move[0m
+[ 33%] Built target scene
+[ 66%] Built target hello_moveit
+[ 83%] [32mBuilding CXX object CMakeFiles/move.dir/src/move.cpp.o[0m
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In member function ‘[01m[Kvoid Move::pose_callback(std_msgs::msg::Float32MultiArray)[m[K’:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:66:20:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kprompt[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+   66 |         auto const [01;35m[Kprompt[m[K = [visual_tools_ = &this->visual_tools_](auto text) {
+      |                    [01;35m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/tf2/tf2/convert.h:41[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:43[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+                 from [01m[K/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:62[m[K,
+                 from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:4[m[K:
+/opt/ros/humble/include/tf2/tf2/impl/convert.h: In instantiation of ‘[01m[Kstatic void tf2::impl::Converter<IS_MESSAGE_A, IS_MESSAGE_B>::convert(const A&, B&) [with A = tf2::Quaternion; B = geometry_msgs::msg::Quaternion_<std::allocator<void> >; bool IS_MESSAGE_A = false; bool IS_MESSAGE_B = true][m[K’:
+[01m[K/opt/ros/humble/include/tf2/tf2/convert.h:151:60:[m[K   required from ‘[01m[Kvoid tf2::convert(const A&, B&) [with A = tf2::Quaternion; B = geometry_msgs::msg::Quaternion_<std::allocator<void> >][m[K’
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:80:25:[m[K   required from here
+[01m[K/opt/ros/humble/include/tf2/tf2/impl/convert.h:67:12:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KtoMsg(const tf2::Quaternion&)[m[K’
+   67 |   b = [01;31m[KtoMsg(a)[m[K;
+      |       [01;31m[K~~~~~^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:43[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+                 from [01m[K/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:62[m[K,
+                 from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:4[m[K:
+[01m[K/opt/ros/humble/include/tf2/tf2/convert.h:129:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class A, class B> B tf2::toMsg(const A&)[m[K’
+  129 | B [01;36m[KtoMsg[m[K(const A & a);
+      |   [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/convert.h:129:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/opt/ros/humble/include/tf2/tf2/convert.h:41[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:43[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+                 from [01m[K/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:62[m[K,
+                 from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:4[m[K:
+[01m[K/opt/ros/humble/include/tf2/tf2/impl/convert.h:67:12:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KB[m[K’
+   67 |   b = [01;36m[KtoMsg(a)[m[K;
+      |       [01;36m[K~~~~~^~~[m[K
+gmake[2]: *** [CMakeFiles/move.dir/build.make:76: CMakeFiles/move.dir/src/move.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/move.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,15 @@
+[0.033s] Invoking command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4
+[0.153s] [35m[1mConsolidate compiler generated dependencies of target transformation_matrix_calculator[0m
+[0.215s] [ 20%] Built target move
+[0.222s] [ 40%] Built target hello_moveit
+[0.237s] [ 50%] [32mBuilding CXX object CMakeFiles/transformation_matrix_calculator.dir/src/test.cpp.o[0m
+[0.248s] [ 70%] Built target scene
+[0.284s] [ 90%] Built target frame_effector
+[4.682s] [100%] [32m[1mLinking CXX executable transformation_matrix_calculator[0m
+[5.414s] /usr/bin/ld: CMakeFiles/transformation_matrix_calculator.dir/src/test.cpp.o: in function `main':
+[5.414s] test.cpp:(.text+0x2a9): undefined reference to `void tf2::fromMsg<geometry_msgs::msg::Quaternion_<std::allocator<void> >, tf2::Quaternion>(geometry_msgs::msg::Quaternion_<std::allocator<void> > const&, tf2::Quaternion&)'
+[5.431s] collect2: error: ld returned 1 exit status
+[5.433s] gmake[2]: *** [CMakeFiles/transformation_matrix_calculator.dir/build.make:354: transformation_matrix_calculator] Error 1
+[5.433s] gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/transformation_matrix_calculator.dir/all] Error 2
+[5.434s] gmake: *** [Makefile:146: all] Error 2
+[5.437s] Invoked command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4

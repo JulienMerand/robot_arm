@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/move.dir/src/move.cpp.o: in function `Move::pose_callback(std_msgs::msg::Float32MultiArray_<std::allocator<void> >)':
+move.cpp:(.text+0x133a): undefined reference to `void tf2::fromMsg<geometry_msgs::msg::Transform_<std::allocator<void> >, Eigen::Transform<double, 3, 2, 0> >(geometry_msgs::msg::Transform_<std::allocator<void> > const&, Eigen::Transform<double, 3, 2, 0>&)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/move.dir/build.make:419: move] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/move.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

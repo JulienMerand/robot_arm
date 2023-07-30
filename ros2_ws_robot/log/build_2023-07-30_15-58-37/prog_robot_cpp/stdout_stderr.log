@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target move[0m
+[ 25%] Built target scene
+[ 50%] Built target frame_effector
+[ 75%] Built target hello_moveit
+[ 87%] [32mBuilding CXX object CMakeFiles/move.dir/src/move.cpp.o[0m
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:9:10:[m[K [01;31m[Kfatal error: [m[Ktf2_eigen.h: No such file or directory
+    9 | #include [01;31m[K<tf2_eigen.h>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/move.dir/build.make:76: CMakeFiles/move.dir/src/move.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/move.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

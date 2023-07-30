@@ -1,0 +1,5 @@
+[35m[1mConsolidate compiler generated dependencies of target move[0m
+[ 25%] Built target frame_effector
+[ 50%] Built target scene
+[ 75%] [32m[1mLinking CXX executable move[0m
+[ 87%] Built target hello_moveit

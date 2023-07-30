@@ -1,0 +1,25 @@
+[0.033s] Invoking command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4
+[0.141s] [35m[1mConsolidate compiler generated dependencies of target move[0m
+[0.182s] [ 25%] Built target frame_effector
+[0.189s] [ 50%] Built target hello_moveit
+[0.194s] [ 75%] Built target scene
+[0.224s] [ 87%] [32mBuilding CXX object CMakeFiles/move.dir/src/move.cpp.o[0m
+[10.046s] In file included from [01m[K/opt/ros/humble/include/tf2/tf2/convert.h:41[m[K,
+[10.046s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:43[m[K,
+[10.046s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+[10.046s]                  from [01m[K/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:62[m[K,
+[10.046s]                  from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:4[m[K:
+[10.046s] /opt/ros/humble/include/tf2/tf2/impl/convert.h: In instantiation of ‘[01m[Kstatic void tf2::impl::Converter<IS_MESSAGE_A, IS_MESSAGE_B>::convert(const A&, B&) [with A = geometry_msgs::msg::Transform_<std::allocator<void> >; B = Eigen::Matrix<double, 4, 4>; bool IS_MESSAGE_A = true; bool IS_MESSAGE_B = false][m[K’:
+[10.046s] [01m[K/opt/ros/humble/include/tf2/tf2/convert.h:151:60:[m[K   required from ‘[01m[Kvoid tf2::convert(const A&, B&) [with A = geometry_msgs::msg::Transform_<std::allocator<void> >; B = Eigen::Matrix<double, 4, 4>][m[K’
+[10.046s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:103:21:[m[K   required from here
+[10.046s] [01m[K/opt/ros/humble/include/tf2/tf2/impl/convert.h:60:10:[m[K [01;31m[Kerror: [m[K‘[01m[KfromMsg[m[K’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[10.047s]    60 |   [01;31m[KfromMsg(a, b)[m[K;
+[10.047s]       |   [01;31m[K~~~~~~~^~~~~~[m[K
+[10.047s] In file included from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:8[m[K:
+[10.047s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.hpp:1224:6:[m[K [01;36m[Knote: [m[K‘[01m[Kvoid tf2::fromMsg(const WrenchStamped&, geometry_msgs::msg::WrenchStamped&)[m[K’ declared here, later in the translation unit
+[10.047s]  1224 | void [01;36m[KfromMsg[m[K(const geometry_msgs::msg::WrenchStamped & msg, geometry_msgs::msg::WrenchStamped & out)
+[10.047s]       |      [01;36m[K^~~~~~~[m[K
+[13.925s] gmake[2]: *** [CMakeFiles/move.dir/build.make:76: CMakeFiles/move.dir/src/move.cpp.o] Error 1
+[13.926s] gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/move.dir/all] Error 2
+[13.926s] gmake: *** [Makefile:146: all] Error 2
+[13.932s] Invoked command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4

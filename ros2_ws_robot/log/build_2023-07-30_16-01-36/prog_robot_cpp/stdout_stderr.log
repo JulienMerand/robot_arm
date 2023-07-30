@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target move[0m
+[ 25%] Built target frame_effector
+[ 50%] Built target hello_moveit
+[ 75%] Built target scene
+[ 87%] [32mBuilding CXX object CMakeFiles/move.dir/src/move.cpp.o[0m
+[100%] [32m[1mLinking CXX executable move[0m
+/usr/bin/ld: CMakeFiles/move.dir/src/move.cpp.o: in function `Move::pose_callback(std_msgs::msg::Float32MultiArray_<std::allocator<void> >)':
+move.cpp:(.text+0x133a): undefined reference to `void tf2::fromMsg<geometry_msgs::msg::Transform_<std::allocator<void> >, Eigen::Transform<double, 3, 1, 0> >(geometry_msgs::msg::Transform_<std::allocator<void> > const&, Eigen::Transform<double, 3, 1, 0>&)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/move.dir/build.make:419: move] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/move.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

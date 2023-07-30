@@ -1,0 +1,40 @@
+In file included from [01m[K/opt/ros/humble/include/tf2/tf2/convert.h:41[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:43[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+                 from [01m[K/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:62[m[K,
+                 from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:4[m[K:
+/opt/ros/humble/include/tf2/tf2/impl/convert.h: In instantiation of ‘[01m[Kstatic void tf2::impl::Converter<IS_MESSAGE_A, IS_MESSAGE_B>::convert(const A&, B&) [with A = tf2::Transform; B = Eigen::Transform<double, 3, 2>; bool IS_MESSAGE_A = false; bool IS_MESSAGE_B = false][m[K’:
+[01m[K/opt/ros/humble/include/tf2/tf2/convert.h:151:60:[m[K   required from ‘[01m[Kvoid tf2::convert(const A&, B&) [with A = tf2::Transform; B = Eigen::Transform<double, 3, 2>][m[K’
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:105:21:[m[K   required from here
+[01m[K/opt/ros/humble/include/tf2/tf2/impl/convert.h:74:16:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KtoMsg(const tf2::Transform&)[m[K’
+   74 |   fromMsg([01;31m[KtoMsg(a)[m[K, b);
+      |           [01;31m[K~~~~~^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:43[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+                 from [01m[K/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:62[m[K,
+                 from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:4[m[K:
+[01m[K/opt/ros/humble/include/tf2/tf2/convert.h:129:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class A, class B> B tf2::toMsg(const A&)[m[K’
+  129 | B [01;36m[KtoMsg[m[K(const A & a);
+      |   [01;36m[K^~~~~[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/convert.h:129:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/opt/ros/humble/include/tf2/tf2/convert.h:41[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:43[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+                 from [01m[K/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:62[m[K,
+                 from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:4[m[K:
+[01m[K/opt/ros/humble/include/tf2/tf2/impl/convert.h:74:16:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KB[m[K’
+   74 |   fromMsg([01;36m[KtoMsg(a)[m[K, b);
+      |           [01;36m[K~~~~~^~~[m[K
+[01m[K/opt/ros/humble/include/tf2/tf2/impl/convert.h:74:10:[m[K [01;31m[Kerror: [m[K‘[01m[KfromMsg[m[K’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+   74 |   [01;31m[KfromMsg(toMsg(a), b)[m[K;
+      |   [01;31m[K~~~~~~~^~~~~~~~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:43[m[K,
+                 from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+                 from [01m[K/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:62[m[K,
+                 from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:4[m[K:
+[01m[K/opt/ros/humble/include/tf2/tf2/convert.h:138:6:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class A, class B> void tf2::fromMsg(const A&, B&)[m[K’ declared here, later in the translation unit
+  138 | void [01;36m[KfromMsg[m[K(const A &, B & b);
+      |      [01;36m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/move.dir/build.make:76: CMakeFiles/move.dir/src/move.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/move.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

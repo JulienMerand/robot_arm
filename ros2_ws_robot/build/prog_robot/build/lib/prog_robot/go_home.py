@@ -11,33 +11,39 @@ class MinimalPublisher(Node):
 
         super().__init__('pub_to_arduino')
         self.publisher_ = self.create_publisher(Int32MultiArray, '/micro_ros_arduino_subscriber', 10)
-        # self.sub_arduino = self.create_subscription(Int32,'/micro_ros_arduino_node_publisher', self.arduino_callback, 10)
+        self.timer = self.create_timer(1.0, self.timer_callback)
+        self.sub_robot = self.create_subscription(Int32,'/micro_ros_arduino_node_publisher', self.robot_callback, 10)
 
         self.pub = Int32MultiArray()
         self.gripper_open = 90
         self.gripper_close = 180
 
-        publish()
+        self.robot_state = -1
 
-        def publish():
-            ang_deg = [0,0,0,0,0,0]
-            step = ang2Step(ang_deg, "deg")
-            speed = 15
-            accel = 70
+        ang_deg = [0,0,0,0,0,0]
+        self.step = ang2Step(ang_deg, "deg")
+        self.speed = 25
+        self.accel = 30
 
+        print("En attente du robot...")
 
-            self.pub.data = step + [(int)(self.gripper_open)] + [(int)(speed)] + [(int)(accel)]
+    def robot_callback(self, msg):
+        self.robot_state = True
+        print('Le robot est prêt...')
+    
+    def timer_callback(self):
+        if self.robot_state:
+            self.pub.data = self.step + [(int)(self.gripper_open)] + [(int)(self.speed)] + [(int)(self.accel)]
             self.publisher_.publish(self.pub)
             self.get_logger().info('Publishing: "%s"' % self.pub.data)
-
-
+            self.robot_state = False
 
 def main(args=None):
     rclpy.init(args=args)
 
     publisher = MinimalPublisher()
 
-    rclpy.spin_once(publisher, timeout_sec=1)
+    rclpy.spin(publisher)
 
     publisher.destroy_node()
     rclpy.shutdown()

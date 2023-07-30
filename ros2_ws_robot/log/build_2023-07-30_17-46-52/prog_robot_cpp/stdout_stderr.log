@@ -1,0 +1,14 @@
+[35m[1mConsolidate compiler generated dependencies of target move[0m
+[ 20%] Built target transformation_matrix_calculator
+[ 40%] Built target hello_moveit
+[ 60%] Built target scene
+[ 70%] [32mBuilding CXX object CMakeFiles/move.dir/src/move.cpp.o[0m
+[ 90%] Built target frame_effector
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In lambda function:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:158:79:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ was not captured for this lambda function
+  158 |             Eigen::Matrix4d TF_base_effector_final = [01;31m[Kget_transformation_matrix(t)[m[K;
+      |                                                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:158:79:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[KEigen::Matrix4d Move::get_transformation_matrix(geometry_msgs::msg::TransformStamped)[m[K’ without object
+gmake[2]: *** [CMakeFiles/move.dir/build.make:76: CMakeFiles/move.dir/src/move.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/move.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/transformation_matrix_calculator.dir/src/test.cpp.o: in function `main':
+test.cpp:(.text+0x2a9): undefined reference to `void tf2::fromMsg<geometry_msgs::msg::Quaternion_<std::allocator<void> >, tf2::Quaternion>(geometry_msgs::msg::Quaternion_<std::allocator<void> > const&, tf2::Quaternion&)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/transformation_matrix_calculator.dir/build.make:354: transformation_matrix_calculator] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:197: CMakeFiles/transformation_matrix_calculator.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

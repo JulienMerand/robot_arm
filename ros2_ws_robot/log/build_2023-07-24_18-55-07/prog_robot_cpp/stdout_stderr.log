@@ -1,0 +1,84 @@
+[35m[1mConsolidate compiler generated dependencies of target move[0m
+[ 33%] Built target hello_moveit
+[ 66%] Built target scene
+[ 83%] [32mBuilding CXX object CMakeFiles/move.dir/src/move.cpp.o[0m
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In member function ‘[01m[Kvoid Move::pose_callback(std_msgs::msg::Float32MultiArray)[m[K’:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:50:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kostringstream[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::ostringstream[m[K’?
+   50 |         [01;31m[Kostringstream[m[K stream;
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+      |         [32m[Kstd::ostringstream[m[K
+In file included from [01m[K/usr/include/c++/11/bits/shared_ptr.h:52[m[K,
+                 from [01m[K/usr/include/c++/11/memory:77[m[K,
+                 from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:1[m[K:
+[01m[K/usr/include/c++/11/iosfwd:153:41:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::ostringstream[m[K’ declared here
+  153 |   typedef basic_ostringstream<char>     [01;36m[Kostringstream[m[K;
+      |                                         [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:52:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kostream_iterator[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::ostream_iterator[m[K’?
+   52 |         copy(msg.data.begin(), msg.data.end()-1, [01;31m[Kostream_iterator[m[K<int>(stream,", "));
+      |                                                  [01;31m[K^~~~~~~~~~~~~~~~[m[K
+      |                                                  [32m[Kstd::ostream_iterator[m[K
+In file included from [01m[K/usr/include/c++/11/iterator:65[m[K,
+                 from [01m[K/opt/ros/humble/include/rcpputils/rcpputils/join.hpp:23[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/exceptions/exceptions.hpp:26[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/exceptions.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:3[m[K:
+[01m[K/usr/include/c++/11/bits/stream_iterator.h:176:11:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::ostream_iterator[m[K’ declared here
+  176 |     class [01;36m[Kostream_iterator[m[K
+      |           [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:52:67:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+   52 |         copy(msg.data.begin(), msg.data.end()-1, ostream_iterator<[01;31m[Kint[m[K>(stream,", "));
+      |                                                                   [01;31m[K^~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:53:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstream[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::io_errc::stream[m[K’?
+   53 |         [01;31m[Kstream[m[K << msg.data.back();
+      |         [01;31m[K^~~~~~[m[K
+      |         [32m[Kstd::io_errc::stream[m[K
+In file included from [01m[K/usr/include/c++/11/ios:42[m[K,
+                 from [01m[K/usr/include/c++/11/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:3[m[K:
+[01m[K/usr/include/c++/11/bits/ios_base.h:203:24:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::io_errc::stream[m[K’ declared here
+  203 |   enum class io_errc { [01;36m[Kstream[m[K = 1 };
+      |                        [01;36m[K^~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:3[m[K:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:55:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kstream[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::io_errc::stream[m[K’?
+   55 |         RCLCPP_INFO(this->get_logger(), "I heard: '%s'", [01;31m[Kstream[m[K.str());
+      |                                                          [01;31m[K^~~~~~[m[K
+In file included from [01m[K/usr/include/c++/11/ios:42[m[K,
+                 from [01m[K/usr/include/c++/11/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/11/iostream:39[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:3[m[K:
+[01m[K/usr/include/c++/11/bits/ios_base.h:203:24:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::io_errc::stream[m[K’ declared here
+  203 |   enum class io_errc { [01;36m[Kstream[m[K = 1 };
+      |                        [01;36m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/move.dir/build.make:76: CMakeFiles/move.dir/src/move.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/move.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,82 @@
+[0.034s] Invoking command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4
+[0.094s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.341s] -- Found moveit_ros_planning_interface: 2.5.4 (/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface/share/moveit_ros_planning_interface/cmake)
+[0.360s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[0.407s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.411s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.420s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.455s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_microxrcedds_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.494s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_microxrcedds_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.699s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.709s] -- Found parameter_traits: 0.3.3 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.775s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.783s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.828s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.011s] -- Found rclcpp_lifecycle: 16.0.4 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[2.065s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[2.145s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[2.349s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.020s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[3.704s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[4.045s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[4.596s] -- Found moveit_visual_tools: 4.1.0 (/home/julien/Documents/ros/ws_moveit2/install/moveit_visual_tools/share/moveit_visual_tools/cmake)
+[5.113s] -- Setting OGRE_DIR to: '/opt/ros/humble/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[5.116s] -- Found OGRE
+[5.117s] --   static     : OFF
+[5.117s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[5.117s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[5.118s] --   media      : /opt/ros/humble/opt/rviz_ogre_vendor/share/OGRE/Media
+[5.118s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[5.118s] -- OGRE_LIBRARY_DIRS: /opt/ros/humble/opt/rviz_ogre_vendor/lib
+[5.118s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[5.118s] -- OGRE_PLUGIN_DIR: /opt/ros/humble/opt/rviz_ogre_vendor/lib/OGRE
+[5.118s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[5.119s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[5.119s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[5.119s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/humble/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[5.119s] -- Could not find freeimage library
+[5.212s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND
+[5.212s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND
+[6.344s] -- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[6.452s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.453s] -- Configured cppcheck include dirs: 
+[6.453s] -- Configured cppcheck exclude dirs and/or files: 
+[6.454s] -- Added test 'flake8' to check Python code syntax and style conventions
+[6.454s] -- Added test 'lint_cmake' to check CMake code style
+[6.454s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[6.456s] -- Added test 'uncrustify' to check C / C++ code style
+[6.456s] -- Configured uncrustify additional arguments: 
+[6.456s] -- Added test 'xmllint' to check XML markup files
+[6.458s] -- Configuring done
+[6.673s] -- Generating done
+[6.677s] -- Build files have been written to: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp
+[6.742s] [35m[1mConsolidate compiler generated dependencies of target move[0m
+[6.742s] [35m[1mConsolidate compiler generated dependencies of target frame_effector[0m
+[6.747s] [35m[1mConsolidate compiler generated dependencies of target scene[0m
+[6.751s] [35m[1mConsolidate compiler generated dependencies of target hello_moveit[0m
+[6.798s] [ 25%] Built target frame_effector
+[6.815s] [ 50%] Built target scene
+[6.831s] [ 75%] Built target hello_moveit
+[6.837s] [ 87%] [32mBuilding CXX object CMakeFiles/move.dir/src/move.cpp.o[0m
+[15.413s] In file included from [01m[K/opt/ros/humble/include/tf2/tf2/convert.h:41[m[K,
+[15.413s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:43[m[K,
+[15.413s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+[15.413s]                  from [01m[K/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:62[m[K,
+[15.413s]                  from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:4[m[K:
+[15.414s] /opt/ros/humble/include/tf2/tf2/impl/convert.h: In instantiation of ‘[01m[Kstatic void tf2::impl::Converter<IS_MESSAGE_A, IS_MESSAGE_B>::convert(const A&, B&) [with A = geometry_msgs::msg::Transform_<std::allocator<void> >; B = Eigen::Transform<double, 3, 1>; bool IS_MESSAGE_A = true; bool IS_MESSAGE_B = false][m[K’:
+[15.414s] [01m[K/opt/ros/humble/include/tf2/tf2/convert.h:151:60:[m[K   required from ‘[01m[Kvoid tf2::convert(const A&, B&) [with A = geometry_msgs::msg::Transform_<std::allocator<void> >; B = Eigen::Transform<double, 3, 1>][m[K’
+[15.414s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:103:21:[m[K   required from here
+[15.414s] [01m[K/opt/ros/humble/include/tf2/tf2/impl/convert.h:60:10:[m[K [01;31m[Kerror: [m[K‘[01m[KfromMsg[m[K’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[15.414s]    60 |   [01;31m[KfromMsg(a, b)[m[K;
+[15.414s]       |   [01;31m[K~~~~~~~^~~~~~[m[K
+[15.414s] In file included from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:43[m[K,
+[15.414s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+[15.414s]                  from [01m[K/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:62[m[K,
+[15.414s]                  from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:4[m[K:
+[15.414s] [01m[K/opt/ros/humble/include/tf2/tf2/convert.h:138:6:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class A, class B> void tf2::fromMsg(const A&, B&)[m[K’ declared here, later in the translation unit
+[15.414s]   138 | void [01;36m[KfromMsg[m[K(const A &, B & b);
+[15.414s]       |      [01;36m[K^~~~~~~[m[K
+[18.763s] gmake[2]: *** [CMakeFiles/move.dir/build.make:76: CMakeFiles/move.dir/src/move.cpp.o] Error 1
+[18.764s] gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/move.dir/all] Error 2
+[18.764s] gmake: *** [Makefile:146: all] Error 2
+[18.766s] Invoked command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4

@@ -19,6 +19,25 @@ ament_target_dependencies(
   "rclcpp"
 )
 
+add_executable(move src/move.cpp)
+ament_target_dependencies(
+  move
+  "moveit_ros_planning_interface"
+  "moveit_visual_tools"
+  "rclcpp"
+  "tf2_ros"
+  "geometry_msgs"
+)
+
+add_executable(transformation_matrix_calculator src/transformation_matrix_calculator.cpp)
+ament_target_dependencies(
+  transformation_matrix_calculator
+  "rclcpp"
+  "tf2"
+  "tf2_ros"
+  "moveit_ros_planning_interface"
+)
+
 add_executable(scene src/scene.cpp)
 ament_target_dependencies(
   scene
@@ -26,10 +45,26 @@ ament_target_dependencies(
   "rclcpp"
 )
 
+add_executable(frame_effector src/frame_effector.cpp)
+ament_target_dependencies(
+  frame_effector
+  "geometry_msgs"
+  "rclcpp"
+  "tf2_ros"
+)
+
 install(TARGETS 
   hello_moveit 
   scene
+  move
+  frame_effector
+  transformation_matrix_calculator
   DESTINATION lib/${PROJECT_NAME})
+
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

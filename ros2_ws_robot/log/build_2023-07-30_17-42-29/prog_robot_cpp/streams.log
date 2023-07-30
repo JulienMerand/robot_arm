@@ -1,0 +1,25 @@
+[0.049s] Invoking command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4
+[0.210s] [35m[1mConsolidate compiler generated dependencies of target move[0m
+[0.232s] [ 20%] Built target hello_moveit
+[0.295s] [ 40%] Built target transformation_matrix_calculator
+[0.299s] [ 60%] Built target scene
+[0.328s] [ 70%] [32mBuilding CXX object CMakeFiles/move.dir/src/move.cpp.o[0m
+[0.342s] [ 90%] Built target frame_effector
+[10.781s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In lambda function:
+[10.781s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:158:79:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ was not captured for this lambda function
+[10.781s]   158 |             Eigen::Matrix4d TF_base_effector_final = [01;31m[Kget_transformation_matrix(t)[m[K;
+[10.781s]       |                                                      [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[10.782s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:158:79:[m[K [01;31m[Kerror: [m[Kcannot call member function ‘[01m[KEigen::Matrix4d Move::get_transformation_matrix(geometry_msgs::msg::TransformStamped)[m[K’ without object
+[10.782s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:159:68:[m[K [01;31m[Kerror: [m[K‘[01m[KTF_link6_effector_final[m[K’ is not captured
+[10.782s]   159 |             Eigen::Matrix4d TF_base_link6 = TF_base_effector_final*[01;31m[KTF_link6_effector_final[m[K.inverse();
+[10.782s]       |                                                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[10.782s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:142:45:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+[10.782s]   142 |         auto const target_pose = [pos = msg0[01;36m[K][m[K {
+[10.782s]       |                                             [01;36m[K^[m[K
+[10.782s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:132:25:[m[K [01;36m[Knote: [m[K‘[01m[KEigen::Matrix4d TF_link6_effector_final[m[K’ declared here
+[10.782s]   132 |         Eigen::Matrix4d [01;36m[KTF_link6_effector_final[m[K = get_transformation_matrix(transform);
+[10.782s]       |                         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[15.984s] gmake[2]: *** [CMakeFiles/move.dir/build.make:76: CMakeFiles/move.dir/src/move.cpp.o] Error 1
+[15.984s] gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/move.dir/all] Error 2
+[15.985s] gmake: *** [Makefile:146: all] Error 2
+[15.988s] Invoked command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4

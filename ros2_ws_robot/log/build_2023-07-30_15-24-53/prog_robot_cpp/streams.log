@@ -1,0 +1,50 @@
+[0.038s] Invoking command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4
+[0.200s] [35m[1mConsolidate compiler generated dependencies of target scene[0m
+[0.213s] [35m[1mConsolidate compiler generated dependencies of target move[0m
+[0.221s] [35m[1mConsolidate compiler generated dependencies of target frame_effector[0m
+[0.226s] [35m[1mConsolidate compiler generated dependencies of target hello_moveit[0m
+[0.272s] [ 25%] Built target frame_effector
+[0.284s] [ 50%] Built target scene
+[0.293s] [ 62%] [32mBuilding CXX object CMakeFiles/move.dir/src/move.cpp.o[0m
+[0.311s] [ 87%] Built target hello_moveit
+[10.063s] In file included from [01m[K/opt/ros/humble/include/tf2/tf2/convert.h:41[m[K,
+[10.063s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:43[m[K,
+[10.063s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+[10.063s]                  from [01m[K/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:62[m[K,
+[10.063s]                  from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:4[m[K:
+[10.063s] /opt/ros/humble/include/tf2/tf2/impl/convert.h: In instantiation of ‘[01m[Kstatic void tf2::impl::Converter<IS_MESSAGE_A, IS_MESSAGE_B>::convert(const A&, B&) [with A = tf2::Transform; B = Eigen::Transform<double, 3, 2>; bool IS_MESSAGE_A = false; bool IS_MESSAGE_B = false][m[K’:
+[10.063s] [01m[K/opt/ros/humble/include/tf2/tf2/convert.h:151:60:[m[K   required from ‘[01m[Kvoid tf2::convert(const A&, B&) [with A = tf2::Transform; B = Eigen::Transform<double, 3, 2>][m[K’
+[10.063s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:105:21:[m[K   required from here
+[10.064s] [01m[K/opt/ros/humble/include/tf2/tf2/impl/convert.h:74:16:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KtoMsg(const tf2::Transform&)[m[K’
+[10.064s]    74 |   fromMsg([01;31m[KtoMsg(a)[m[K, b);
+[10.064s]       |           [01;31m[K~~~~~^~~[m[K
+[10.064s] In file included from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:43[m[K,
+[10.064s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+[10.064s]                  from [01m[K/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:62[m[K,
+[10.064s]                  from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:4[m[K:
+[10.064s] [01m[K/opt/ros/humble/include/tf2/tf2/convert.h:129:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class A, class B> B tf2::toMsg(const A&)[m[K’
+[10.064s]   129 | B [01;36m[KtoMsg[m[K(const A & a);
+[10.064s]       |   [01;36m[K^~~~~[m[K
+[10.064s] [01m[K/opt/ros/humble/include/tf2/tf2/convert.h:129:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[10.064s] In file included from [01m[K/opt/ros/humble/include/tf2/tf2/convert.h:41[m[K,
+[10.064s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:43[m[K,
+[10.064s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+[10.065s]                  from [01m[K/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:62[m[K,
+[10.065s]                  from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:4[m[K:
+[10.065s] [01m[K/opt/ros/humble/include/tf2/tf2/impl/convert.h:74:16:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[KB[m[K’
+[10.065s]    74 |   fromMsg([01;36m[KtoMsg(a)[m[K, b);
+[10.065s]       |           [01;36m[K~~~~~^~~[m[K
+[10.065s] [01m[K/opt/ros/humble/include/tf2/tf2/impl/convert.h:74:10:[m[K [01;31m[Kerror: [m[K‘[01m[KfromMsg[m[K’ was not declared in this scope, and no declarations were found by argument-dependent lookup at the point of instantiation [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[10.065s]    74 |   [01;31m[KfromMsg(toMsg(a), b)[m[K;
+[10.065s]       |   [01;31m[K~~~~~~~^~~~~~~~~~~~~[m[K
+[10.065s] In file included from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer_interface.h:43[m[K,
+[10.065s]                  from [01m[K/opt/ros/humble/include/tf2_ros/tf2_ros/buffer.h:42[m[K,
+[10.065s]                  from [01m[K/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:62[m[K,
+[10.065s]                  from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:4[m[K:
+[10.065s] [01m[K/opt/ros/humble/include/tf2/tf2/convert.h:138:6:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class A, class B> void tf2::fromMsg(const A&, B&)[m[K’ declared here, later in the translation unit
+[10.065s]   138 | void [01;36m[KfromMsg[m[K(const A &, B & b);
+[10.066s]       |      [01;36m[K^~~~~~~[m[K
+[13.448s] gmake[2]: *** [CMakeFiles/move.dir/build.make:76: CMakeFiles/move.dir/src/move.cpp.o] Error 1
+[13.449s] gmake[1]: *** [CMakeFiles/Makefile2:169: CMakeFiles/move.dir/all] Error 2
+[13.449s] gmake: *** [Makefile:146: all] Error 2
+[13.451s] Invoked command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4

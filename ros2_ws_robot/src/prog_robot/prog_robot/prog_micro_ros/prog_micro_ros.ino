@@ -34,7 +34,6 @@ long step[7];
 int speed = 5;
 int accel = 100;
 
-
 #define LED_PIN 13
 
 #define RCCHECK(fn) { rcl_ret_t temp_rc = fn; if((temp_rc != RCL_RET_OK)){error_loop();}}
@@ -198,14 +197,19 @@ void loop() {
     
     // digitalWrite(LED_PIN, !digitalRead(LED_PIN));
 
-    msg_pub.data = 0;
     cb_called = false;
     gripper_moveable = false;
 
   }
   else{
-    msg_pub.data = 0;
-    RCSOFTCHECK(rcl_publish(&publisher, &msg_pub, NULL));
+    if(start){
+      msg_pub.data = -1;
+      RCSOFTCHECK(rcl_publish(&publisher, &msg_pub, NULL));
+    }
+    else{
+      msg_pub.data = 1;
+    }
+    
   }
 
   

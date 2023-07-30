@@ -1,0 +1,6 @@
+[35m[1mConsolidate compiler generated dependencies of target move[0m
+[ 25%] Built target hello_moveit
+[ 50%] Built target scene
+[ 75%] Built target frame_effector
+[ 87%] [32mBuilding CXX object CMakeFiles/move.dir/src/move.cpp.o[0m
+[100%] [32m[1mLinking CXX executable move[0m

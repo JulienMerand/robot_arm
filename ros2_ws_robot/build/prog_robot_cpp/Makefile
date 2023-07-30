@@ -211,6 +211,32 @@ hello_moveit/fast:
 .PHONY : hello_moveit/fast
 
 #=============================================================================
+# Target rules for targets named move
+
+# Build rule for target.
+move: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 move
+.PHONY : move
+
+# fast build rule for target.
+move/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/build
+.PHONY : move/fast
+
+#=============================================================================
+# Target rules for targets named transformation_matrix_calculator
+
+# Build rule for target.
+transformation_matrix_calculator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 transformation_matrix_calculator
+.PHONY : transformation_matrix_calculator
+
+# fast build rule for target.
+transformation_matrix_calculator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transformation_matrix_calculator.dir/build.make CMakeFiles/transformation_matrix_calculator.dir/build
+.PHONY : transformation_matrix_calculator/fast
+
+#=============================================================================
 # Target rules for targets named scene
 
 # Build rule for target.
@@ -222,6 +248,43 @@ scene: cmake_check_build_system
 scene/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scene.dir/build.make CMakeFiles/scene.dir/build
 .PHONY : scene/fast
+
+#=============================================================================
+# Target rules for targets named frame_effector
+
+# Build rule for target.
+frame_effector: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 frame_effector
+.PHONY : frame_effector
+
+# fast build rule for target.
+frame_effector/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/frame_effector.dir/build.make CMakeFiles/frame_effector.dir/build
+.PHONY : frame_effector/fast
+
+src/frame_effector.o: src/frame_effector.cpp.o
+.PHONY : src/frame_effector.o
+
+# target to build an object file
+src/frame_effector.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/frame_effector.dir/build.make CMakeFiles/frame_effector.dir/src/frame_effector.cpp.o
+.PHONY : src/frame_effector.cpp.o
+
+src/frame_effector.i: src/frame_effector.cpp.i
+.PHONY : src/frame_effector.i
+
+# target to preprocess a source file
+src/frame_effector.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/frame_effector.dir/build.make CMakeFiles/frame_effector.dir/src/frame_effector.cpp.i
+.PHONY : src/frame_effector.cpp.i
+
+src/frame_effector.s: src/frame_effector.cpp.s
+.PHONY : src/frame_effector.s
+
+# target to generate assembly for a file
+src/frame_effector.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/frame_effector.dir/build.make CMakeFiles/frame_effector.dir/src/frame_effector.cpp.s
+.PHONY : src/frame_effector.cpp.s
 
 src/hello_moveit.o: src/hello_moveit.cpp.o
 .PHONY : src/hello_moveit.o
@@ -247,6 +310,30 @@ src/hello_moveit.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello_moveit.dir/build.make CMakeFiles/hello_moveit.dir/src/hello_moveit.cpp.s
 .PHONY : src/hello_moveit.cpp.s
 
+src/move.o: src/move.cpp.o
+.PHONY : src/move.o
+
+# target to build an object file
+src/move.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/src/move.cpp.o
+.PHONY : src/move.cpp.o
+
+src/move.i: src/move.cpp.i
+.PHONY : src/move.i
+
+# target to preprocess a source file
+src/move.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/src/move.cpp.i
+.PHONY : src/move.cpp.i
+
+src/move.s: src/move.cpp.s
+.PHONY : src/move.s
+
+# target to generate assembly for a file
+src/move.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/move.dir/build.make CMakeFiles/move.dir/src/move.cpp.s
+.PHONY : src/move.cpp.s
+
 src/scene.o: src/scene.cpp.o
 .PHONY : src/scene.o
 
@@ -271,6 +358,30 @@ src/scene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/scene.dir/build.make CMakeFiles/scene.dir/src/scene.cpp.s
 .PHONY : src/scene.cpp.s
 
+src/transformation_matrix_calculator.o: src/transformation_matrix_calculator.cpp.o
+.PHONY : src/transformation_matrix_calculator.o
+
+# target to build an object file
+src/transformation_matrix_calculator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transformation_matrix_calculator.dir/build.make CMakeFiles/transformation_matrix_calculator.dir/src/transformation_matrix_calculator.cpp.o
+.PHONY : src/transformation_matrix_calculator.cpp.o
+
+src/transformation_matrix_calculator.i: src/transformation_matrix_calculator.cpp.i
+.PHONY : src/transformation_matrix_calculator.i
+
+# target to preprocess a source file
+src/transformation_matrix_calculator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transformation_matrix_calculator.dir/build.make CMakeFiles/transformation_matrix_calculator.dir/src/transformation_matrix_calculator.cpp.i
+.PHONY : src/transformation_matrix_calculator.cpp.i
+
+src/transformation_matrix_calculator.s: src/transformation_matrix_calculator.cpp.s
+.PHONY : src/transformation_matrix_calculator.s
+
+# target to generate assembly for a file
+src/transformation_matrix_calculator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/transformation_matrix_calculator.dir/build.make CMakeFiles/transformation_matrix_calculator.dir/src/transformation_matrix_calculator.cpp.s
+.PHONY : src/transformation_matrix_calculator.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -286,14 +397,26 @@ help:
 	@echo "... test"
 	@echo "... prog_robot_cpp_uninstall"
 	@echo "... uninstall"
+	@echo "... frame_effector"
 	@echo "... hello_moveit"
+	@echo "... move"
 	@echo "... scene"
+	@echo "... transformation_matrix_calculator"
+	@echo "... src/frame_effector.o"
+	@echo "... src/frame_effector.i"
+	@echo "... src/frame_effector.s"
 	@echo "... src/hello_moveit.o"
 	@echo "... src/hello_moveit.i"
 	@echo "... src/hello_moveit.s"
+	@echo "... src/move.o"
+	@echo "... src/move.i"
+	@echo "... src/move.s"
 	@echo "... src/scene.o"
 	@echo "... src/scene.i"
 	@echo "... src/scene.s"
+	@echo "... src/transformation_matrix_calculator.o"
+	@echo "... src/transformation_matrix_calculator.i"
+	@echo "... src/transformation_matrix_calculator.s"
 .PHONY : help
 
 

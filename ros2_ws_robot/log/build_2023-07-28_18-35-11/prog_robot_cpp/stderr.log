@@ -1,0 +1,63 @@
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In member function ‘[01m[Kvoid Move::pose_callback(std_msgs::msg::Float32MultiArray)[m[K’:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:58:35:[m[K [01;31m[Kerror: [m[Kcapture of non-variable ‘[01m[KMove::visual_tools_[m[K’
+   58 |         auto const draw_title = [&[01;31m[Kvisual_tools_[m[K](auto text) {
+      |                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:22:44:[m[K [01;36m[Knote: [m[K‘[01m[Kmoveit_visual_tools::MoveItVisualTools Move::visual_tools_[m[K’ declared here
+   22 |     moveit_visual_tools::MoveItVisualTools [01;36m[Kvisual_tools_[m[K;
+      |                                            [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In lambda function:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:64:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ was not captured for this lambda function
+   64 |         [01;31m[Kvisual_tools_[m[K.publishText(text_pose, text, rviz_visual_tools::WHITE, rviz_visual_tools::XLARGE);
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In member function ‘[01m[Kvoid Move::pose_callback(std_msgs::msg::Float32MultiArray)[m[K’:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:66:31:[m[K [01;31m[Kerror: [m[Kcapture of non-variable ‘[01m[KMove::visual_tools_[m[K’
+   66 |         auto const prompt = [&[01;31m[Kvisual_tools_[m[K](auto text) {
+      |                               [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:22:44:[m[K [01;36m[Knote: [m[K‘[01m[Kmoveit_visual_tools::MoveItVisualTools Move::visual_tools_[m[K’ declared here
+   22 |     moveit_visual_tools::MoveItVisualTools [01;36m[Kvisual_tools_[m[K;
+      |                                            [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In lambda function:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:67:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ was not captured for this lambda function
+   67 |             [01;31m[Kvisual_tools_[m[K.prompt(text);
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In member function ‘[01m[Kvoid Move::pose_callback(std_msgs::msg::Float32MultiArray)[m[K’:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:70:11:[m[K [01;31m[Kerror: [m[Kcapture of non-variable ‘[01m[KMove::visual_tools_[m[K’
+   70 |         [&[01;31m[Kvisual_tools_[m[K, jmg = this->move_group_.getRobotModel()->getJointModelGroup("robot_arm")](auto const trajectory) {
+      |           [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:22:44:[m[K [01;36m[Knote: [m[K‘[01m[Kmoveit_visual_tools::MoveItVisualTools Move::visual_tools_[m[K’ declared here
+   22 |     moveit_visual_tools::MoveItVisualTools [01;36m[Kvisual_tools_[m[K;
+      |                                            [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In lambda function:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:71:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ was not captured for this lambda function
+   71 |             [01;31m[Kvisual_tools_[m[K.publishTrajectoryLine(trajectory, jmg);
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp: In instantiation of ‘[01m[KMove::pose_callback(std_msgs::msg::Float32MultiArray)::<lambda(auto:41)> [with auto:41 = const char*][m[K’:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:91:15:[m[K   required from here
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:67:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ was not captured for this lambda function
+   67 |             [01;31m[Kvisual_tools_[m[K.prompt(text);
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:67:13:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMove::visual_tools_[m[K’
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:22:44:[m[K [01;36m[Knote: [m[Kdeclared here
+   22 |     moveit_visual_tools::MoveItVisualTools [01;36m[Kvisual_tools_[m[K;
+      |                                            [01;36m[K^~~~~~~~~~~~~[m[K
+/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp: In instantiation of ‘[01m[KMove::pose_callback(std_msgs::msg::Float32MultiArray)::<lambda(auto:40)> [with auto:40 = const char*][m[K’:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:92:19:[m[K   required from here
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:64:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ was not captured for this lambda function
+   64 |         [01;31m[Kvisual_tools_[m[K.publishText(text_pose, text, rviz_visual_tools::WHITE, rviz_visual_tools::XLARGE);
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:64:9:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMove::visual_tools_[m[K’
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:22:44:[m[K [01;36m[Knote: [m[Kdeclared here
+   22 |     moveit_visual_tools::MoveItVisualTools [01;36m[Kvisual_tools_[m[K;
+      |                                            [01;36m[K^~~~~~~~~~~~~[m[K
+/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp: In instantiation of ‘[01m[KMove::pose_callback(std_msgs::msg::Float32MultiArray)::<lambda(auto:42)> [with auto:42 = moveit_msgs::msg::RobotTrajectory_<std::allocator<void> >][m[K’:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:106:38:[m[K   required from here
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:71:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ was not captured for this lambda function
+   71 |             [01;31m[Kvisual_tools_[m[K.publishTrajectoryLine(trajectory, jmg);
+      |             [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:71:13:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KMove::visual_tools_[m[K’
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:22:44:[m[K [01;36m[Knote: [m[Kdeclared here
+   22 |     moveit_visual_tools::MoveItVisualTools [01;36m[Kvisual_tools_[m[K;
+      |                                            [01;36m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/move.dir/build.make:76: CMakeFiles/move.dir/src/move.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/move.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
