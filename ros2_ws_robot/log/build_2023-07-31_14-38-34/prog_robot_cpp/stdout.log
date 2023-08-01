@@ -1,0 +1,7 @@
+[ 20%] Built target scene
+[ 30%] [32mBuilding CXX object CMakeFiles/hello_moveit.dir/src/hello_moveit.cpp.o[0m
+[ 50%] Built target transformation_matrix_calculator
+[ 60%] [32mBuilding CXX object CMakeFiles/move.dir/src/move.cpp.o[0m
+[ 80%] Built target frame_effector
+[ 90%] [32m[1mLinking CXX executable hello_moveit[0m
+[ 90%] Built target hello_moveit

@@ -1,0 +1,24 @@
+[0.493s] Invoking command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4
+[0.670s] [35m[1mConsolidate compiler generated dependencies of target move[0m
+[0.714s] [ 20%] Built target transformation_matrix_calculator
+[0.731s] [ 40%] Built target hello_moveit
+[0.753s] [ 60%] Built target scene
+[0.779s] [ 70%] [32mBuilding CXX object CMakeFiles/move.dir/src/move.cpp.o[0m
+[0.808s] [ 90%] Built target frame_effector
+[3.989s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:91:34:[m[K [01;35m[Kwarning: [m[Kmulti-character character constant [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmultichar-Wmultichar]8;;[m[K]
+[3.989s]    91 |         move_group_.setPlannerId([01;35m[K'ompl'[m[K);
+[3.989s]       |                                  [01;35m[K^~~~~~[m[K
+[11.128s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In member function ‘[01m[Kvoid Move::pose_callback(std_msgs::msg::Float32MultiArray)[m[K’:
+[11.128s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:91:34:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kint[m[K’ to ‘[01m[Kconst string&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+[11.128s]    91 |         move_group_.setPlannerId([01;31m[K'ompl'[m[K);
+[11.129s]       |                                  [01;31m[K^~~~~~[m[K
+[11.129s]       |                                  [01;31m[K|[m[K
+[11.129s]       |                                  [01;31m[Kint[m[K
+[11.130s] In file included from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:4[m[K:
+[11.131s] [01m[K/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:225:40:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid moveit::planning_interface::MoveGroupInterface::setPlannerId(const string&)[m[K’
+[11.131s]   225 |   void setPlannerId([01;36m[Kconst std::string& planner_id[m[K);
+[11.131s]       |                     [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[15.942s] gmake[2]: *** [CMakeFiles/move.dir/build.make:76: CMakeFiles/move.dir/src/move.cpp.o] Error 1
+[15.943s] gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/move.dir/all] Error 2
+[15.943s] gmake: *** [Makefile:146: all] Error 2
+[15.948s] Invoked command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4

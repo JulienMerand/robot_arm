@@ -17,7 +17,7 @@ int main(int argc, char** argv)
     std::string source_frame = "link6_1"; // Remplacer par le nom du repère source
     std::string target_frame = "frame_effector"; // Remplacer par le nom du repère cible
     try {
-        while (!tf_buffer.canTransform(target_frame, source_frame, tf2::TimePointZero)) {
+        while (!tf_buffer.canTransform(source_frame, target_frame, tf2::TimePointZero)) {
             rclcpp::sleep_for(std::chrono::milliseconds(100));
             RCLCPP_INFO(node->get_logger(), "Waiting for the frame...");
         }
@@ -29,16 +29,12 @@ int main(int argc, char** argv)
     // Get the transformation between the frames
     geometry_msgs::msg::TransformStamped transform;
     try {
-        transform = tf_buffer.lookupTransform(target_frame, source_frame, tf2::TimePointZero);
+        transform = tf_buffer.lookupTransform(source_frame, target_frame, tf2::TimePointZero);
     } catch (tf2::TransformException &ex) {
         RCLCPP_ERROR(node->get_logger(), "Erreur lors de l'obtention de la transformation : %s", ex.what());
         return 1;
     }
 
-    // Convert the transformation to an Eigen::Isometry3d matrix
-    // Eigen::Isometry3d transformation_matrix;
-    // tf2::convert(transform, transformation_matrix);
-    transform.transform.translation.x = 0;
     tf2::Matrix3x3 rot;
     tf2::Quaternion quaternion;
     tf2::convert(transform.transform.rotation, quaternion);

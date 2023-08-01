@@ -12,6 +12,11 @@ def generate_launch_description():
                 PythonLaunchDescriptionSource([
                     FindPackageShare("robot_moveit_config"), '/launch', '/demo.launch.py'])
             )
+    
+    move_cpp_launch = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([
+                    FindPackageShare("prog_robot_cpp"), '/launch', '/move_cpp.launch.py'])
+            )
  
     pub_to_arduino_node = Node(
         package="prog_robot",
@@ -27,6 +32,7 @@ def generate_launch_description():
     ld.add_action(rviz_moveit_launch)
     ld.add_action(pub_to_arduino_node)
     ld.add_action(scene_node)
+    ld.add_action(move_cpp_launch)
 
     return ld
 

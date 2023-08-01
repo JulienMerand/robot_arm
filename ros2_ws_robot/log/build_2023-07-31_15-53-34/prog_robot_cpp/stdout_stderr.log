@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target move[0m
+[ 20%] Built target transformation_matrix_calculator
+[ 40%] Built target hello_moveit
+[ 60%] Built target scene
+[ 70%] [32mBuilding CXX object CMakeFiles/move.dir/src/move.cpp.o[0m
+[ 90%] Built target frame_effector
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:91:34:[m[K [01;35m[Kwarning: [m[Kmulti-character character constant [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmultichar-Wmultichar]8;;[m[K]
+   91 |         move_group_.setPlannerId([01;35m[K'ompl'[m[K);
+      |                                  [01;35m[K^~~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In member function ‘[01m[Kvoid Move::pose_callback(std_msgs::msg::Float32MultiArray)[m[K’:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:91:34:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kint[m[K’ to ‘[01m[Kconst string&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’}
+   91 |         move_group_.setPlannerId([01;31m[K'ompl'[m[K);
+      |                                  [01;31m[K^~~~~~[m[K
+      |                                  [01;31m[K|[m[K
+      |                                  [01;31m[Kint[m[K
+In file included from [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:4[m[K:
+[01m[K/home/julien/Documents/ros/ws_moveit2/install/moveit_ros_planning_interface/include/moveit/move_group_interface/move_group_interface.h:225:40:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid moveit::planning_interface::MoveGroupInterface::setPlannerId(const string&)[m[K’
+  225 |   void setPlannerId([01;36m[Kconst std::string& planner_id[m[K);
+      |                     [01;36m[K~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/move.dir/build.make:76: CMakeFiles/move.dir/src/move.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/move.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

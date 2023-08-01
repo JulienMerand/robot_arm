@@ -1,0 +1,16 @@
+[0.496s] Invoking command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4
+[0.656s] [35m[1mConsolidate compiler generated dependencies of target move[0m
+[0.735s] [ 20%] Built target hello_moveit
+[0.752s] [ 40%] Built target scene
+[0.764s] [ 60%] Built target transformation_matrix_calculator
+[0.764s] [ 70%] [32mBuilding CXX object CMakeFiles/move.dir/src/move.cpp.o[0m
+[0.812s] [ 90%] Built target frame_effector
+[10.375s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In member function ‘[01m[Kvoid Move::pose_callback(std_msgs::msg::Float32MultiArray)[m[K’:
+[10.375s] [01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:90:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kmove_group[m[K’ was not declared in this scope; did you mean ‘[01m[Kmove_group_[m[K’?
+[10.375s]    90 |         [01;31m[Kmove_group[m[K.setPlanningPipelineId("ompl");
+[10.375s]       |         [01;31m[K^~~~~~~~~~[m[K
+[10.375s]       |         [32m[Kmove_group_[m[K
+[14.791s] gmake[2]: *** [CMakeFiles/move.dir/build.make:76: CMakeFiles/move.dir/src/move.cpp.o] Error 1
+[14.791s] gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/move.dir/all] Error 2
+[14.792s] gmake: *** [Makefile:146: all] Error 2
+[14.794s] Invoked command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4
