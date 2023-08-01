@@ -1,0 +1,32 @@
+[1.744s] Invoking command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4
+[2.556s] [ 20%] Built target transformation_matrix_calculator
+[2.613s] [ 40%] Built target hello_moveit
+[2.617s] [ 60%] Built target scene
+[2.641s] [ 80%] Built target move
+[2.829s] [100%] Built target frame_effector
+[3.820s] Invoked command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --build /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp -- -j4 -l4
+[4.863s] Invoking command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --install /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp
+[4.978s] -- Install configuration: ""
+[4.987s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/lib/prog_robot_cpp/hello_moveit
+[4.998s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/lib/prog_robot_cpp/scene
+[5.000s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/lib/prog_robot_cpp/move
+[5.003s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/lib/prog_robot_cpp/frame_effector
+[5.014s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/lib/prog_robot_cpp/transformation_matrix_calculator
+[5.016s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/launch
+[5.017s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/launch/move_cpp.launch.py
+[5.018s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/ament_index/resource_index/package_run_dependencies/prog_robot_cpp
+[5.019s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/ament_index/resource_index/parent_prefix_path/prog_robot_cpp
+[5.019s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/environment/ament_prefix_path.sh
+[5.025s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/environment/ament_prefix_path.dsv
+[5.026s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/environment/path.sh
+[5.027s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/environment/path.dsv
+[5.027s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/local_setup.bash
+[5.028s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/local_setup.sh
+[5.031s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/local_setup.zsh
+[5.041s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/local_setup.dsv
+[5.042s] -- Installing: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/package.dsv
+[5.044s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/ament_index/resource_index/packages/prog_robot_cpp
+[5.054s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/cmake/prog_robot_cppConfig.cmake
+[5.055s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/cmake/prog_robot_cppConfig-version.cmake
+[5.055s] -- Up-to-date: /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot_cpp/share/prog_robot_cpp/package.xml
+[5.090s] Invoked command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/julien/Documents/ros/ws_ros2/install/simple_pub_sub:/home/julien/Documents/ros/ws_ros2/install/py_pubsub:/home/julien/Documents/ros/microros_ws/install/sensor_msgs_py:/home/julien/Documents/ros/ws_moveit2/install/moveit_configs_utils:/home/julien/Documents/ros/ws_moveit2/install/launch_param_builder:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot:/opt/ros/humble /usr/bin/cmake --install /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot_cpp

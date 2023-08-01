@@ -1,7 +1,6 @@
 # Default initial positions for Robot's ros2_control fake system
 
 initial_positions:
-  Idol Joint: -0.5934
   Joint1: 0
   Joint2: 0
   Joint3: 0

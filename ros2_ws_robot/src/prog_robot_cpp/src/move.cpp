@@ -88,6 +88,7 @@ void Move::pose_callback(const std_msgs::msg::Float32MultiArray msg0)
         visual_tools_.loadRemoteControl();
 
         // move_group_.setPlanningPipelineId("ompl");
+        // move_group_.setPlanningPipelineId('PTP')
         // move_group_.setPlanningTime(10.0);
         move_group_.allowReplanning(true);
 

@@ -255,6 +255,7 @@
   <child link="Idol_Gear_1"/>
   <axis xyz="0 0 -1"/>
   <limit upper="0" lower="-1.5708" effort="100" velocity="100.0"/>
+  <mimic joint="Servo Joint"/>
 </joint>
 
 </robot>

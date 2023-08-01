@@ -23,7 +23,6 @@ moveit_simple_controller_manager:
   hand_controller:
     type: GripperCommand
     joints:
-      - Idol Joint
       - Servo Joint
     action_ns: gripper_cmd
     default: true

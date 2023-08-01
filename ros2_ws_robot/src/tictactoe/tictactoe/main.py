@@ -35,7 +35,7 @@ class NodeTictactoe(Node):
 
         
     def robot_ready(self):
-        self.pose.data = [225.0, 0.0, 350.0, 0.0, 120.0, 0.0] + [self.speed]
+        self.pose.data = [250.0, 0.0, 350.0, 0.0, 120.0, 0.0] + [self.speed]
         self.publisher_pose.publish(self.pose)
         # self.moveJ([225.0, 0.0, 350.0, 0.0, 120.0, 0.0])
         time.sleep(0.2)
