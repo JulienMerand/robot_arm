@@ -29,7 +29,7 @@ private:
     t.child_frame_id = "frame_effector";
     t.transform.translation.x = 0.0;
     t.transform.translation.y = 0.0;
-    t.transform.translation.z = 0.140;
+    t.transform.translation.z = 0.130;
     // t.transform.rotation.x = 0.0;
     // t.transform.rotation.y = 0.0;
     // t.transform.rotation.z = 0.0;

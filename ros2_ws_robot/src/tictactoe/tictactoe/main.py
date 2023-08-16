@@ -1,11 +1,15 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float32MultiArray, Int32MultiArray, Int32
+from sensor_msgs.msg import Image
+from cv_bridge import CvBridge
+import cv2
 from tictactoe.game_algorithm import Tictactoe
 from tictactoe.vision import Vision_Tictactoe
 
 import pygame
 import time
+import numpy as np
 
 class NodeTictactoe(Node):
 
@@ -14,48 +18,71 @@ class NodeTictactoe(Node):
         super().__init__('tictactoe')
         self.publisher_pose = self.create_publisher(Float32MultiArray, '/pose_xyz_speed', 10)
         self.publisher_gripper = self.create_publisher(Int32, '/pose_gripper', 10)
+        self.cam_subscriber = self.create_subscription(Image, '/camera/frames', self.update_frame, 10)
+        self.br = CvBridge()
+
+        self.frame = None
 
         self.pose = Float32MultiArray()
         self.gripper = Int32()
-        self.speed = (float)(35.0)
+        self.speed = (float)(40.0)
 
         # Init du robot
-        self.robot_ready()
+        self.init_robot()
         self.open_gripper()
         
-        self.player = input("[MASTER] Qui commence ? 'ROBOT' ou 'HUMAN' ? ")
         self.squares_coords = []
         self.green_pieces_coords = []
+        self.player = 'ROBOT'
 
-        # Jeu
-        if self.player == 'ROBOT' or self.player == 'HUMAN': 
-            self.play()
-        else:
-            print("Erreur : Mauvaise saisie.")
+        # self.player = input("[MASTER] Qui commence ? 'ROBOT' ou 'HUMAN' ? ")
+        # # Jeu
+        # if self.player == 'ROBOT' or self.player == 'HUMAN': 
+        #     self.play()
+        # else:
+        #     print("Erreur : Mauvaise saisie.")
+        
+
+    def update_frame(self, data):
+        # Convert ROS Image message to OpenCV image
+        self.frame = self.br.imgmsg_to_cv2(data, desired_encoding='passthrough')
+        
+        # self.frame = np.asanyarray(current_frame)
+        # print('frame : ', self.frame)
+        
+        # # Display image
+        # cv2.imshow("camera", self.frame)
+        # cv2.waitKey(1)
 
         
-    def robot_ready(self):
+    def init_robot(self):
         self.pose.data = [250.0, 0.0, 350.0, 0.0, 120.0, 0.0] + [self.speed]
         self.publisher_pose.publish(self.pose)
         # self.moveJ([225.0, 0.0, 350.0, 0.0, 120.0, 0.0])
-        time.sleep(0.2)
+        time.sleep(1)
+
+    def robot_ready(self):
+        self.pose.data = [250.0, 200.0, 100.0, 0.0, 180.0, 0.0] + [self.speed]
+        self.publisher_pose.publish(self.pose)
+        # self.moveJ([225.0, 0.0, 350.0, 0.0, 120.0, 0.0])
+        time.sleep(1)
 
     def moveJ(self, pos):
         for i in range(len(pos)):
             pos[i] = float(pos[i])
         self.pose.data = pos + [self.speed]
         self.publisher_pose.publish(self.pose)
-        time.sleep(0.2)
+        time.sleep(1)
 
     def open_gripper(self):
         self.gripper.data = (int)(90)
         self.publisher_gripper.publish(self.gripper)
-        time.sleep(0.2)
+        time.sleep(1)
 
     def close_gripper(self):
         self.gripper.data = (int)(180)
         self.publisher_gripper.publish(self.gripper)
-        time.sleep(0.2)
+        time.sleep(1)
 
     def move_robot(self, case):
         (i, j) = case
@@ -74,23 +101,115 @@ class NodeTictactoe(Node):
         self.moveJ([x_case, y_case, 100, theta, 180, 0]) # Approche
         self.robot_ready()
 
-    def play(self):
-        
-        self.game = Tictactoe(self.player)
-        self.vision = Vision_Tictactoe('https://192.168.1.16:8080/video')
+    # def play(self):
+    
+    #     # self.cam_subscriber = self.create_subscription(Image, '/camera/frames', self.update_frame, 1)
+    #     # while self.frame is None:
+    #     #     print("waiting for frames...")
+    #     # print(type(self.frame))
+    #     self.game = Tictactoe(self.player)
+    #     self.vision = Vision_Tictactoe()
 
+    #     print("[ROBOT] Je localise mes pieces...")
+    #     self.green_pieces_coords = self.vision.get_coords_green_pieces(self.frame)
+    #     # print(f"[ROBOT] Je les ai trouvées, elles sont là : {self.green_pieces_coords}, surtout n'y touche pas je ne veux pas avoir à les rechercher.")
+    #     print("[ROBOT] Je localise le plateau...")
+    #     _, self.squares_coords, _ = self.vision.get_board(self.frame)
+    #     print("[ROBOT] OK !")
+
+    #     print("[MASTER] Debut du jeu...")
+    #     ret, move = self.game.start()
+    #     if ret:
+    #         self.move_robot(move)
+        
+    #     # Initialisation de pygame
+    #     pygame.init()
+
+    #     # Boucle principale du jeu
+    #     running = True
+    #     while running:
+            
+    #         for event in pygame.event.get():
+    #             if event.type == pygame.QUIT:
+    #                 running = False
+    #                 break
+    #             elif event.type == pygame.KEYDOWN:
+    #                 if event.key == pygame.K_SPACE and self.game.current_player == self.game.HUMAN:
+    #                     self.cam_subscriber = self.create_subscription(Image, '/camera/frames', self.update_frame, 1)
+    #                     print("[ROBOT] Je localise mes pieces...")
+    #                     self.green_pieces_coords = self.vision.get_coords_green_pieces(self.frame)
+    #                     # print(f"[ROBOT] Je les ai trouvées, elles sont là : {self.green_pieces_coords}, surtout n'y touche pas je ne veux pas avoir à les rechercher.")
+    #                     print("[ROBOT] Je localise le plateau...")
+    #                     vision_board, self.squares_coords, full_board_img = self.vision.get_board(self.frame)
+    #                     print("[ROBOT] OK !")
+    #                     # print(self.squares_coords)
+    #                     # print("[CAMERA] Je vois ça : ", vision_board)
+
+    #                     ret0, ret1, (i, j) = self.game.compare_board(vision_board)
+    #                     if ret0:
+    #                         if ret1:
+    #                             print(f"[MASTER] J'ai noté ton coup, tu as joué en {3*j + i}")
+    #                             bool, move = self.game.next_move(i, j)
+    #                             # print("[CAMERA] Maintenant j'ai ça : ", game.board)
+    #                             if bool:
+    #                                 self.move_robot(move)
+    #                                 break
+    #                         else:
+    #                             self.move_robot((i, j))
+    #                             break
+    #                     print("[MASTER] Tu n'as pas joué...")
+
+    #         self.game.update_board()
+
+    #         # Vérification du résultat
+    #         result = self.game.check_winner()
+    #         # running = game.display_result(result)
+    #         self.game.display_result(result)
+
+    #         # Mise à jour de l'affichage
+    #         pygame.display.flip()
+
+    #         if not running:
+    #             time.sleep(1.5)
+
+    #     # Fermeture de pygame
+    #     pygame.quit()
+
+
+
+def main(args=None):
+    rclpy.init(args=args)
+
+    node = NodeTictactoe()
+    rclpy.spin_once(node)
+
+    # print(type(node.frame))
+
+    node.player = input("[MASTER] Qui commence ? 'ROBOT' ou 'HUMAN' ? ")
+    # Jeu   
+    if node.player == 'ROBOT' or node.player == 'HUMAN': 
+
+        # # Init du robot
+        # node.robot_ready()
+        # rclpy.spin_once(node)
+        # node.open_gripper()
+        # rclpy.spin_once(node)
+
+        game = Tictactoe(node.player)
+        vision = Vision_Tictactoe()
+        rclpy.spin_once(node)
         print("[ROBOT] Je localise mes pieces...")
-        self.green_pieces_coords = self.vision.get_coords_green_pieces()
-        # print(f"[ROBOT] Je les ai trouvées, elles sont là : {self.green_pieces_coords}, surtout n'y touche pas je ne veux pas avoir à les rechercher.")
+        node.green_pieces_coords = vision.get_coords_green_pieces(node.frame)
+        print(f"[ROBOT] Je les ai trouvées, elles sont là : {node.green_pieces_coords}, surtout n'y touche pas je ne veux pas avoir à les rechercher.")
         print("[ROBOT] Je localise le plateau...")
-        _, self.squares_coords, _ = self.vision.get_board()
+        _, node.squares_coords, _ = vision.get_board(node.frame)
         print("[ROBOT] OK !")
 
         print("[MASTER] Debut du jeu...")
-        ret, move = self.game.start()
+        ret, move = game.start()
         if ret:
-            self.move_robot(move)
-        
+            node.move_robot(move)
+        rclpy.spin_once(node)
         # Initialisation de pygame
         pygame.init()
 
@@ -103,36 +222,39 @@ class NodeTictactoe(Node):
                     running = False
                     break
                 elif event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_SPACE and self.game.current_player == self.game.HUMAN:
+                    if event.key == pygame.K_SPACE and game.current_player == game.HUMAN:
+                        # node.cam_subscriber = self.create_subscription(Image, '/camera/frames', self.update_frame, 1)
+                        rclpy.spin_once(node)
                         print("[ROBOT] Je localise mes pieces...")
-                        self.green_pieces_coords = self.vision.get_coords_green_pieces()
+                        node.green_pieces_coords = vision.get_coords_green_pieces(node.frame)
                         # print(f"[ROBOT] Je les ai trouvées, elles sont là : {self.green_pieces_coords}, surtout n'y touche pas je ne veux pas avoir à les rechercher.")
                         print("[ROBOT] Je localise le plateau...")
-                        vision_board, self.squares_coords, full_board_img = self.vision.get_board()
+                        vision_board, node.squares_coords, full_board_img = vision.get_board(node.frame)
                         print("[ROBOT] OK !")
                         # print(self.squares_coords)
                         # print("[CAMERA] Je vois ça : ", vision_board)
 
-                        ret0, ret1, (i, j) = self.game.compare_board(vision_board)
+                        ret0, ret1, (i, j) = game.compare_board(vision_board)
                         if ret0:
                             if ret1:
                                 print(f"[MASTER] J'ai noté ton coup, tu as joué en {3*j + i}")
-                                bool, move = self.game.next_move(i, j)
+                                bool, move = game.next_move(i, j)
                                 # print("[CAMERA] Maintenant j'ai ça : ", game.board)
                                 if bool:
-                                    self.move_robot(move)
+                                    node.move_robot(move)
                                     break
                             else:
-                                self.move_robot((i, j))
+                                node.move_robot((i, j))
                                 break
                         print("[MASTER] Tu n'as pas joué...")
 
-            self.game.update_board()
+            game.update_board()
+            rclpy.spin_once(node)
 
             # Vérification du résultat
-            result = self.game.check_winner()
-            # running = game.display_result(result)
-            self.game.display_result(result)
+            result = game.check_winner()
+            running = game.display_result(result)
+            game.display_result(result)
 
             # Mise à jour de l'affichage
             pygame.display.flip()
@@ -142,19 +264,12 @@ class NodeTictactoe(Node):
 
         # Fermeture de pygame
         pygame.quit()
-        
-        
+    else:
+        print("Erreur : Mauvaise saisie.")
 
 
 
-def main(args=None):
-    rclpy.init(args=args)
-
-    game = NodeTictactoe()
-
-    rclpy.spin_once(game, timeout_sec=1)
-
-    game.destroy_node()
+    node.destroy_node()
     rclpy.shutdown()
 
 

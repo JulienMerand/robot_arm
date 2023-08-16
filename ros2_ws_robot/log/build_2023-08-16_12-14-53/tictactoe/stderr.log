@@ -1,0 +1,5 @@
+  File "/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/python3.10/site-packages/tictactoe/main.py", line 101
+    self.cam_subscriber = self.create_subscription(Image, '/camera/frames', self.update_frame, 1):
+                                                                                                 ^
+SyntaxError: invalid syntax
+

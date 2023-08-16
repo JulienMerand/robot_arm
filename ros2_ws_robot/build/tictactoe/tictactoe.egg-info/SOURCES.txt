@@ -8,6 +8,7 @@ setup.py
 ../../build/tictactoe/tictactoe.egg-info/requires.txt
 ../../build/tictactoe/tictactoe.egg-info/top_level.txt
 ../../build/tictactoe/tictactoe.egg-info/zip-safe
+launch/tictactoe.launch.py
 resource/tictactoe
 test/test_copyright.py
 test/test_flake8.py

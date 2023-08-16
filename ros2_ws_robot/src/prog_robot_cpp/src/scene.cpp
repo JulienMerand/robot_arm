@@ -52,9 +52,9 @@ int main(int argc, char * argv[])
     
     auto const ground = create_collision_box("ground", 0.8, 0.4, 0.06, 0.1, 0.0, -0.03);
     auto const cmd_box = create_collision_box("cmd_box", 0.15, 0.4, 0.15, -0.225, 0.0, 0.075);
-    auto const tube_cam = create_collision_box("tube_cam", 0.016, 0.016, 0.535, 0.50, 0.0, 0.2675);
-    auto const cam_back = create_collision_box("cam_back", 0.06, 0.09, 0.02, 0.53, 0.0, 0.535);
-    auto const cam_front = create_collision_box("cam_front", 0.1, 0.09, 0.035, 0.45, 0.0, 0.552);
+    auto const tube_cam = create_collision_box("tube_cam", 0.03, 0.03, 0.535, 0.50, 0.0, 0.2675);
+    auto const cam_back = create_collision_box("cam_back", 0.06, 0.15, 0.02, 0.53, 0.0, 0.535);
+    auto const cam_front = create_collision_box("cam_front", 0.2, 0.15, 0.040, 0.45, 0.0, 0.552);
 
     // Add the collision object to the scene
     moveit::planning_interface::PlanningSceneInterface planning_scene_interface;

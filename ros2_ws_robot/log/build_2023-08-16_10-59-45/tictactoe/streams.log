@@ -1,0 +1,27 @@
+[5.200s] Invoking command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/tictactoe': PYTHONPATH=/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/prefix_override:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tictactoe build --build-base /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/build install --record /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/install.log --single-version-externally-managed
+[6.594s] running egg_info
+[6.596s] writing ../../build/tictactoe/tictactoe.egg-info/PKG-INFO
+[6.598s] writing dependency_links to ../../build/tictactoe/tictactoe.egg-info/dependency_links.txt
+[6.598s] writing entry points to ../../build/tictactoe/tictactoe.egg-info/entry_points.txt
+[6.598s] writing requirements to ../../build/tictactoe/tictactoe.egg-info/requires.txt
+[6.599s] writing top-level names to ../../build/tictactoe/tictactoe.egg-info/top_level.txt
+[6.605s] reading manifest file '../../build/tictactoe/tictactoe.egg-info/SOURCES.txt'
+[6.609s] writing manifest file '../../build/tictactoe/tictactoe.egg-info/SOURCES.txt'
+[6.609s] running build
+[6.612s] running build_py
+[6.615s] copying tictactoe/main.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/build/lib/tictactoe
+[6.616s] copying tictactoe/vision.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/build/lib/tictactoe
+[6.616s] running install
+[6.616s] running install_lib
+[6.622s] copying /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/build/lib/tictactoe/main.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/python3.10/site-packages/tictactoe
+[6.622s] copying /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/build/lib/tictactoe/vision.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/python3.10/site-packages/tictactoe
+[6.622s] byte-compiling /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/python3.10/site-packages/tictactoe/main.py to main.cpython-310.pyc
+[6.627s] byte-compiling /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/python3.10/site-packages/tictactoe/vision.py to vision.cpython-310.pyc
+[6.638s] running install_data
+[6.641s] running install_egg_info
+[6.648s] removing '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/python3.10/site-packages/tictactoe-0.0.0-py3.10.egg-info' (and everything under it)
+[6.650s] Copying ../../build/tictactoe/tictactoe.egg-info to /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/python3.10/site-packages/tictactoe-0.0.0-py3.10.egg-info
+[6.663s] running install_scripts
+[6.746s] Installing main script to /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/tictactoe
+[6.748s] writing list of installed files to '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/install.log'
+[6.833s] Invoked command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/tictactoe' returned '0': PYTHONPATH=/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/prefix_override:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/tictactoe/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/tictactoe build --build-base /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/build install --record /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/tictactoe/install.log --single-version-externally-managed

@@ -1,4 +1,5 @@
 import cv2
+import pickle
 import numpy as np
 from math import sqrt, sin, cos, atan, pi
 
@@ -12,9 +13,23 @@ def print_board(board):
 
 class Vision_Tictactoe():
 
-    def __init__(self, IP):
-        self.IP = IP
+    def __init__(self):
+        # Get camera parameters
+        file_path = '/home/julien/Documents/Python/calibration/parametres_camera.pkl'
+        with open(file_path, 'rb') as f:
+            parameters = pickle.load(f)
+        
+        self.extrinsic_matrix = parameters['extrinsic matrix']
+        self.intrinsic_matrix = parameters['intrinsic matrix']
+        self.dist_coeffs = parameters['distortion']
+        self.rot_vecs = parameters['rotation']
+        self.trans_vecs = parameters['translation']
 
+    def pixel_to_real_coordinates(self, px, py):
+        # rx, ry = 0.518*py+64.203, (px - 400)/2
+        rx, ry = 0.512*py + 66.744, 0.481*px - 189.26
+        # rx, ry = py, px
+        return rx, ry
 
     def analyse_board(self, board_img):
 
@@ -125,7 +140,7 @@ class Vision_Tictactoe():
             TR_BaseToBoard = np.eye(2)
             Rot_board = np.array(([cos(-theta), -sin(-theta)],
                                 [sin(-theta),  cos(-theta)]))
-            coord_x, coord_y = 0.518*y_middle_board+64.203, (x_middle_board - 400)/2
+            coord_x, coord_y = self.pixel_to_real_coordinates(x_middle_board, y_middle_board)
             Pos_board = np.array([int(coord_x), int(coord_y)])
             TR_BaseToBoard = [Rot_board, Pos_board]       
 
@@ -160,35 +175,28 @@ class Vision_Tictactoe():
                     i += 1
         return draw, squares_coords_board
 
-    def get_board(self):
-
-        cap = cv2.VideoCapture(self.IP)
-        ret, frame = cap.read()
-        if ret == True:
-            # Apply Perspective Transform Algorithm
-            pts1 = np.float32([[58, 90],     [429, 90],
-                                [34, 512], [452, 512]])
-            pts2 = np.float32([[0, 0],     [800, 0],
-                                [0, 900], [800, 900]])
-            matrix = cv2.getPerspectiveTransform(pts1, pts2)
-            wood_plate = cv2.warpPerspective(frame, matrix, (800,900))
-            # Find the board and get the transformation matrix from the base to the board and the angle of the board
-            board_img, TR_base2board, theta = self.find_board(wood_plate)
-            # Show, identify squares and find the pieces to construct the board
-            board_analysed, board = self.analyse_board(board_img)
-            full_board_img, squares_coords_board = self.show_squares(board_img, board_analysed)
-            squares_coords = {0: [], 1: [], 2: [], 3: [], 4: [], 5: [], 6: [], 7: [], 8: []}
-            for i in range(9):
-                rot, trans = TR_base2board[0], TR_base2board[1]
-                squares_coords[i] = list(np.round(np.dot(np.linalg.inv(rot), np.transpose(squares_coords_board[i] + trans)),2)) + [theta]       
-        else:
-            return False
-        cap.release()
+    def get_board(self, frame):
+        frame = cv2.undistort(frame,self.intrinsic_matrix, self.dist_coeffs)
+        # Apply Perspective Transform Algorithm
+        pts1 = np.float32([[58, 90],     [429, 90],
+                            [34, 512], [452, 512]])
+        pts2 = np.float32([[0, 0],     [800, 0],
+                            [0, 900], [800, 900]])
+        matrix = cv2.getPerspectiveTransform(pts1, pts2)
+        wood_plate = cv2.warpPerspective(frame, matrix, (800,900))
+        # Find the board and get the transformation matrix from the base to the board and the angle of the board
+        board_img, TR_base2board, theta = self.find_board(wood_plate)
+        # Show, identify squares and find the pieces to construct the board
+        board_analysed, board = self.analyse_board(board_img)
+        full_board_img, squares_coords_board = self.show_squares(board_img, board_analysed)
+        squares_coords = {0: [], 1: [], 2: [], 3: [], 4: [], 5: [], 6: [], 7: [], 8: []}
+        for i in range(9):
+            rot, trans = TR_base2board[0], TR_base2board[1]
+            squares_coords[i] = list(np.round(np.dot(np.linalg.inv(rot), np.transpose(squares_coords_board[i] + trans)),2)) + [theta]       
         return board, squares_coords, full_board_img
 
 
     def find_green_pieces(self, plate):
-        
         coords = []
         img = np.copy(plate)
         img_HSV = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
@@ -199,7 +207,7 @@ class Vision_Tictactoe():
         kernel = np.ones((5, 5), np.uint8)
         mask_morph = cv2.dilate(mask, kernel, iterations=1)
         mask_morph = cv2.morphologyEx(mask_morph, cv2.MORPH_OPEN, kernel, iterations=1)
-        contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        contours, _ = cv2.findContours(mask_morph, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
         if(len(contours) > 0):
             for cnt in contours:
                 x,y,w,h = cv2.boundingRect(cnt)
@@ -216,56 +224,60 @@ class Vision_Tictactoe():
                     pts = np.intp(pts)
                     cv2.drawContours(img, [box], 0, (0,255,0), 2)
                     cv2.circle(img, (middle_x, middle_y), 5, (0,255,0), -1)
-                    coord_x, coord_y = (0.518*middle_y+64.203), (middle_x - 400)/2
+                    coord_x, coord_y = self.pixel_to_real_coordinates(middle_x, middle_y)
                     try:
                         theta = (atan((box[1][0] - box[0][0])/(box[1][1] - box[0][1]))%(pi/4))*180/pi
                     except:
                         theta = 0.0
-                    coords.append([coord_x, coord_y, round(theta,2)])
+                    coords.append([round(coord_x,2), round(coord_y,2), round(theta,2)])
+        # cv2.imshow('Green Pieces', img)
+        # cv2.imshow('mask', mask_morph)
+        # cv2.waitKey(0)
         return coords
         
-    def get_coords_green_pieces(self):
-        
-        cap = cv2.VideoCapture(self.IP)
-        ret, frame = cap.read()
-        if ret == True:
-
-            img = np.copy(frame)
-            img_HSV = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
-            img_blur = cv2.blur(img_HSV, (7,7))
-            mask = cv2.inRange(img_blur, np.array([0,0,190]), np.array([255,255,255]))
-            kernel = np.ones((5, 5), np.uint8)
-            mask_morph = cv2.morphologyEx(mask, cv2.MORPH_OPEN, kernel, iterations=3)
-            mask_morph = cv2.dilate(mask_morph, kernel, iterations=2)
-            # mask_morph = cv2.morphologyEx(mask_morph, cv2.MORPH_CLOSE, kernel, iterations=3)
-            mask_morph_not = cv2.bitwise_not(mask_morph)
-            new_frame = cv2.bitwise_and(frame, frame, mask=mask_morph_not)
-            # Apply Perspective Transform Algorithm
-            pts1 = np.float32([[58, 90],     [429, 90],
-                                [34, 512], [452, 512]])
-            pts2 = np.float32([[0, 0],     [800, 0],
-                                [0, 900], [800, 900]])
-            matrix = cv2.getPerspectiveTransform(pts1, pts2)
-            wood_plate = cv2.warpPerspective(new_frame, matrix, (800,900))
-            # Find the green pieces
-            green_pieces_coords = self.find_green_pieces(wood_plate)
-        else: 
-            return []
-        cap.release()
+    def get_coords_green_pieces(self, frame):
+        frame = cv2.undistort(frame,self.intrinsic_matrix, self.dist_coeffs)
+        img = np.copy(frame)
+        # cv2.imshow('img',img)
+        cv2.waitKey(0)
+        img_HSV = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
+        img_blur = cv2.blur(img_HSV, (7,7))
+        mask = cv2.inRange(img_blur, np.array([0,0,190]), np.array([255,30,255]))
+        kernel = np.ones((5, 5), np.uint8)
+        mask_morph = cv2.morphologyEx(mask, cv2.MORPH_OPEN, kernel, iterations=3)
+        mask_morph = cv2.dilate(mask_morph, kernel, iterations=2)
+        # mask_morph = cv2.morphologyEx(mask_morph, cv2.MORPH_CLOSE, kernel, iterations=3)
+        mask_morph_not = cv2.bitwise_not(mask_morph)
+        new_frame = cv2.bitwise_and(frame, frame, mask=mask_morph_not)
+        # Apply Perspective Transform Algorithm
+        pts1 = np.float32([[58, 90],     [429, 90],
+                            [34, 512], [452, 512]])
+        pts2 = np.float32([[0, 0],     [800, 0],
+                            [0, 900], [800, 900]])
+        matrix = cv2.getPerspectiveTransform(pts1, pts2)
+        wood_plate = cv2.warpPerspective(new_frame, matrix, (800,900))
+        # Find the green pieces
+        # cv2.imshow('plateau', wood_plate)
+        green_pieces_coords = self.find_green_pieces(wood_plate)
         return green_pieces_coords
 
 
 if __name__=="__main__":
 
-    vision = Vision_Tictactoe('https://192.168.1.16:8080/video')
+    vision = Vision_Tictactoe()
 
-    green_pieces_coords = vision.get_coords_green_pieces()
-    print("\nGreen pieces coords : ",green_pieces_coords)
+    cap = cv2.VideoCapture('https://192.168.1.16:8080/video')
+    ret, frame = cap.read()
+    if ret == True:
 
-    board, squares_coords, full_board_img = vision.get_board()
-    cv2.imshow('Board', full_board_img)
-    print("\nSquares coords : ", squares_coords)
-    print_board(board)
-    cv2.waitKey(0)
+        green_pieces_coords = vision.get_coords_green_pieces(frame)
+        print("\nGreen pieces coords : ",green_pieces_coords)
+        cv2.waitKey(0)
+
+        # board, squares_coords, full_board_img = vision.get_board(frame)
+        # cv2.imshow('Board', full_board_img)
+        # print("\nSquares coords : ", squares_coords)
+        # print_board(board)
+        # cv2.waitKey(0)
 
 

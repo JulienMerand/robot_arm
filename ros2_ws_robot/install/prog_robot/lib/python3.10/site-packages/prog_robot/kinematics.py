@@ -366,7 +366,7 @@ if __name__=="__main__":
 
     t = time.time()
     # print(inverse_kinematics(pos, ori))
-    print(inverse_kinematics([225,0,350], [0,120,0], "above", False))
+    print("Résultat : ",inverse_kinematics([225,0,350], [0,120,0], "above", False))
     t = time.time() - t
     print("Temps d'exécution (s) : ",t)
 
