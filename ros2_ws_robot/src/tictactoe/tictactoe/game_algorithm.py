@@ -3,7 +3,7 @@ import time
 
 class Tictactoe():
     """ Tictactoe game !
-        \nstarter = 'ROBOT' or 'HUMAN' """
+        \nstarter = 'ROBOT' or 'HUMAIN' """
     def __init__(self, starter):
 
         # Définition des couleurs

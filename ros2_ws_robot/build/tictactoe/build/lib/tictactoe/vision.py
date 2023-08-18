@@ -14,17 +14,17 @@ def print_board(board):
 class Vision_Tictactoe():
 
     def __init__(self):
-        pass
-        # # Get camera parameters
-        # file_path = '/home/julien/Documents/Python/calibration/parametres_camera.pkl'
-        # with open(file_path, 'rb') as f:
-        #     parameters = pickle.load(f)
         
-        # self.extrinsic_matrix = parameters['extrinsic matrix']
-        # self.intrinsic_matrix = parameters['intrinsic matrix']
-        # self.dist_coeffs = parameters['distortion']
-        # self.rot_vecs = parameters['rotation']
-        # self.trans_vecs = parameters['translation']
+        # Get camera parameters
+        file_path = '/home/julien/Documents/Python/calibration/parametres_camera.pkl'
+        with open(file_path, 'rb') as f:
+            parameters = pickle.load(f)
+        
+        self.extrinsic_matrix = parameters['extrinsic matrix']
+        self.intrinsic_matrix = parameters['intrinsic matrix']
+        self.dist_coeffs = parameters['distortion']
+        self.rot_vecs = parameters['rotation']
+        self.trans_vecs = parameters['translation']
 
     def pixel_to_real_coordinates(self, px, py):
         # rx, ry = 0.518*py+64.203, (px - 400)/2

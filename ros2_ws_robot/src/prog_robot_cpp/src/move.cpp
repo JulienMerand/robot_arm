@@ -303,7 +303,7 @@ void Move::timer_callback()
                 RCLCPP_ERROR(this->get_logger(), "Planning failed!");
                 // RCLCPP_ERROR(this->logger, "Planning failed!");
             }
-
+            rclcpp::sleep_for(std::chrono::seconds(2));
         }
 
         /*-------------------*/
@@ -343,9 +343,10 @@ void Move::timer_callback()
                 RCLCPP_ERROR(this->get_logger(), "Planning failed!");
                 // RCLCPP_ERROR(this->logger, "Planning failed!");
             }
+            rclcpp::sleep_for(std::chrono::seconds(1));
         }
 
-        rclcpp::sleep_for(std::chrono::seconds(1));
+        
     }
     
 }

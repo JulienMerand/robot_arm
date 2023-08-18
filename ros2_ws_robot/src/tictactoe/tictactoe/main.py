@@ -99,7 +99,7 @@ def main(args=None):
     node = NodeTictactoe()
     rclpy.spin_once(node)
 
-    node.player = input("[MASTER] Qui commence ? 'ROBOT' ou 'HUMAIN' ?")
+    node.player = input("[MASTER] Qui commence ? 'ROBOT' ou 'HUMAIN' ? ")
 
     # Jeu   
     if node.player == 'ROBOT' or node.player == 'HUMAIN': 
