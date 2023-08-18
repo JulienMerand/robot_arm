@@ -2,7 +2,9 @@
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_description/share/robot_description/urdf/Robot.gazebo
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_description/share/robot_description/urdf/Robot.xacro
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_description/share/robot_description/urdf/Robot.trans
+/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_description/share/robot_description/meshes/Servo_Gear.stl
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_description/share/robot_description/meshes/link5_1.stl
+/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_description/share/robot_description/meshes/Gripper_Servo.stl
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_description/share/robot_description/meshes/link2_1.stl
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_description/share/robot_description/meshes/link6_1.stl
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_description/share/robot_description/meshes/Servo_Gear_1.stl
@@ -10,6 +12,9 @@
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_description/share/robot_description/meshes/link3_1.stl
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_description/share/robot_description/meshes/base_link.stl
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_description/share/robot_description/meshes/Idol_Gear_1.stl
+/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_description/share/robot_description/meshes/Pivot_Arm.stl
+/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_description/share/robot_description/meshes/Gripper_Idol.stl
+/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_description/share/robot_description/meshes/Idol_Gear.stl
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_description/share/robot_description/meshes/link4_1.stl
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_description/share/robot_description/launch/visualize.launch.py
 /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/robot_description/share/robot_description/rviz/config.rviz

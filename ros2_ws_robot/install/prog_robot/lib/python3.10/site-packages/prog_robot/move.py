@@ -1,14 +1,14 @@
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float32MultiArray, Int32MultiArray, Int32
-from prog_robot.fonctions import ang2Step, cercle
+from prog_robot.fonctions import ang2Step
 from prog_robot.kinematics import inverse_kinematics
 
 from copy import deepcopy
-import time
 
 class Move(Node):
-
+    """ Récupère les informations des topics /pose_xyz_speed /pose_theta_speed et /pose_gripper et les transmets directement au robot"""
+    
     def __init__(self):
 
         super().__init__('pub_to_arduino')

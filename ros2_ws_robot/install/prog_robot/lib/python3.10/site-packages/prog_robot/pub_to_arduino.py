@@ -2,12 +2,12 @@ import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int32MultiArray, Int32
 from sensor_msgs.msg import JointState
-import time,math
+import math
 from copy import deepcopy
 from prog_robot.fonctions import ang2Step
 
-class MinimalPublisher(Node):
-
+class Pub2Arduino(Node):
+    """ Récupère les informations du topic /joint_states et les transmets au robot."""
     def __init__(self):
 
         super().__init__('pub_to_arduino')
@@ -29,8 +29,6 @@ class MinimalPublisher(Node):
 
         self.robot_state = False
         self.get_logger().info("Waiting for the robot...")
-
-
 
 
     def joint_states_callback(self, msg):
@@ -79,7 +77,7 @@ class MinimalPublisher(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    publisher = MinimalPublisher()
+    publisher = Pub2Arduino()
 
     rclpy.spin(publisher)
 

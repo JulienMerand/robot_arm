@@ -5,8 +5,8 @@ import time,math
 from prog_robot.fonctions import ang2Step
 from prog_robot.kinematics import inverse_kinematics
 
-class MinimalPublisher(Node):
-
+class GoHome(Node):
+    """ Publie les positions articulaires correspondantes à la position 'home' du robot."""
     def __init__(self):
 
         super().__init__('pub_to_arduino')
@@ -41,7 +41,7 @@ class MinimalPublisher(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    publisher = MinimalPublisher()
+    publisher = GoHome()
 
     rclpy.spin(publisher)
 
