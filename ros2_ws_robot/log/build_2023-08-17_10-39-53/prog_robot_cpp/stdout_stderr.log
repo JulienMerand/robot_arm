@@ -1,0 +1,28 @@
+[35m[1mConsolidate compiler generated dependencies of target move[0m
+[ 20%] Built target hello_moveit
+[ 30%] [32mBuilding CXX object CMakeFiles/move.dir/src/move.cpp.o[0m
+[ 50%] Built target transformation_matrix_calculator
+[ 70%] Built target scene
+[ 90%] Built target frame_effector
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In member function ‘[01m[Kvoid Move::pose_callback(std_msgs::msg::Float32MultiArray)[m[K’:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:104:49:[m[K [01;31m[Kerror: [m[K‘[01m[KTF_link6_effector_final[m[K’ was not declared in this scope
+  104 |     auto const target_pose = [this, pos = msg0, [01;31m[KTF_link6_effector_final[m[K] {
+      |                                                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In lambda function:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:121:64:[m[K [01;31m[Kerror: [m[K‘[01m[KTF_link6_effector_final[m[K’ is not captured
+  121 |         Eigen::Matrix4d TF_base_link6 = TF_base_effector_final*[01;31m[KTF_link6_effector_final[m[K.inverse();
+      |                                                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:104:72:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+  104 |     auto const target_pose = [this, pos = msg0, TF_link6_effector_final[01;36m[K][m[K {
+      |                                                                        [01;36m[K^[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:104:49:[m[K [01;36m[Knote: [m[K‘[01m[K<typeprefixerror>TF_link6_effector_final[m[K’ declared here
+  104 |     auto const target_pose = [this, pos = msg0, [01;36m[KTF_link6_effector_final[m[K] {
+      |                                                 [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In member function ‘[01m[Kvoid Move::timer_callback()[m[K’:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:145:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[K{[m[K’ token
+  145 |     if[01;31m[K{[m[K!all_poses.empty()}{
+      |       [01;31m[K^[m[K
+      |       [32m[K([m[K
+gmake[2]: *** [CMakeFiles/move.dir/build.make:76: CMakeFiles/move.dir/src/move.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/move.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

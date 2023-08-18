@@ -5,11 +5,11 @@
 <xacro:include filename="Robot.trans" />
 <xacro:include filename="Robot.gazebo" />
 <link name="base_link">
-  <inertial>
+  <!-- <inertial>
     <origin xyz="9.323197461062662e-06 -2.179181289320399e-06 0.03766434672102797" rpy="0 0 0"/>
     <mass value="0.6555115079798821"/>
     <inertia ixx="0.001559" iyy="0.001558" izz="0.002695" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
-  </inertial>
+  </inertial> -->
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
@@ -206,7 +206,7 @@
   <parent link="link1_1"/>
   <child link="link2_1"/>
   <axis xyz="0 1 0"/>
-  <limit upper="1.92" lower="-1.5" effort="100" velocity="100.0"/>
+  <limit upper="1.92" lower="-0.873" effort="100" velocity="100.0"/>
 </joint>
 
 <joint name="Joint3" type="revolute">
@@ -222,7 +222,7 @@
   <parent link="link3_1"/>
   <child link="link4_1"/>
   <axis xyz="0 0 1"/>
-  <limit upper="3.1415927" lower="-3.1415927" effort="100" velocity="100.0"/>
+  <limit upper="2.36" lower="-2.36" effort="100" velocity="100.0"/>
 </joint>
 
 <joint name="Joint5" type="revolute">
@@ -238,7 +238,7 @@
   <parent link="link5_1"/>
   <child link="link6_1"/>
   <axis xyz="0 0 1"/>
-  <limit upper="3.1415927" lower="-3.1415927" effort="100" velocity="100.0"/>
+  <limit upper="2.36" lower="-2.36" effort="100" velocity="100.0"/>
 </joint>
 
 <joint name="Servo Joint" type="revolute">
@@ -253,9 +253,9 @@
   <origin xyz="0 0.014 0.024" rpy="0 -1.5708 0"/>
   <parent link="link6_1"/>
   <child link="Idol_Gear_1"/>
+  <mimic joint="Servo Joint"/>
   <axis xyz="0 0 -1"/>
   <limit upper="0" lower="-1.5708" effort="100" velocity="100.0"/>
-  <mimic joint="Servo Joint"/>
 </joint>
 
 </robot>

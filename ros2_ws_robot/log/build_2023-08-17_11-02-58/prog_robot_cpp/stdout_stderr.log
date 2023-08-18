@@ -1,0 +1,13 @@
+[35m[1mConsolidate compiler generated dependencies of target move[0m
+[ 20%] Built target transformation_matrix_calculator
+[ 40%] Built target scene
+[ 50%] [32mBuilding CXX object CMakeFiles/move.dir/src/move.cpp.o[0m
+[ 70%] Built target hello_moveit
+[ 90%] Built target frame_effector
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:[m[K In constructor ‘[01m[KMove::Move()[m[K’:
+[01m[K/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp/src/move.cpp:58:49:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before numeric constant
+   58 |     timer_ = this->create_wall_timer(std::milli [01;31m[K1000ms[m[K , std::bind(&Move::timer_callback, this));
+      |                                                 [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/move.dir/build.make:76: CMakeFiles/move.dir/src/move.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:171: CMakeFiles/move.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

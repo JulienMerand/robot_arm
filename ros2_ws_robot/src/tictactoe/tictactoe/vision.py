@@ -14,16 +14,17 @@ def print_board(board):
 class Vision_Tictactoe():
 
     def __init__(self):
-        # Get camera parameters
-        file_path = '/home/julien/Documents/Python/calibration/parametres_camera.pkl'
-        with open(file_path, 'rb') as f:
-            parameters = pickle.load(f)
+        pass
+        # # Get camera parameters
+        # file_path = '/home/julien/Documents/Python/calibration/parametres_camera.pkl'
+        # with open(file_path, 'rb') as f:
+        #     parameters = pickle.load(f)
         
-        self.extrinsic_matrix = parameters['extrinsic matrix']
-        self.intrinsic_matrix = parameters['intrinsic matrix']
-        self.dist_coeffs = parameters['distortion']
-        self.rot_vecs = parameters['rotation']
-        self.trans_vecs = parameters['translation']
+        # self.extrinsic_matrix = parameters['extrinsic matrix']
+        # self.intrinsic_matrix = parameters['intrinsic matrix']
+        # self.dist_coeffs = parameters['distortion']
+        # self.rot_vecs = parameters['rotation']
+        # self.trans_vecs = parameters['translation']
 
     def pixel_to_real_coordinates(self, px, py):
         # rx, ry = 0.518*py+64.203, (px - 400)/2
@@ -134,12 +135,12 @@ class Vision_Tictactoe():
             img = cv2.drawContours(img,[pts1],0,(0,255,0),2)
             cv2.circle(img, (x_middle_board, y_middle_board), 5, (0,0,0), -1)
             try:
-                theta = (atan((box[1][0] - box[0][0])/(box[1][1] - box[0][1]))%(pi/4))
+                theta = -(atan((box[1][0] - box[0][0])/(box[1][1] - box[0][1]))%(pi/4))
             except:
                 theta = 0.0
             TR_BaseToBoard = np.eye(2)
-            Rot_board = np.array(([cos(-theta), -sin(-theta)],
-                                [sin(-theta),  cos(-theta)]))
+            Rot_board = np.array(([cos(theta), -sin(theta)],
+                                [sin(theta),  cos(theta)]))
             coord_x, coord_y = self.pixel_to_real_coordinates(x_middle_board, y_middle_board)
             Pos_board = np.array([int(coord_x), int(coord_y)])
             TR_BaseToBoard = [Rot_board, Pos_board]       
@@ -176,7 +177,7 @@ class Vision_Tictactoe():
         return draw, squares_coords_board
 
     def get_board(self, frame):
-        frame = cv2.undistort(frame,self.intrinsic_matrix, self.dist_coeffs)
+        # frame = cv2.undistort(frame,self.intrinsic_matrix, self.dist_coeffs)
         # Apply Perspective Transform Algorithm
         pts1 = np.float32([[58, 90],     [429, 90],
                             [34, 512], [452, 512]])
@@ -215,19 +216,12 @@ class Vision_Tictactoe():
                     rect = cv2.minAreaRect(cnt)
                     box = np.intp(cv2.boxPoints(rect))
                     middle_x, middle_y = box[0][0] + (box[2][0] - box[0][0])//2, box[0][1] + (box[2][1] - box[0][1])//2
-                    peri = cv2.arcLength(cnt, True)
-                    approx_poly = cv2.approxPolyDP(cnt, 0.04 * peri, True)
-                    approx_poly = np.intp(approx_poly)
-                    pts = np.zeros((4,2))
-                    for i in range(4):
-                        pts[i] = approx_poly[i][0]
-                    pts = np.intp(pts)
                     cv2.drawContours(img, [box], 0, (0,255,0), 2)
                     cv2.circle(img, (middle_x, middle_y), 5, (0,255,0), -1)
                     coord_x, coord_y = self.pixel_to_real_coordinates(middle_x, middle_y)
                     try:
-                        theta = (atan((box[1][0] - box[0][0])/(box[1][1] - box[0][1]))%(pi/4))*180/pi
-                    except:
+                        theta = -(atan((box[1][0] - box[0][0])/(box[1][1] - box[0][1]))%(pi/4))*180/pi
+                    except Exception as e:
                         theta = 0.0
                     coords.append([round(coord_x,2), round(coord_y,2), round(theta,2)])
         # cv2.imshow('Green Pieces', img)
@@ -236,7 +230,7 @@ class Vision_Tictactoe():
         return coords
         
     def get_coords_green_pieces(self, frame):
-        frame = cv2.undistort(frame,self.intrinsic_matrix, self.dist_coeffs)
+        # frame = cv2.undistort(frame,self.intrinsic_matrix, self.dist_coeffs)
         img = np.copy(frame)
         # cv2.imshow('img',img)
         cv2.waitKey(0)
@@ -246,7 +240,16 @@ class Vision_Tictactoe():
         kernel = np.ones((5, 5), np.uint8)
         mask_morph = cv2.morphologyEx(mask, cv2.MORPH_OPEN, kernel, iterations=3)
         mask_morph = cv2.dilate(mask_morph, kernel, iterations=2)
-        # mask_morph = cv2.morphologyEx(mask_morph, cv2.MORPH_CLOSE, kernel, iterations=3)
+
+        contours, _ = cv2.findContours(mask_morph, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+        if(len(contours) > 0):
+            for cnt in contours:
+                x,y,w,h = cv2.boundingRect(cnt)
+                if w>150 and h>150:
+                    rect = cv2.minAreaRect(cnt)
+                    box = np.intp(cv2.boxPoints(rect))
+                    cv2.drawContours(mask_morph, [box], 0, 255, -1)
+
         mask_morph_not = cv2.bitwise_not(mask_morph)
         new_frame = cv2.bitwise_and(frame, frame, mask=mask_morph_not)
         # Apply Perspective Transform Algorithm

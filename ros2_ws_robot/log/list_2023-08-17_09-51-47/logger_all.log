@@ -1,0 +1,110 @@
+[0.531s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/julien/Documents/ros/robot_arm/ros2_ws_robot']
+[0.531s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/julien/Documents/ros/robot_arm/ros2_ws_robot'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f2b82022770>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7f2b82139b70>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7f2b82139b70>>, mixin_verb=('list',))
+[0.579s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.579s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.579s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.579s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.579s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.579s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot'
+[0.579s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot) by extension 'ignore'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot) by extension 'ignore_ament_install'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot) by extensions ['colcon_pkg']
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot) by extension 'colcon_pkg'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot) by extensions ['colcon_meta']
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot) by extension 'colcon_meta'
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot) by extensions ['ros']
+[0.580s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot) by extension 'ros'
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot) by extensions ['cmake', 'python']
+[0.597s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot) by extension 'cmake'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot) by extension 'python'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot) by extensions ['python_setup_py']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot) by extension 'python_setup_py'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build) by extensions ['ignore', 'ignore_ament_install']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build) by extension 'ignore'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build) ignored
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/frames) by extensions ['ignore', 'ignore_ament_install']
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/frames) by extension 'ignore'
+[0.598s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/frames) by extension 'ignore_ament_install'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/frames) by extensions ['colcon_pkg']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/frames) by extension 'colcon_pkg'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/frames) by extensions ['colcon_meta']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/frames) by extension 'colcon_meta'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/frames) by extensions ['ros']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/frames) by extension 'ros'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/frames) by extensions ['cmake', 'python']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/frames) by extension 'cmake'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/frames) by extension 'python'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/frames) by extensions ['python_setup_py']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/frames) by extension 'python_setup_py'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install) by extensions ['ignore', 'ignore_ament_install']
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install) by extension 'ignore'
+[0.599s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install) ignored
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/log) by extensions ['ignore', 'ignore_ament_install']
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/log) by extension 'ignore'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/log) ignored
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src) by extensions ['ignore', 'ignore_ament_install']
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src) by extension 'ignore'
+[0.600s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src) by extension 'ignore_ament_install'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src) by extensions ['colcon_pkg']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src) by extension 'colcon_pkg'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src) by extensions ['colcon_meta']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src) by extension 'colcon_meta'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src) by extensions ['ros']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src) by extension 'ros'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src) by extensions ['cmake', 'python']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src) by extension 'cmake'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src) by extension 'python'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src) by extensions ['python_setup_py']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src) by extension 'python_setup_py'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot) by extensions ['ignore', 'ignore_ament_install']
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot) by extension 'ignore'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot) by extension 'ignore_ament_install'
+[0.601s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot) by extensions ['colcon_pkg']
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot) by extension 'colcon_pkg'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot) by extensions ['colcon_meta']
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot) by extension 'colcon_meta'
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot) by extensions ['ros']
+[0.602s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot) by extension 'ros'
+[0.605s] DEBUG:colcon.colcon_core.package_identification:Package '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot' with type 'ros.ament_python' and name 'prog_robot'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp) by extension 'ignore'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp) by extension 'ignore_ament_install'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp) by extensions ['colcon_pkg']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp) by extension 'colcon_pkg'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp) by extensions ['colcon_meta']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp) by extension 'colcon_meta'
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp) by extensions ['ros']
+[0.606s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp) by extension 'ros'
+[0.608s] DEBUG:colcon.colcon_core.package_identification:Package '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot_cpp' with type 'ros.ament_cmake' and name 'prog_robot_cpp'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/robot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/robot_description) by extension 'ignore'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/robot_description) by extension 'ignore_ament_install'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/robot_description) by extensions ['colcon_pkg']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/robot_description) by extension 'colcon_pkg'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/robot_description) by extensions ['colcon_meta']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/robot_description) by extension 'colcon_meta'
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/robot_description) by extensions ['ros']
+[0.608s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/robot_description) by extension 'ros'
+[0.609s] DEBUG:colcon.colcon_core.package_identification:Package '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/robot_description' with type 'ros.ament_cmake' and name 'robot_description'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/robot_moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/robot_moveit_config) by extension 'ignore'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/robot_moveit_config) by extension 'ignore_ament_install'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/robot_moveit_config) by extensions ['colcon_pkg']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/robot_moveit_config) by extension 'colcon_pkg'
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/robot_moveit_config) by extensions ['colcon_meta']
+[0.609s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/robot_moveit_config) by extension 'colcon_meta'
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/robot_moveit_config) by extensions ['ros']
+[0.610s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/robot_moveit_config) by extension 'ros'
+[0.611s] DEBUG:colcon.colcon_core.package_identification:Package '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/robot_moveit_config' with type 'ros.ament_cmake' and name 'robot_moveit_config'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/tictactoe) by extensions ['ignore', 'ignore_ament_install']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/tictactoe) by extension 'ignore'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/tictactoe) by extension 'ignore_ament_install'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/tictactoe) by extensions ['colcon_pkg']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/tictactoe) by extension 'colcon_pkg'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/tictactoe) by extensions ['colcon_meta']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/tictactoe) by extension 'colcon_meta'
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/tictactoe) by extensions ['ros']
+[0.611s] Level 1:colcon.colcon_core.package_identification:_identify(/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/tictactoe) by extension 'ros'
+[0.612s] DEBUG:colcon.colcon_core.package_identification:Package '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/tictactoe' with type 'ros.ament_python' and name 'tictactoe'
+[0.612s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

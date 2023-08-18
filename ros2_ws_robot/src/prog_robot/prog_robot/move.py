@@ -7,7 +7,7 @@ from prog_robot.kinematics import inverse_kinematics
 from copy import deepcopy
 import time
 
-class MinimalPublisher(Node):
+class Move(Node):
 
     def __init__(self):
 
@@ -97,7 +97,7 @@ class MinimalPublisher(Node):
 def main(args=None):
     rclpy.init(args=args)
 
-    publisher = MinimalPublisher()
+    publisher = Move()
 
     rclpy.spin(publisher)
 

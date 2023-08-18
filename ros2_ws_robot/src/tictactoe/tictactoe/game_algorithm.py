@@ -44,6 +44,7 @@ class Tictactoe():
         self.screen = self.setup()
 
     def start(self):
+        ''' Joue le coup du robot si c'est le premier joueur.'''
         if self.starter=='ROBOT':
             print("[MASTER] Le robot commence.")
             # IA qui commence
@@ -54,8 +55,10 @@ class Tictactoe():
             print("[MASTER] A toi de commencer. N'oublies pas d'appuyer sur la touche SPACE une fois que tu as joué.")
             return False, 0 
 
-    # Initialisation du plateau de jeu
+    
     def setup(self):
+        ''' Initialisation du plateau de jeu '''
+        
         # Initialisation de la fenêtre du jeu
         screen = pygame.display.set_mode((self.WIDTH, self.HEIGHT))
         pygame.display.set_caption("Tic Tac Toe")
@@ -69,12 +72,13 @@ class Tictactoe():
 
         return screen
 
-    # Fonction pour vérifier si trois éléments sont égaux
+    
     def equals3(self, a, b, c):
+        '''Fonction pour vérifier si trois éléments sont égaux'''
         return a == b and b == c and a != '-'
 
-    # Fonction pour vérifier s'il y a un gagnant
     def check_winner(self):
+        ''' Vérifie si il y a un gagnant dans self.board.'''
         winner = None
 
         # Vérification des lignes horizontales
@@ -106,6 +110,7 @@ class Tictactoe():
             return winner
 
     def display_result(self, result):
+        ''' Affiche le vainqueur sur la fenêtre pyame.'''
         if result is not None:
             result_text = ''
             if result == 'tie':
@@ -124,6 +129,7 @@ class Tictactoe():
         
 
     def best_move(self):
+        ''' Choisis le meilleur coup à jouer grâce à l'algorithme "minimax" et met à jour self.board.'''
         # AI fait son coup
         best_score = float('-inf')
         move = None
@@ -143,6 +149,7 @@ class Tictactoe():
 
 
     def minimax(self, board, depth, is_maximizing):
+        ''' Calcul le meilleur score du plateau donné.'''
         result = self.check_winner()
         if result is not None:
             return self.scores[result]
@@ -169,8 +176,9 @@ class Tictactoe():
             return best_score
 
     def next_move(self, i, j):
-        # Si le coup est valide
+        '''Met à jour self.board en fonction du coup demandé par le joueur et effectue le coup de l'IA.'''
         if self.board[i][j] == '-':
+            # si le coup est valide
             self.board[i][j] = self.HUMAN
             for i in range(3):
                 if '-' in self.board[i]:
@@ -181,6 +189,7 @@ class Tictactoe():
         return False, 0
 
     def update_board(self):
+        ''' Met à jour la fenêtre pygame en fonction de self.board.'''
         for i in range(3):
             for j in range(3):
                 y = self.W * i + self.W // 2
@@ -194,6 +203,12 @@ class Tictactoe():
                     pygame.draw.line(self.screen, self.BLACK, (x + radius, y - radius), (x - radius, y + radius), 4)
 
     def compare_board(self, vision_board):
+        '''
+        Renvoie : bool, bool, (i,j) \n
+        \t  - Il y a une difference entre le plateau que je vois et celui que je connais,
+        \t  - Une pièce 'O' (True) ou 'X' (False) a été jouée,
+        \t  - La case jouée (i, j).
+        '''
         for i in range(3):
             for j in range(3):
                 if self.board[i][j] != vision_board[i][j]:
@@ -209,6 +224,9 @@ class Tictactoe():
                         # print("[COMPARE_BOARD] Et j'ai ça : ", self.board)
                         return True, False, (i, j)
         return False, False, (i, j)
+
+
+
 
 if __name__=="__main__":
 
