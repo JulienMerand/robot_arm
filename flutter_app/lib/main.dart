@@ -69,6 +69,6 @@ class Exos {
 }
 
 List exos = [
-  Exos("Joint Control", "Control each joints position",
-      (context) => const JointControl()),
+  Exos("Control", "Control the robot and effector position",
+      (context) => const Control()),
 ];
