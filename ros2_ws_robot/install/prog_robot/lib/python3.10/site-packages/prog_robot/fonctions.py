@@ -1,3 +1,8 @@
+"""
+Quelques fonctions utiles.
+
+"""
+
 import math
 import numpy as np
 
@@ -55,6 +60,10 @@ def cercle(centre, rayon):
         Y.append(elt + Oy)
 
     return X,Y
+
+
+
+
 
 if __name__=="__main__":
 

@@ -1,3 +1,8 @@
+""" 
+Récupère le flux vidéo sur le serveur, enlève la distortion crée par la caméra et publie l'image sur le topic /camera/frames.
+
+"""
+
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image
@@ -6,7 +11,6 @@ import cv2
 import pickle
 
 class Camera(Node):
-    """ Récupère le flux vidéo sur le serveur, enlève la distortion crée par la caméra et publie l'image sur le topic /camera/frames"""
     def __init__(self):
         super().__init__('camera_node')
         self.cam_publisher = self.create_publisher(Image, '/camera/frames', 10)

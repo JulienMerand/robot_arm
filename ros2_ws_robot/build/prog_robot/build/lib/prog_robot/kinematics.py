@@ -1,3 +1,8 @@
+"""
+Regroupe toutes les fonctions utiles à calculer la cinématique du robot.
+
+"""
+
 import numpy as np
 from math import sin, cos, pi, atan, acos, asin, sqrt, atan2
 from scipy.spatial.transform import Rotation as R
@@ -348,9 +353,10 @@ if __name__=="__main__":
     # ang = [0,45,45,0,45,0]
     # ang = [18,100,-64,70,76,57]
     # ang = [37,65,75,0,40,0]
-    # pos, ori = forward_kinematics(ang)
-    # print("\nResultat : ")
-    # print(f"pos : {pos} | ori : {ori}\n")
+    ang = [0,0,0,0,0,0]
+    pos, ori = forward_kinematics(ang)
+    print("\nResultat : ")
+    print(f"pos : {pos} | ori : {ori}\n")
 
     # ang = [0,0,pi/2]
     # pos = forward_kinematics_3dof(ang)
@@ -364,10 +370,10 @@ if __name__=="__main__":
     # print(t)
     # print(thetas)
 
-    t = time.time()
-    # print(inverse_kinematics(pos, ori))
-    print("Résultat : ",inverse_kinematics([225,0,350], [0,120,0], "above", False))
-    t = time.time() - t
-    print("Temps d'exécution (s) : ",t)
+    # t = time.time()
+    # # print(inverse_kinematics(pos, ori))
+    # print("Résultat : ",inverse_kinematics([225,0,350], [0,120,0], "above", False))
+    # t = time.time() - t
+    # print("Temps d'exécution (s) : ",t)
 
     # workspace()

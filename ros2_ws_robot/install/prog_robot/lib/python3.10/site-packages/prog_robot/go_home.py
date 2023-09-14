@@ -1,3 +1,8 @@
+""" 
+Envoie directement au robot les positions articulaires correspondantes à sa position 'home'.
+
+"""
+
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int32MultiArray, Int32
@@ -6,7 +11,6 @@ from prog_robot.fonctions import ang2Step
 from prog_robot.kinematics import inverse_kinematics
 
 class GoHome(Node):
-    """ Publie les positions articulaires correspondantes à la position 'home' du robot."""
     def __init__(self):
 
         super().__init__('pub_to_arduino')
@@ -20,7 +24,9 @@ class GoHome(Node):
 
         self.robot_state = -1
 
+        # Position 'home'
         ang_deg = [0,0,0,0,0,0]
+
         self.step = ang2Step(ang_deg, "deg")
         self.speed = 25
         self.accel = 30

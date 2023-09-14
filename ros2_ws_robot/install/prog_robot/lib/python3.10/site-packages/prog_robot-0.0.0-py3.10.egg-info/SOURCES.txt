@@ -11,6 +11,7 @@ setup.py
 launch/simu.launch.py
 prog_robot/__init__.py
 prog_robot/camera.py
+prog_robot/controller.py
 prog_robot/fonctions.py
 prog_robot/go_home.py
 prog_robot/kinematics.py

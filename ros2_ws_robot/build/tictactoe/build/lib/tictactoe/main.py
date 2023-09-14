@@ -14,7 +14,11 @@ import numpy as np
 class NodeTictactoe(Node):
 
     def __init__(self):
-
+        """
+        Publie les positions sur les topics /pose_xyz_speed et /pose_gripper.
+        Récupère les frames de la caméra via le topic /camera/frames.
+        
+        """
         super().__init__('tictactoe')
         self.publisher_pose = self.create_publisher(Float32MultiArray, '/pose_xyz_speed', 10)
         self.publisher_gripper = self.create_publisher(Int32, '/pose_gripper', 10)

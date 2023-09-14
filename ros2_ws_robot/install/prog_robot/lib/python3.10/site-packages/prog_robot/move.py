@@ -1,3 +1,8 @@
+"""
+Lis les topics /pose_xyz_speed /pose_theta_speed et /pose_gripper et transmets les positions au robot.
+
+"""
+
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Float32MultiArray, Int32MultiArray, Int32
@@ -11,7 +16,7 @@ class Move(Node):
     
     def __init__(self):
 
-        super().__init__('pub_to_arduino')
+        super().__init__('move')
         self.publisher_ = self.create_publisher(Int32MultiArray, '/micro_ros_arduino_subscriber', 10)
         self.timer = self.create_timer(1.0, self.timer_callback)
         self.sub_robot = self.create_subscription(Int32,'/micro_ros_arduino_node_publisher', self.robot_callback, 10)        

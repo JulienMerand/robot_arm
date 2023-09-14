@@ -9,6 +9,14 @@ double roundDouble(double value, int places) {
   return ((value * mod).round().toDouble() / mod);
 }
 
+void reset() {
+  jointStates = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
+  eulerPos = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0]; // z = 853.144
+  for (var i = 0; i < 5; i++) {
+    joint[i].setValue(0.0);
+  }
+}
+
 List<double> jointlimitsLower = [
   roundDouble(-1.658 * 180 / pi, 2),
   roundDouble(-0.873 * 180 / pi, 2),
@@ -74,7 +82,8 @@ class _ControlState extends State<Control> {
 
   @override
   void initState() {
-    ros = Ros(url: 'ws://127.0.0.1:9090');
+    // ros = Ros(url: 'ws://127.0.0.1:9090');
+    ros = Ros(url: 'ws://192.168.1.51:9090');
     jointStatesPub = Topic(
         ros: ros,
         name: '/controller/joint_states',
@@ -125,7 +134,7 @@ class _ControlState extends State<Control> {
           ),
         ),
         body: Container(
-          padding: const EdgeInsets.all(20),
+          padding: const EdgeInsets.symmetric(horizontal: 10),
           child: Center(
               child: Column(
             children: [
@@ -141,7 +150,7 @@ class _ControlState extends State<Control> {
                         },
                         style: buttonStyle,
                         child: const Text("0.01")),
-                    const SizedBox(width: 10),
+                    // const SizedBox(width: 10),
                     ElevatedButton(
                         onPressed: () {
                           setState(() {
@@ -150,7 +159,7 @@ class _ControlState extends State<Control> {
                         },
                         style: buttonStyle,
                         child: const Text("0.1")),
-                    const SizedBox(width: 10),
+                    // const SizedBox(width: 10),
                     ElevatedButton(
                         onPressed: () {
                           setState(() {
@@ -159,7 +168,7 @@ class _ControlState extends State<Control> {
                         },
                         style: buttonStyle,
                         child: const Text("1")),
-                    const SizedBox(width: 10),
+                    // const SizedBox(width: 10),
                     ElevatedButton(
                         onPressed: () {
                           setState(() {
@@ -168,10 +177,21 @@ class _ControlState extends State<Control> {
                         },
                         style: buttonStyle,
                         child: const Text("10")),
+                    // const SizedBox(width: 10),
+                    IconButton(
+                        onPressed: () {
+                          setState(() {
+                            reset();
+                            publishJoints();
+                            publishPose();
+                          });
+                        },
+                        style: buttonStyle,
+                        icon: const Icon(Icons.restart_alt)),
                   ],
                 ),
               ),
-              const SizedBox(height: 20),
+              // const SizedBox(height: 10),
               Column(
                 children: List.generate(joint.length, (index) {
                   return Row(
@@ -223,7 +243,7 @@ class _ControlState extends State<Control> {
                   );
                 }),
               ),
-              const SizedBox(height: 20),
+              const SizedBox(height: 5),
 // Joysticks
               Expanded(
                 child: Row(

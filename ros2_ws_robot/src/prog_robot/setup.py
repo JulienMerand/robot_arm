@@ -27,6 +27,7 @@ setup(
             "move = prog_robot.move:main",
             "go_home = prog_robot.go_home:main",
             "camera = prog_robot.camera:main",
+            "controller = prog_robot.controller:main",
         ],
     },
 )

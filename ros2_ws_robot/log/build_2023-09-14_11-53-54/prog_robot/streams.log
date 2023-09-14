@@ -1,0 +1,46 @@
+[1.688s] Invoking command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot': PYTHONPATH=/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot/prefix_override:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/prog_robot build --build-base /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot/build install --record /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot/install.log --single-version-externally-managed
+[2.083s] running egg_info
+[2.084s] writing ../../build/prog_robot/prog_robot.egg-info/PKG-INFO
+[2.084s] writing dependency_links to ../../build/prog_robot/prog_robot.egg-info/dependency_links.txt
+[2.084s] writing entry points to ../../build/prog_robot/prog_robot.egg-info/entry_points.txt
+[2.085s] writing requirements to ../../build/prog_robot/prog_robot.egg-info/requires.txt
+[2.085s] writing top-level names to ../../build/prog_robot/prog_robot.egg-info/top_level.txt
+[2.087s] reading manifest file '../../build/prog_robot/prog_robot.egg-info/SOURCES.txt'
+[2.088s] writing manifest file '../../build/prog_robot/prog_robot.egg-info/SOURCES.txt'
+[2.088s] running build
+[2.088s] running build_py
+[2.088s] copying prog_robot/move.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot/build/lib/prog_robot
+[2.088s] copying prog_robot/pub_to_arduino.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot/build/lib/prog_robot
+[2.089s] copying prog_robot/fonctions.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot/build/lib/prog_robot
+[2.089s] copying prog_robot/camera.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot/build/lib/prog_robot
+[2.089s] copying prog_robot/kinematics.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot/build/lib/prog_robot
+[2.089s] copying prog_robot/controller.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot/build/lib/prog_robot
+[2.089s] copying prog_robot/go_home.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot/build/lib/prog_robot
+[2.090s] running install
+[2.090s] running install_lib
+[2.091s] copying /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot/build/lib/prog_robot/move.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/python3.10/site-packages/prog_robot
+[2.091s] copying /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot/build/lib/prog_robot/pub_to_arduino.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/python3.10/site-packages/prog_robot
+[2.091s] copying /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot/build/lib/prog_robot/fonctions.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/python3.10/site-packages/prog_robot
+[2.092s] copying /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot/build/lib/prog_robot/camera.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/python3.10/site-packages/prog_robot
+[2.092s] copying /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot/build/lib/prog_robot/kinematics.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/python3.10/site-packages/prog_robot
+[2.092s] copying /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot/build/lib/prog_robot/controller.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/python3.10/site-packages/prog_robot
+[2.092s] copying /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot/build/lib/prog_robot/go_home.py -> /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/python3.10/site-packages/prog_robot
+[2.093s] byte-compiling /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/python3.10/site-packages/prog_robot/move.py to move.cpython-310.pyc
+[2.094s] byte-compiling /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/python3.10/site-packages/prog_robot/pub_to_arduino.py to pub_to_arduino.cpython-310.pyc
+[2.095s] byte-compiling /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/python3.10/site-packages/prog_robot/fonctions.py to fonctions.cpython-310.pyc
+[2.096s] byte-compiling /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/python3.10/site-packages/prog_robot/camera.py to camera.cpython-310.pyc
+[2.097s] byte-compiling /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/python3.10/site-packages/prog_robot/kinematics.py to kinematics.cpython-310.pyc
+[2.099s] byte-compiling /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/python3.10/site-packages/prog_robot/controller.py to controller.cpython-310.pyc
+[2.100s] byte-compiling /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/python3.10/site-packages/prog_robot/go_home.py to go_home.cpython-310.pyc
+[2.100s] running install_data
+[2.101s] running install_egg_info
+[2.104s] removing '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/python3.10/site-packages/prog_robot-0.0.0-py3.10.egg-info' (and everything under it)
+[2.105s] Copying ../../build/prog_robot/prog_robot.egg-info to /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/python3.10/site-packages/prog_robot-0.0.0-py3.10.egg-info
+[2.106s] running install_scripts
+[2.133s] Installing camera script to /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/prog_robot
+[2.134s] Installing controller script to /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/prog_robot
+[2.134s] Installing go_home script to /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/prog_robot
+[2.134s] Installing move script to /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/prog_robot
+[2.134s] Installing pub_to_arduino script to /home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/prog_robot
+[2.134s] writing list of installed files to '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot/install.log'
+[2.189s] Invoked command in '/home/julien/Documents/ros/robot_arm/ros2_ws_robot/src/prog_robot' returned '0': PYTHONPATH=/home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot/prefix_override:/home/julien/Documents/ros/robot_arm/ros2_ws_robot/install/prog_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/prog_robot build --build-base /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot/build install --record /home/julien/Documents/ros/robot_arm/ros2_ws_robot/build/prog_robot/install.log --single-version-externally-managed

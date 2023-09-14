@@ -1,3 +1,9 @@
+"""
+Lis le topic /joint_states et transmets les positions au robot.
+Essentiel pour lier rviz2 avec le robot.
+
+"""
+
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int32MultiArray, Int32
