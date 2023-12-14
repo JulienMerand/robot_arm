@@ -4,8 +4,11 @@ Le modèle est le robot Moveo de BCN3D (https://github.com/BCN3D/BCN3D-Moveo)
 
 <img src="/Images/Station.jpg" height="400">
 <img src="/Images/Robot.jpg" height="400">
-<!-- ![Alt text](/Images/Station.jpg) -->
-<!-- ![Alt text](/Images/Robot.jpg) -->
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="/Images/Station.jpg"" alt="Image 1" height="300">
+    <img src="/Images/Robot.jpg" alt="Image 2" height="300">
+</div>
 
 Commandes utiles :
 
