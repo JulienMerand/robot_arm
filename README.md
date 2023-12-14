@@ -2,12 +2,9 @@
 Dans le cadre d'un projet personnel, je réalise un bras à 6 degrées de libertés, entièrement imprimé en 3D.
 Le modèle est le robot Moveo de BCN3D (https://github.com/BCN3D/BCN3D-Moveo)
 
-<img src="/Images/Station.jpg" height="400">
-<img src="/Images/Robot.jpg" height="400">
-
-<div style="display: flex; justify-content: space-between;">
-    <img src="/Images/Station.jpg"" alt="Image 1" height="300">
-    <img src="/Images/Robot.jpg" alt="Image 2" height="300">
+<div style="display: flex;">
+    <img src="/Images/Station.jpg" alt="Image 1" height="350" style="margin-right: 20px;">
+    <img src="/Images/Robot.jpg" alt="Image 2" height="350" style="margin-left: 20px;">
 </div>
 
 Commandes utiles :
