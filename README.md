@@ -2,6 +2,9 @@
 Dans le cadre d'un projet personnel, je réalise un bras à 6 degrées de libertés, entièrement imprimé en 3D.
 Le modèle est le robot Moveo de BCN3D (https://github.com/BCN3D/BCN3D-Moveo)
 
+![Alt text](/Images/Station.jpg)
+![Alt text](/Images/Robot.jpg)
+
 Commandes utiles :
 
 MICRO AGENT PORT SERIE :
