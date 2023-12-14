@@ -7,7 +7,7 @@ Le modèle est le robot Moveo de BCN3D (https://github.com/BCN3D/BCN3D-Moveo)
     <img src="/Images/Robot.jpg" alt="Image 2" height="350" style="margin-left: 100px;">
 </div>
 
-Commandes utiles :
+\nCommandes utiles :
 
 MICRO AGENT PORT SERIE :
 MicroXRCEAgent serial --dev /dev/ttyACM0 -b 115200
