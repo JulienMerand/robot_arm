@@ -3,8 +3,8 @@ Dans le cadre d'un projet personnel, je réalise un bras à 6 degrées de libert
 Le modèle est le robot Moveo de BCN3D (https://github.com/BCN3D/BCN3D-Moveo)
 
 <div style="display: flex;">
-    <img src="/Images/Station.jpg" alt="Image 1" height="350" style="margin-right: 100px;">
-    <img src="/Images/Robot.jpg" alt="Image 2" height="350" style="margin: 0;">
+    <img src="/Images/Station.jpg" alt="Image 1" height="350">
+    <img src="/Images/Robot.jpg" alt="Image 2" height="350">
 </div>
 
 
